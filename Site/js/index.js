@@ -24,3 +24,19 @@ container.addEventListener("mousemove", function (e) {
 container.addEventListener("mouseup", function (e) {
   drag = false;
 });
+
+// Zoomer dans une image
+
+const imgContainerZoom = document.querySelector(".ressources-body");
+const imgZoom = document.querySelector(".ressources-body img");
+
+imgContainerZoom.addEventListener("mousemove", (e) => {
+  const imgContainerZoomInfos = imgContainerZoom.getBoundingClientRect();
+  const x = e.clientX - imgContainerZoomInfos.left;
+  const y = e.clientY - imgContainerZoomInfos.top;
+
+  const pourcentageXcontainer = (x / imgContainerZoomInfos.width) * 100;
+  const pourcentageYcontainer = (y / imgContainerZoomInfos.height) * 100;
+
+  imgZoom.style.transformOrigin = `${pourcentageXcontainer}% ${pourcentageYcontainer}%`;
+});
