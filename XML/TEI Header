@@ -1,1 +1,22 @@
-Page où mettre le TEI Header générale -
+Base TEI Header : 
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
+<teiHeader> 
+ <fileDesc> 
+  <titleStmt> 
+   <title> 
+<!-- Titre de la ressource --> 
+   </title> 
+  </titleStmt> 
+  <publicationStmt> 
+   <p> 
+<!-- Informations sur la distribution de la ressource --> 
+   </p> 
+  </publicationStmt> 
+  <sourceDesc> 
+   <p> 
+<!-- Informations sur la source de la ressource --> 
+   </p> 
+  </sourceDesc> 
+ </fileDesc> 
+</teiHeader>
