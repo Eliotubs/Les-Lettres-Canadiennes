@@ -410,15 +410,7 @@ main .sommaire .accordeon_titre {
   font-size: 16px;
   margin: 10px;
   cursor: pointer;
-}
 
-main .content_accordeon{
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}
-
-main .sommaire {
   margin-top: 10%;
   margin-right: 20px;
   padding: 10px 60px 30px 10px;
@@ -431,6 +423,16 @@ main .sommaire {
   background-color: var(--gris160);
   border-radius: 0% 30% 30% 0%;
 }
+
+main .content_accordeon{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+/*main .sommaire {
+  
+}*/
 
 main .sommaire .volume{
   font-weight: bold;
