@@ -75,12 +75,7 @@
                 <p class="point"><a href="#Lettre_32">Lettre 32</a></p>
               </div>
             </div>
-             <div class="acordeon">
-
-             </div>
         </div>
-
-       
 
         <div class="transcription_integral">
           <h1 class="title_page">Transcription intégrale</h1>
@@ -209,6 +204,16 @@
       </div>
     </main>
 
+    <script>
+      const sommaire = document.querySelectorAll(".sommaire");
+
+sommaire.forEach(item => {
+  const header = item.querySelector(".accordeon_titre");
+  header.addEventListener("click", () => {
+    item.classList.toggle("active");
+  })
+})
+    </script>
     <footer>
       <div class="footer">
         <p>Footer</p>
