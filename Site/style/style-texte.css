@@ -408,10 +408,13 @@ main .sommaire {
   margin-left: 10px;
   margin-right: 20px;
   font-size: 13px;
+  
+  height: fit-content;
   position: sticky;
+
   top: 0px;
   background-color: var(--gris160);
-  height: fit-content;
+  
 }
 
 details {
