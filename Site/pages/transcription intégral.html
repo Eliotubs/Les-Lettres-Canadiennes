@@ -5,14 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="../style/style-texte.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/tei.css">
-    <script src="https://jsdelivr.net"></script>
-    <script>
-let c = new CETEI();
- c.getHTML5('../XML/Lettres_XML/Lettre_12', function(data) {
-   document.getElementsByTagName("body")[0].appendChild(data);
- });
-</script>
+    <link href="css/tei.css">
+    <link rel="stylesheet" href="https://jsdelivr.net">
+
     <title>Editions critique</title>
     <header>
       <nav class="header-container">
@@ -68,6 +63,14 @@ let c = new CETEI();
       </nav>
     </header>
   <body>
+
+    <script type="module">
+    import CETEI from 'https://jsdelivr.net';
+    let Tei = new CETEI();
+    Tei.getHTML5("../XML/Lettres_XML/Lettre_12", function(data) {
+      document.getElementById("tei-container").appendChild(data);
+    });
+    </script>
         
   
   
