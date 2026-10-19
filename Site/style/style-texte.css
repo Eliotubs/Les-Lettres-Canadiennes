@@ -399,19 +399,18 @@ main {
 /* PAGE : TRANSCRIPTION INTEGRAL */
 /* //////////////////// */
 
-main .contenaire_transcription_integral{
+main .contenaire_transcription_integral {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-main .sommaire{
-  margin-left: 10px ;
-  margin-right: 20px ;
+main .sommaire {
+  margin-left: 10px;
+  margin-right: 20px;
   font-size: 13px;
-  
   position: sticky;
   top: 0px;
-
   background-color: var(--gris160);
 }
 
@@ -436,36 +435,34 @@ details[open] summary {
   margin-bottom: 0.5em;
 }
 
-
-main .transcription_integral{
-  margin-left: 50px ;
-  margin-right: 50px ;
+main .transcription_integral {
+  margin-left: 50px;
+  margin-right: 50px;
   margin-bottom: 50px;
   font-size: 16px;
-  
+
   text-align: justify;
   line-height: 1.5;
 }
 
-main .transcription_integral .en-tête{
+main .transcription_integral .en-tête {
   margin-top: 10px;
   margin-bottom: 20px;
   text-align: center;
 }
 
-main .transcription_integral .en-tête h1{
+main .transcription_integral .en-tête h1 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-main .transcription_integral .en-tête .description{
+main .transcription_integral .en-tête .description {
   font-style: italic;
 }
 
-main .transcription_integral .texte_lettre{
+main .transcription_integral .texte_lettre {
   text-indent: 2em;
 }
-
 
 /* //////////////////// */
 /* FOOTER */
