@@ -407,7 +407,8 @@ main .contenaire_transcription_integral {
 main .sommaire {
   margin-left: 20px;
   margin-right: 20px;
-  font-size: 13px;
+  padding: 10px 60px 30px 10px;
+  font-size: 15px;
   
   height: fit-content;
   position: sticky;
@@ -417,25 +418,19 @@ main .sommaire {
   
 }
 
-details {
- /* border: 2px solid #aaa;
-  border-radius: 10px; */
-  padding: 0.5em 5em 0.5em;
-}
-
-summary {
+main .sommaire .titre_sommaire {
   font-weight: bold;
-  padding: 0.5em 5em 0.5em; 
+  text-align: left;
+  font-size: 16px;
+  margin: 10px;
 }
 
-details[open] {
-  padding: 3em;
+main .sommaire .volume{
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-details[open] summary {
-  border-bottom: 1px solid #aaa;
-  margin-bottom: 0.5em;
-}
 
 main .transcription_integral {
   margin-left: 50px;
@@ -465,6 +460,8 @@ main .transcription_integral .en-tête .description {
 main .transcription_integral .texte_lettre {
   text-indent: 2em;
 }
+
+
 
 /* //////////////////// */
 /* FOOTER */
