@@ -4,54 +4,70 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link href="../style/style-texte.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/tei.css">
     <script src="https://jsdelivr.net"></script>
     <script>
 let c = new CETEI();
- c.getHTML5('balzac-42-splendeurs-miseres-courtisanes-presse-derniere-incarnation-vautrin.xml', function(data) {
+ c.getHTML5('../XML/Lettres_XML/Lettre_12', function(data) {
    document.getElementsByTagName("body")[0].appendChild(data);
  });
 </script>
     <title>Editions critique</title>
-  </head>
-  
-  <header>
-    <img class="logo_othonè" src="images/othone.png" alt="logo Othonè" href=""/>
-    <img class="logo_lettre" src="images/Logo.jpg" alt="logo des Lettres" href=""/>
-    <nav class="page_accueil">
-        <hr class="sidebar">
-        <ul>
-            <li><a href="">Accueil</a></li>
-            <li class="menu-deroulant">
-                <a href="">Texte <span class="fleche">&#x23F7</span></a>
-                <ul class="sous-menu">
-                    <li><a href="">Lettres</a></li>
-                    <li><a href="">Transcription intégral</a></li>
-                </ul>
-            </li>
-            <li class="menu-deroulant">
-                <a href="">Annexes <span class="fleche">&#x23F7</span></a>
-                <ul class="sous-menu">
-                    <li><a href="">Ressources</a></li>
-                    <li><a href="">Documentation historique</a></li>
-                    <li><a href="">Données</a></li>
-                    <li><a href="">Index</a></li>
-                </ul>
-            </li>
-            <li class="menu-deroulant">
-                <a href="">À propos <span class="fleche">&#x23F7</span></a>
-                <ul class="sous-menu">
-                    <li><a href="">Présentation du projet</a></li>
-                    <li><a href="">Introduction générale</a></li>
-                    <li><a href="">Choix éditoriaux</a></li>
-                    <li><a href="">Contributeur</a></li>
-                </ul>
-            </li>
+    <header>
+      <nav class="header-container">
+        <p id="logo-title">Les lettres canadiennes</p>
+        <ul id="nav">
+          <li>
+            <a href="template.html">Accueil</a>
+          </li>
+          <li class="active">
+            <button
+              id="btn-texte-popover"
+              class="btn-menu"
+              popovertarget="nav-texte-popover"
+            >
+              Texte<i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <div class="popover" id="nav-texte-popover" popover>
+              <a href="#">Lettres</a>
+              <a href="#">Transcription intégrale</a>
+            </div>
+          </li>
+          <li>
+            <button
+              id="btn-references-popover"
+              class="btn-menu"
+              popovertarget="nav-references-popover"
+            >
+              Références<i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <div class="popover" id="nav-references-popover" popover>
+              <a href="#">Ressources</a>
+              <a href="#">Documentation historique</a>
+              <a href="#">Données</a>
+              <a href="#">Index</a>
+            </div>
+          </li>
+          <li>
+            <button
+              id="btn-apropos-popover"
+              class="btn-menu"
+              popovertarget="nav-apropos-popover"
+            >
+              À propos<i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <div class="popover" id="nav-apropos-popover" popover>
+              <a href="#">Présentation du projet</a>
+              <a href="#">Introduction générale</a>
+              <a href="#">Choix éditoriaux</a>
+              <a href="#">Contributeurs</a>
+            </div>
+          </li>
         </ul>
-    </nav>
+      </nav>
     </header>
-    <body>
+  <body>
         
   
   
