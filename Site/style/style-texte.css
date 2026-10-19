@@ -399,18 +399,16 @@ main {
 /* PAGE : TRANSCRIPTION INTEGRAL */
 /* //////////////////// */
 
-/*main .contenaire_transcription_integral{
+main .contenaire_transcription_integral{
   display: flex;
-  flex-direction: column;
-}*/
+  align-items: center;
+}
 
 main .sommaire{
-  align-items: left;
   margin-left: 10px ;
   margin-right: 20px ;
   font-size: 13px;
   
-  justify-content: flex-start;
   position: sticky;
   top: 0px;
 
@@ -445,8 +443,6 @@ main .transcription_integral{
   margin-bottom: 50px;
   font-size: 16px;
   
-  
-  align-items: center;
   text-align: justify;
   line-height: 1.5;
 }
