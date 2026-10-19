@@ -1,0 +1,10 @@
+tei-head {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+tei-p {
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+}
