@@ -402,24 +402,7 @@ main {
 
 main .contenaire_transcription_integral {
   display: flex;
-<<<<<<< Updated upstream
   align-items: start;
-=======
-  flex-direction: column;
-}*/
-
-main .sommaire {
-  align-items: left;
-  margin-left: 10px;
-  margin-right: 20px;
-  font-size: 13px;
-
-  justify-content: flex-start;
-  position: sticky;
-  top: 0px;
-
-  background-color: var(--gris160);
->>>>>>> Stashed changes
 }
 
 main .sommaire .accordeon_titre {
@@ -449,40 +432,29 @@ main .sommaire {
   border-radius: 0% 30% 30% 0%;
 }
 
-
-<<<<<<< Updated upstream
 main .sommaire .volume{
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-
-=======
->>>>>>> Stashed changes
 main .transcription_integral {
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 50px;
   font-size: 16px;
 
-<<<<<<< Updated upstream
-=======
 
   align-items: center;
->>>>>>> Stashed changes
   text-align: justify;
   line-height: 1.5;
 }
 
-<<<<<<< Updated upstream
 main .transcription_integral h1.title_page{
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-=======
->>>>>>> Stashed changes
 main .transcription_integral .en-tête {
   margin-top: 10px;
   margin-bottom: 20px;
