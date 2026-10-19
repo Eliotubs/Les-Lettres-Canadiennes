@@ -395,9 +395,49 @@ main {
   font-size: 0.8rem;
 }
 
-body .transcription_integral{
+/* //////////////////// */
+/* PAGE : TRANSCRIPTION INTEGRAL */
+/* //////////////////// */
+
+main .sommaire{
+  display: flex;
+  align-items: baseline;
+  margin-left: 10px ;
+  margin-right: 20px ;
+  font-size: 13px;
+
+  position: sticky;
+  top: 0px;
+
+  background-color: var(--gris160);
+}
+
+details {
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 2em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
+}
+
+
+main .transcription_integral{
   margin-left: 50px ;
   margin-right: 50px ;
+  margin-bottom: 50px;
   font-size: 16px;
   
   display: block;
@@ -406,22 +446,22 @@ body .transcription_integral{
   line-height: 1.5;
 }
 
-body .transcription_integral .en-tête{
+main .transcription_integral .en-tête{
   margin-top: 10px;
   margin-bottom: 20px;
   text-align: center;
 }
 
-body .transcription_integral .en-tête h1{
-  /*margin-top: 20px;*/
+main .transcription_integral .en-tête h1{
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
-body .transcription_integral .en-tête .description{
+main .transcription_integral .en-tête .description{
   font-style: italic;
 }
 
-body .transcription_integral .texte_lettre{
+main .transcription_integral .texte_lettre{
   text-indent: 2em;
 }
 
