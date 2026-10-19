@@ -140,7 +140,7 @@ nav.page_accueil > ul > li:hover > a{
 .image{
  
   background-color: #000000;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/feuille_marbre.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Site/images/feuille_marbre.jpg);
   background-position: center;
   background-size: cover; /* ou contain */
   padding: 3.2em; /*zone de remplissage */
@@ -151,6 +151,13 @@ nav.page_accueil > ul > li:hover > a{
 
 .signature{
     text-align: right;
+}
+
+.btn-menu{
+  background: none;
+  border: none;
+  position: relative;
+  cursor: pointer;
 }
 
 button{
