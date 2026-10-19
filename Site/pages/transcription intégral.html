@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="../style/style-texte.css" rel="stylesheet" />
-    <link href="css/tei.css">
+    <link href="css/tei.css" rel="stylesheet"s>
     <link rel="stylesheet" href="https://jsdelivr.net">
 
     <title>Editions critique</title>
@@ -67,14 +67,11 @@
     <script type="module">
     import CETEI from 'https://jsdelivr.net';
     let Tei = new CETEI();
-    Tei.getHTML5("", function(data) {
+    Tei.getHTML5("Lettre_12.xml", function(data) {
       document.getElementById("tei-container").appendChild(data);
     });
     </script>
         
-  
-  
-
   </body>
   <footer>
     <div class="footer">
