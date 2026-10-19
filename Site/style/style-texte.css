@@ -399,10 +399,10 @@ main {
 /* PAGE : TRANSCRIPTION INTEGRAL */
 /* //////////////////// */
 
-main .contenaire_transcription_integral{
+/*main .contenaire_transcription_integral{
   display: flex;
   flex-direction: column;
-}
+}*/
 
 main .sommaire{
   align-items: left;
