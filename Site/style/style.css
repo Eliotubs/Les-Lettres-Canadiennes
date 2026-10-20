@@ -13,7 +13,7 @@ body{
     margin-right: 50px ;
 }
 
-body h1{
+body h2{
     font-size: 30px;
     font-family: Georgia, serif;
 }
@@ -23,7 +23,7 @@ body p {
     font-family: "Poppins", sans-serif;
 }
 
-body .affective h1{
+body .affective h2{
     font-family: "Tangerine", cursive;
     font-weight: 700;
     font-style: normal;

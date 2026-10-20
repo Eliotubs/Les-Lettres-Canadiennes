@@ -7,7 +7,7 @@ fleche_sommaire.addEventListener("click", (e) => {
     div_sommaire.style.transform = "translateX(0)";
     menu_ouvert = true;
   } else {
-    div_sommaire.style.transform = "translateX(-180px)";
+    div_sommaire.style.transform = "translateX(-290px)";
     menu_ouvert = false;
   }
 });
