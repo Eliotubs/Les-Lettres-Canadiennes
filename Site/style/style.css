@@ -6,17 +6,36 @@
     padding: 3;
     list-style: none;
     text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/*Cette div doit regrouper tout les éléments qui sont en dehors du header.*/
 body{
     margin-left: 50px ;
     margin-right: 50px ;
-    font-size: 18px;
 }
 
-/* à voir si on met une image ? = vectoriel */
+body h1{
+    font-size: 30px;
+    font-family: Georgia, serif;
+}
+
+body p {
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+}
+
+body .affective h1{
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+}
+
+body .affective p {
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
 
 header > img.logo_lettre{
     margin-top: 4%;
@@ -164,7 +183,6 @@ button{
     margin-top: 5px;
     border-radius: 30px;
     padding: 15px;
-    font-size: medium;
 }
 
 .abstract{
