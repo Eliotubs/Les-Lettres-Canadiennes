@@ -18,7 +18,8 @@
   gap: 20px;
 }
 
-.filtres-container i {
+.filtres-container i,
+.volume-container i {
   margin-left: 5px;
   transform: scale(75%);
 }
@@ -53,7 +54,6 @@
   background: var(--gris240);
   transition: 0.2s ease;
   top: anchor(bottom);
-  position-try-fallbacks: --below-right, --below-left;
 }
 
 .filtres-intern-container {
@@ -105,7 +105,7 @@
 }
 
 /* ////////////////////// */
-/* LETTRES MAIN */
+/* LETTRES MAIN LEFT */
 /* ////////////////////// */
 
 .lettres-main {
@@ -119,14 +119,95 @@
   padding: 20px 50px;
 }
 
+.btn-volumes {
+  background: var(--gris240);
+  width: 100%;
+  text-align: left;
+}
+
+.volume-container:has(.popover-volume:popover-open) button i {
+  rotate: 180deg;
+  transition: 0.2s ease-in-out;
+}
+
+.popover-volume {
+  width: 100%;
+  padding: 20px 50px;
+  border: none;
+  background: var(--gris240);
+  transition: 0.2s ease;
+  top: anchor(bottom);
+  left: anchor(left);
+}
+
+#btn-volume-1 {
+  anchor-name: --volume-1-popover;
+}
+
+#volume-1 {
+  position-anchor: --volume-1-popover;
+}
+
+/* ////////////////////// */
+/* LETTRES MAIN - DESCRIPTION */
+/* ////////////////////// */
+
+.lettres-main-right {
+  display: flex;
+  flex-direction: column;
+}
+
 .lettres-mr-desc {
   padding: 20px 50px;
 }
 
+.lettres-mr-desc p:first-of-type {
+  margin-bottom: 10px;
+  font-weight: 500;
+  position: relative;
+  margin-left: 10px;
+}
+
+.lettres-mr-desc p:first-of-type::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  width: 1px;
+  height: 100%;
+  background: var(--gris080);
+}
+
+/* ////////////////////// */
+/* LETTRES MAIN - BOUTONS DE LECTURE */
+/* ////////////////////// */
+
 .lettres-mr-buttons-container {
   border-top: 1px solid var(--gris080);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .lettres-mr-buttons {
   padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.btn-lecture {
+  padding: 10px 10px;
+  border: 1px solid blue;
+  border-radius: 10px;
+  width: 100%;
+}
+
+#btn-lecture-selection {
+  color: var(--gris240);
+  background: blue;
 }

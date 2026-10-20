@@ -203,13 +203,38 @@
         <div class="lettres-main">
           <div class="lettres-main-left">
             <h2 class="intitule">Sélection des lettres</h2>
+            <div class="volume-container">
+              <button
+                id="btn-volume-1"
+                class="btn-volumes"
+                popovertarget="volume-1"
+              >
+                <i class="fa-solid fa-chevron-up"></i>
+                Volume 1 (1700-1715)
+              </button>
+              <div id="volume-1" class="popover-volume" popover>
+                <p>bonjour</p>
+              </div>
+            </div>
           </div>
           <div class="lettres-main-right">
             <div class="lettres-mr-desc">
               <h2 class="intitule">Description</h2>
+              <p>À Smith, en Canada</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ratione similique saepe, velit eius sequi.
+              </p>
             </div>
             <div class="lettres-mr-buttons-container">
-              <div class="lettres-mr-buttons"></div>
+              <div class="lettres-mr-buttons">
+                <a class="btn-lecture" id="btn-lecture-debut" href=""
+                  >Lire les lettres</a
+                >
+                <a class="btn-lecture" id="btn-lecture-selection" href=""
+                  >Lire la sélection</a
+                >
+              </div>
             </div>
           </div>
         </div>
