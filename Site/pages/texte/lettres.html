@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interface de lecture - Lettres canadiennes</title>
+    <link href="../../style/style-texte.css" rel="stylesheet" />
+    <link href="../../style/style-lettres.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="header-container">
+        <p id="logo-title">Les lettres canadiennes</p>
+        <ul id="nav">
+          <li>
+            <a href="">Accueil</a>
+          </li>
+          <li class="active">
+            <button
+              id="btn-texte-popover"
+              class="btn-menu"
+              popovertarget="nav-texte-popover"
+            >
+              Texte<i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <div class="popover" id="nav-texte-popover" popover>
+              <a href="lettre70_p1.html">Lettres</a>
+              <a href="#">Transcription intégrale</a>
+            </div>
+          </li>
+          <li>
+            <button
+              id="btn-references-popover"
+              class="btn-menu"
+              popovertarget="nav-references-popover"
+            >
+              Références<i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <div class="popover" id="nav-references-popover" popover>
+              <a href="#">Ressources</a>
+              <a href="#">Documentation historique</a>
+              <a href="#">Données</a>
+              <a href="#">Index</a>
+            </div>
+          </li>
+          <li>
+            <button
+              id="btn-apropos-popover"
+              class="btn-menu"
+              popovertarget="nav-apropos-popover"
+            >
+              À propos<i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <div class="popover" id="nav-apropos-popover" popover>
+              <a href="#">Présentation du projet</a>
+              <a href="#">Introduction générale</a>
+              <a href="#">Choix éditoriaux</a>
+              <a href="#">Contributeurs</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="main-container">
+        <div class="lettres-header">
+          <h2 class="intitule">Filtres</h2>
+          <div class="filtres-container">
+            <!-- //////////////////// -->
+            <!-- FILTRE SUJET -->
+            <!-- //////////////////// -->
+            <div class="filtre-container">
+              <button
+                id="btn-filtres-sujet-popover"
+                class="btn-filtres"
+                popovertarget="filtres-sujet"
+              >
+                Sujet<i class="fa-solid fa-chevron-up"></i>
+              </button>
+              <div id="filtres-sujet" class="popover-filtres" popover>
+                <div class="filtres-intern-container">
+                  <div class="label-filtres-selectall">
+                    <input id="filtre-checkbox-selectall" type="checkbox" />
+                    <label for="filtre-checkbox-selectall"
+                      >Tout sélectionner</label
+                    >
+                  </div>
+                  <div class="filtres-label-container">
+                    <div class="label-filtre">
+                      <input
+                        class="checkbox-filtre"
+                        id="filtre-checkbox-sujet-canada"
+                        type="checkbox"
+                      />
+                      <label for="filtre-checkbox-sujet-canada">Canada</label>
+                    </div>
+                    <div class="label-filtre">
+                      <input
+                        class="checkbox-filtre"
+                        id="filtre-checkbox-sujet-louisxiv"
+                        type="checkbox"
+                      />
+                      <label for="filtre-checkbox-sujet-louisxiv"
+                        >Louis XIV</label
+                      >
+                    </div>
+                    <div class="label-filtre">
+                      <input
+                        class="checkbox-filtre"
+                        id="filtre-checkbox-sujet-famille"
+                        type="checkbox"
+                      />
+                      <label for="filtre-checkbox-sujet-famille"
+                        >Lettres addresées à sa famille</label
+                      >
+                    </div>
+                    <div class="label-filtre">
+                      <input
+                        class="checkbox-filtre"
+                        id="filtre-checkbox-sujet-paris"
+                        type="checkbox"
+                      />
+                      <label for="filtre-checkbox-sujet-paris">Paris</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- //////////////////// -->
+            <!-- FILTRE EMPRUNTS -->
+            <!-- //////////////////// -->
+            <div class="filtre-container">
+              <button
+                id="btn-filtres-emprunts-popover"
+                class="btn-filtres"
+                popovertarget="filtres-emprunts"
+              >
+                Emprunts<i class="fa-solid fa-chevron-up"></i>
+              </button>
+              <div id="filtres-emprunts" class="popover-filtres" popover>
+                <div class="filtres-intern-container">
+                  <div class="label-filtres-selectall">
+                    <input id="filtre-checkbox-selectall" type="checkbox" />
+                    <label for="filtre-checkbox-selectall"
+                      >Tout sélectionner</label
+                    >
+                  </div>
+                  <div class="filtres-label-container">
+                    <div class="label-filtre">
+                      <input
+                        class="checkbox-filtre"
+                        id="filtre-checkbox-emprunts-mercure"
+                        type="checkbox"
+                      />
+                      <label for="filtre-checkbox-emprunts-mercure"
+                        >Mercure galant</label
+                      >
+                    </div>
+                    <div class="label-filtre">
+                      <input
+                        class="checkbox-filtre"
+                        id="filtre-checkbox-emprunts-gazette_etud"
+                        type="checkbox"
+                      />
+                      <label for="filtre-checkbox-emprunts-gazette_etud"
+                        >Gazette étudiante</label
+                      >
+                    </div>
+                    <div class="label-filtre">
+                      <input
+                        class="checkbox-filtre"
+                        id="filtre-checkbox-emprunts-gazette_paris"
+                        type="checkbox"
+                      />
+                      <label for="filtre-checkbox-emprunts-gazette_paris"
+                        >Gazette de Paris</label
+                      >
+                    </div>
+                    <div class="label-filtre">
+                      <input
+                        class="checkbox-filtre"
+                        id="filtre-checkbox-emprunts-gazette_lyon"
+                        type="checkbox"
+                      />
+                      <label for="filtre-checkbox-emprunts-gazette_lyon"
+                        >Gazette de Lyon</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lettres-main">
+          <div class="lettres-main-left">
+            <h2 class="intitule">Sélection des lettres</h2>
+            <div class="volume-container">
+              <button
+                id="btn-volume-1"
+                class="btn-volumes"
+                popovertarget="volume-1"
+              >
+                <i class="fa-solid fa-chevron-up"></i>
+                Volume 1 (1700-1715)
+              </button>
+              <div id="volume-1" class="popover-volume" popover>
+                <p>bonjour</p>
+              </div>
+            </div>
+          </div>
+          <div class="lettres-main-right">
+            <div class="lettres-mr-desc">
+              <h2 class="intitule">Description</h2>
+              <p>À Smith, en Canada</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ratione similique saepe, velit eius sequi.
+              </p>
+            </div>
+            <div class="lettres-mr-buttons-container">
+              <div class="lettres-mr-buttons">
+                <a class="btn-lecture" id="btn-lecture-debut" href=""
+                  >Lire les lettres</a
+                >
+                <a class="btn-lecture" id="btn-lecture-selection" href=""
+                  >Lire la sélection</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>Footer</footer>
+    <script src="../../js/accueil.js"></script>
+  </body>
+</html>
