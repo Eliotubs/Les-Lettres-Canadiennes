@@ -181,12 +181,12 @@ button {
   border-bottom: 1px solid var(--gris200);
 }
 
-header:has(#nav-texte-popover:popover-open)~main,
-header:has(#nav-texte-popover:popover-open)~footer,
-header:has(#nav-references-popover:popover-open)~main,
-header:has(#nav-references-popover:popover-open)~footer,
-header:has(#nav-apropos-popover:popover-open)~main,
-header:has(#nav-apropos-popover:popover-open)~footer {
+header:has(#nav-texte-popover:popover-open) ~ main,
+header:has(#nav-texte-popover:popover-open) ~ footer,
+header:has(#nav-references-popover:popover-open) ~ main,
+header:has(#nav-references-popover:popover-open) ~ footer,
+header:has(#nav-apropos-popover:popover-open) ~ main,
+header:has(#nav-apropos-popover:popover-open) ~ footer {
   opacity: 0.3;
 }
 
@@ -399,7 +399,6 @@ main {
 /* PAGE : TRANSCRIPTION INTEGRAL */
 /* //////////////////// */
 
-
 main .contenaire_transcription_integral {
   display: flex;
   align-items: start;
@@ -409,7 +408,8 @@ main .sommaire .accordeon_titre {
   font-weight: bold;
   font-size: 16px;
   margin: 10px;
-  cursor: pointer;}
+  cursor: pointer;
+}
 
 main .content_accordeon {
   max-height: 0;
@@ -418,20 +418,33 @@ main .content_accordeon {
 }
 
 main .sommaire {
-  margin-top: 10%;
+  margin-top: 100px;
   margin-right: 20px;
   padding: 10px 60px 30px 10px;
   font-size: 15px;
-
   height: fit-content;
   position: sticky;
-
   top: 0px;
   background-color: var(--gris160);
-  border-radius: 0% 30% 30% 0%;
+  border-radius: 0% 10% 10% 0%;
+  transform: translateX(-180px);
+  transition: 0.2s ease;
 }
 
-main .content_accordeon{
+.fleche-sommaire {
+  position: absolute;
+  background: var(--gris160);
+  text-align: center;
+  cursor: pointer;
+  right: -40px;
+  top: 30px;
+  padding: 3px 20px 5px;
+  border-radius: 30% 30% 0% 0%;
+  /* font-size: 2rem; */
+  rotate: 90deg;
+}
+
+main .content_accordeon {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
@@ -440,13 +453,11 @@ main .content_accordeon{
 /*main .sommaire {
 }*/
 
-
 main .sommaire .volume {
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 
 main .transcription_integral {
   margin-left: 50px;
@@ -459,7 +470,7 @@ main .transcription_integral {
   line-height: 1.5;
 }
 
-main .transcription_integral h1.title_page{
+main .transcription_integral h1.title_page {
   align-items: center;
   text-align: justify;
   line-height: 1.5;
@@ -468,7 +479,6 @@ main .transcription_integral h1.title_page {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 
 main .transcription_integral .en-tête {
   margin-top: 10px;
@@ -488,8 +498,6 @@ main .transcription_integral .en-tête .description {
 main .transcription_integral .texte_lettre {
   text-indent: 2em;
 }
-
-
 
 /* //////////////////// */
 /* PAGE : PRESENTATION DU PROJET */
@@ -517,12 +525,10 @@ main .transcription_integral .texte_lettre {
 }
 
 .presentation_projet button {
-
   padding: 10px;
   margin: 50px;
   background-color: #aaa;
 }
-
 
 /* //////////////////// */
 /* FOOTER */

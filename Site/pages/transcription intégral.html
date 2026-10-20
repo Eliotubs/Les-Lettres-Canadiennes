@@ -65,16 +65,15 @@
 
     <main>
       <div class="contenaire_transcription_integral">
-        
         <div class="sommaire">
-            <div class="accordeon_titre">Sommaire >></div>
-              <div class="accordeon_content">
-                <p class="volume">Volume 1</p>
-                <p class="point"><a href="#Lettre_12">Lettre 12</a></p>
-                <p class="volume">Volume 2</p>
-                <p class="point"><a href="#Lettre_32">Lettre 32</a></p>
-              </div>
-            </div>
+          <div class="accordeon_titre">Sommaire</div>
+          <div class="accordeon_content">
+            <p class="volume">Volume 1</p>
+            <p class="point"><a href="#Lettre_12">Lettre 12</a></p>
+            <p class="volume">Volume 2</p>
+            <p class="point"><a href="#Lettre_32">Lettre 32</a></p>
+          </div>
+          <div class="fleche-sommaire">...</div>
         </div>
 
         <div class="transcription_integral">
@@ -207,17 +206,18 @@
     <script>
       const sommaire = document.querySelectorAll(".sommaire");
 
-sommaire.forEach(item => {
-  const header = item.querySelector(".accordeon_titre");
-  header.addEventListener("click", () => {
-    item.classList.toggle("active");
-  })
-})
+      sommaire.forEach((item) => {
+        const header = item.querySelector(".accordeon_titre");
+        header.addEventListener("click", () => {
+          item.classList.toggle("active");
+        });
+      });
     </script>
     <footer>
       <div class="footer">
         <p>Footer</p>
       </div>
     </footer>
+    <script src="../js/sommaire.js"></script>
   </body>
 </html>
