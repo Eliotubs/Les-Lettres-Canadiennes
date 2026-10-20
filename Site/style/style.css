@@ -68,8 +68,6 @@ header > img.logo_othonè{
 nav.page_accueil{
     width: 100%;
     font-size: 18px;
-    position: sticky; /* permet de rester au saumet de l'écran même quand on scroll */
-   /* margin-top: 10%;*/   
 }
 
 nav.page > ul {
@@ -191,8 +189,15 @@ button{
     text-align: justify;
 }
 
-footer{
-    background-color: bisque;
-    padding: 5em;
-    margin-top: 5%;
+/* //////////////////// */
+/* FOOTER */
+/* //////////////////// */
+
+footer {
+  background: var(--gris200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  transition: 0.2s ease-in-out;
 }

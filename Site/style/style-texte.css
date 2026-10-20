@@ -396,7 +396,7 @@ main {
 }
 
 /* //////////////////// */
-/* PAGE : TRANSCRIPTION INTEGRAL */
+/* MENU > LETTRE / PAGE : TRANSCRIPTION INTEGRAL */
 /* //////////////////// */
 
 main .contenaire_transcription_integral {
@@ -500,7 +500,11 @@ main .transcription_integral .texte_lettre {
 }
 
 /* //////////////////// */
-/* PAGE : PRESENTATION DU PROJET */
+/* MENU > ANNEXES / PAGE : DONNEES */
+/* //////////////////// */
+
+/* //////////////////// */
+/* MENU > A PROPOS / PAGE : PRESENTATION DU PROJET */
 /* //////////////////// */
 
 .presentation_projet h1 {
