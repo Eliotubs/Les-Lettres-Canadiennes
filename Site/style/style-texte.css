@@ -402,36 +402,15 @@ main {
 
 main .contenaire_transcription_integral {
   display: flex;
-<<<<<<< Updated upstream
   align-items: start;
-=======
-  <<<<<<< Updated upstream align-items: start;
-  =======flex-direction: column;
-}
-
-*/ main .sommaire {
-  align-items: left;
-  margin-left: 10px;
-  margin-right: 20px;
-  font-size: 13px;
-
-  justify-content: flex-start;
-  position: sticky;
-  top: 0px;
-
-  background-color: var(--gris160);
-  >>>>>>>Stashed changes
->>>>>>> Stashed changes
 }
 
 main .sommaire .accordeon_titre {
   font-weight: bold;
   font-size: 16px;
   margin: 10px;
-  cursor: pointer;
+  cursor: pointer;}
 
-<<<<<<< Updated upstream
-=======
 main .content_accordeon {
   max-height: 0;
   overflow: hidden;
@@ -439,7 +418,6 @@ main .content_accordeon {
 }
 
 main .sommaire {
->>>>>>> Stashed changes
   margin-top: 10%;
   margin-right: 20px;
   padding: 10px 60px 30px 10px;
@@ -462,28 +440,19 @@ main .content_accordeon{
 /*main .sommaire {
 }*/
 
-<<<<<<< Updated upstream
-main .sommaire .volume{
-=======
-<<<<<<< Updated upstream main .sommaire .volume {
->>>>>>> Stashed changes
+
+main .sommaire .volume {
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-<<<<<<< Updated upstream
-main .transcription_integral {
-=======
 
-=======>>>>>>>Stashed changes main .transcription_integral {
->>>>>>> Stashed changes
+main .transcription_integral {
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 50px;
   font-size: 16px;
-
-<<<<<<< Updated upstream
 
   align-items: center;
   text-align: justify;
@@ -491,23 +460,17 @@ main .transcription_integral {
 }
 
 main .transcription_integral h1.title_page{
-=======
-  <<<<<<< Updated upstream=======align-items: center;
-  >>>>>>>Stashed changes text-align: justify;
+  align-items: center;
+  text-align: justify;
   line-height: 1.5;
 }
-
-<<<<<<< Updated upstream main .transcription_integral h1.title_page {
->>>>>>> Stashed changes
+main .transcription_integral h1.title_page {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-<<<<<<< Updated upstream
+
 main .transcription_integral .en-tête {
-=======
-=======>>>>>>>Stashed changes main .transcription_integral .en-tête {
->>>>>>> Stashed changes
   margin-top: 10px;
   margin-bottom: 20px;
   text-align: center;
