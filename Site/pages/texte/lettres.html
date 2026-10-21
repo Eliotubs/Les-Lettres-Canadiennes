@@ -88,8 +88,8 @@
               <div id="filtres-sujet" class="popover-filtres" popover>
                 <div class="filtres-intern-container">
                   <div class="label-filtres-selectall">
-                    <input id="filtre-checkbox-selectall" type="checkbox" />
-                    <label for="filtre-checkbox-selectall"
+                    <input id="filtre-sujet-selectall" type="checkbox" />
+                    <label for="filtre-sujet-selectall"
                       >Tout sélectionner</label
                     >
                   </div>
@@ -148,8 +148,8 @@
               <div id="filtres-emprunts" class="popover-filtres" popover>
                 <div class="filtres-intern-container">
                   <div class="label-filtres-selectall">
-                    <input id="filtre-checkbox-selectall" type="checkbox" />
-                    <label for="filtre-checkbox-selectall"
+                    <input id="filtre-emprunts-selectall" type="checkbox" />
+                    <label for="filtre-emprunts-selectall"
                       >Tout sélectionner</label
                     >
                   </div>
@@ -203,17 +203,61 @@
         <div class="lettres-main">
           <div class="lettres-main-left">
             <h2 class="intitule">Sélection des lettres</h2>
-            <div class="volume-container">
-              <button
-                id="btn-volume-1"
-                class="btn-volumes"
-                popovertarget="volume-1"
-              >
-                <i class="fa-solid fa-chevron-up"></i>
-                Volume 1 (1700-1715)
-              </button>
-              <div id="volume-1" class="popover-volume" popover>
-                <p>bonjour</p>
+            <div id="volumes-container">
+              <div class="volume-container">
+                <div class="btn-volume" id="btn-volume-1">
+                  <div class="title-volume">
+                    <i class="fa-solid fa-chevron-up"></i>Volume 1 (1700-1715)
+                  </div>
+                  <div class="nombre-resultats">
+                    <span>Nombre de résultats : 5</span>
+                  </div>
+                </div>
+                <div
+                  id="lettre-container-volume-1"
+                  class="display-lettres-container"
+                >
+                  <div class="label-filtres-selectall">
+                    <input id="volume-1-selectall" type="checkbox" />
+                    <label for="volume-1-selectall">Tout sélectionner</label>
+                  </div>
+                  <div class="display-lettres">
+                    <span class="lettre">Paratexte</span>
+                    <span class="lettre">Lettre 38</span>
+                    <span class="lettre">Lettre 39</span>
+                    <span class="lettre">Lettre 87</span>
+                    <span class="lettre">Lettre 127</span>
+                  </div>
+                </div>
+              </div>
+              <div class="volume-container">
+                <div class="btn-volume" id="btn-volume-2">
+                  <div class="title-volume">
+                    <i class="fa-solid fa-chevron-up"></i>Volume 2 (1715-1725)
+                  </div>
+                  <div class="nombre-resultats">
+                    <span>Nombre de résultats : 8</span>
+                  </div>
+                </div>
+                <div
+                  id="lettre-container-volume-2"
+                  class="display-lettres-container"
+                >
+                  <div class="label-filtres-selectall">
+                    <input id="volume-1-selectall" type="checkbox" />
+                    <label for="volume-1-selectall">Tout sélectionner</label>
+                  </div>
+                  <div class="display-lettres">
+                    <span class="lettre">Lettre 11</span>
+                    <span class="lettre">Lettre 18</span>
+                    <span class="lettre">Lettre 26</span>
+                    <span class="lettre">Lettre 59</span>
+                    <span class="lettre">Lettre 60</span>
+                    <span class="lettre">Lettre 61</span>
+                    <span class="lettre">Lettre 62</span>
+                    <span class="lettre">Lettre 128</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -241,5 +285,6 @@
       </div>
     </main>
     <footer>Footer</footer>
+    <script src="../../js/filtres.js"></script>
   </body>
 </html>
