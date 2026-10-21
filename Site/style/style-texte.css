@@ -729,19 +729,19 @@ main .sommaire {
 
 
 /* //////////////////// */
-/* MENU > A PROPOS / PAGE : SOURCES EMPRUNTEES */
+/* MENU > A PROPOS / PAGE : RESSOURCES */
 /* //////////////////// */
 
-.src_empruntees {
+.ressources {
   width: 100%;
 }
 
-.src_empruntees h1 {
+.ressources h1 {
   text-align: center;
   margin-top: 100px;
 }
 
-.src_empruntees .galerie {
+.ressources .galerie {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -751,38 +751,43 @@ main .sommaire {
 
 }
 
-.src_empruntees .boxe_src {
+.ressources .boxe_src {
   width: 300px;
   padding: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   border-color: 5px black;
-  background-color: grey
+  background-color: grey;
+  justify-content: center;
 }
 
-.src_empruntees .img {
+.ressources .img {
   width: 220px;
   height: 250px;
+  display: flex;
+  justify-content: center;
+  border: 3px;
+  border-color: black;
 }
 
-figure {
+.ressources figure {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.src_empruntees img {
+.ressources img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
+
 
 }
 
-.src_empruntees figcaption {
+.ressources figcaption {
   text-align: center;
   padding: 10px;
 }
-
 
 
 /* //////////////////// */
