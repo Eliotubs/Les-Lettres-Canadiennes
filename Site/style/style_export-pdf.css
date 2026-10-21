@@ -1,0 +1,50 @@
+/* Style appliqué uniquement lors de l'export ou taillé pour le conteneur PDF */
+.style_export-pdf {
+    font-family: "Albert Sans", sans-serif; /* Police propre et lisible */
+    font-size: 15px;
+    line-height: 1.6; /* Espace confortable entre les lignes */
+    color: #111111;   /* Éviter le noir pur (#000) qui fatigue les yeux */
+    background-color: #ffffff;
+    padding: 20px;
+
+    height: auto;   /* S'assure que la hauteur s'adapte au contenu */
+    max-height: none; /* Retire toute limite de hauteur */
+    overflow: visible ;
+
+    padding-bottom: 40px; /*marge de sécurité pour éviter la coupure des paragphes */
+}
+
+/* pas que qu'on est besoin d'un padding = vue qu'il y a les marges dans la convertion du pdf */
+
+.style_export-pdf .en-tête{
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+}
+
+.style_export-pdf h2 {
+    font-size: 24px;
+    color: #111111;
+}
+
+.style_export-pdf p.destinataire{
+    text-align: center;
+}
+
+.style_export-pdf p.description{
+    font-style: italic;
+    text-align: center;
+}
+
+.style_export-pdf p {
+    break-inside: avoid;  /* Empêche un paragraphe d'être coupé en deux */
+    margin-bottom: 15px;
+    text-align: justify;
+    text-indent: 4em; /* aliéna */
+    letter-spacing: normal; /* espace interlettrage */
+}
+
+.style_export-pdf p {
+  margin-bottom: 10px;  /*espace entre charge paragraphe*/
+}
