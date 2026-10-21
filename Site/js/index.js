@@ -40,4 +40,3 @@ imgContainerZoom.addEventListener("mousemove", (e) => {
 
   imgZoom.style.transformOrigin = `${pourcentageXcontainer}% ${pourcentageYcontainer}%`;
 });
-

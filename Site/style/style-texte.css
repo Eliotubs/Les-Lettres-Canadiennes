@@ -411,17 +411,26 @@ main .sommaire .accordeon_titre {
   cursor: pointer;
 }
 
+main:has(.sommaire) {
+  position: relative;
+}
+
+main .sommaire-container {
+  position: absolute;
+  left: 0;
+  top: 200px;
+  height: calc(100% - 100px);
+}
+
 main .sommaire {
-  margin-top: 100px;
-  margin-right: 10px; /* espace entre le sommaire et le texte */
   padding: 10px 60px 30px 10px;
   font-size: 15px;
   height: fit-content;
   position: sticky;
-  top: 0px;
+  top: 0;
   background-color: var(--gris160);
+  transform: translateX(0px);
   border-radius: 0% 10% 10% 0%;
-  transform: translateX(-290px);
   transition: 0.2s ease;
 }
 
@@ -466,12 +475,12 @@ main .machin button.export {
   border: 1 solid black;
 }
 
-.sidebar{
-    border:none;
-    border-top: 2px solid black;
-    margin-bottom: 1.5%;
-    width: 85%;
-    margin-top: 20px;
+.sidebar {
+  border: none;
+  border-top: 2px solid black;
+  margin-bottom: 1.5%;
+  width: 85%;
+  margin-top: 20px;
 }
 
 main .transcription_integral {
@@ -486,7 +495,6 @@ main .transcription_integral h1.title_page {
   padding: none;
 }
 
-
 main .transcription_integral .en-tête h2 {
   margin-bottom: 10px; /*marge entre le titre de la lettre et le texte */
 }
@@ -500,7 +508,6 @@ main .transcription_integral .en-tête .description {
   font-style: italic;
 }
 
-
 main .transcription_integral .texte_lettre {
   width: 100%;
   max-width: 800px;
@@ -510,27 +517,25 @@ main .transcription_integral .texte_lettre {
   letter-spacing: normal; /* espace interlettrage */
 }
 
-main .transcription_integral .texte_lettre p{
+main .transcription_integral .texte_lettre p {
   margin-bottom: 10px; /* espace entre charge paragraphe */
 }
-
 
 /* //////////////////// */
 /* MENU > ANNEXES / PAGE : DONNEES */
 /* //////////////////// */
 
-
-.gephi{
+.gephi {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   width: 100%;
-  
+
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.gephi h1{
+.gephi h1 {
   margin-bottom: 10px;
 }
 
@@ -538,10 +543,9 @@ main .transcription_integral .texte_lettre p{
   margin-bottom: 10px;
 }
 
-.gephi_contente{
+.gephi_contente {
   display: block;
 }
-
 
 /* //////////////////// */
 /* MENU > A PROPOS / PAGE : PRESENTATION DU PROJET */
