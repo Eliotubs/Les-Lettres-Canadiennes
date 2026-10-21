@@ -1,63 +1,57 @@
-:root
-
-*{
-    margin: 1;
-    padding: 3;
-    list-style: none;
-    text-decoration: none;
+:root {
+  --gris240: rgb(240, 240, 240);
+  --gris200: rgb(200, 200, 200);
+  --gris160: rgb(160, 160, 160);
+  --gris120: rgb(120, 120, 120);
+  --gris080: rgb(80, 80, 80);
+  --gris040: rgb(40, 40, 40);
 }
 
-body{
-    margin-left: 50px ;
-    margin-right: 50px ;
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
-body h2{
-    font-size: 30px;
-    font-family: Georgia, serif;
+#body-accueil {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr 100px;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
-body p {
-    font-size: 17px;
-    font-family: "Poppins", sans-serif;
+h2 {
+  font-size: 30px;
+  font-family: Georgia, serif;
 }
 
-body .affective h2{
-    font-family: "Tangerine", cursive;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 50px;
+p {
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+}
+
+body .affective h2 {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
 }
 
 body .affective p {
-    font-family: "Tangerine", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
 }
 
-header > img.logo_lettre{
-    margin-top: 4%;
-    margin-bottom: 5%;
-    position: relative;
-    text-align: left;
-    
-    width: 50%;
-    height: auto;
-}
-
-header > img.logo_othonè{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 5%;
-}
-
-.sidebar{
-    border:none;
-    border-top: 2px solid black;
-    margin-bottom: 1.5%;
-    width: 85%;
+.sidebar {
+  border: none;
+  border-top: 2px solid black;
+  margin-bottom: 1.5%;
+  width: 85%;
 }
 
 /* il y aura deux sorte de menue par page donc on les distingue de leurs premier nav avec la classe page_accueil */
@@ -67,14 +61,31 @@ header > img.logo_othonè{
 /* HEADER */
 /* //////////////////// */
 
-header {
-  background: var(--gris240);
+#body-accueil header {
   padding: 0 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   user-select: none;
+  padding-top: 50px;
+}
+
+.images-header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo_lettre {
+  width: 70%;
+  max-width: 1300px;
+}
+
+#logo_othonè {
+  width: 10%;
+  max-width: 100px;
 }
 
 .header-container {
@@ -85,6 +96,10 @@ header {
   justify-content: space-around;
   gap: 100px;
   text-align: center;
+}
+
+#body-accueil #nav {
+  margin: 50px 0 20px;
 }
 
 #nav {
@@ -123,7 +138,7 @@ li:has(.popover:popover-open) button i {
   left: 0;
 }
 
-a{
+a {
   background: none;
   padding: 11px;
   border: none;
@@ -221,10 +236,11 @@ header:has(#nav-apropos-popover:popover-open) ~ footer {
 
 /*//////// Affective //////////*/
 
-.image{
- 
+.image {
   background-color: #000000;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/feuille_marbre.jpg);
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/feuille_marbre.jpg);
   background-position: center;
   background-size: cover; /* ou contain */
   padding: 3.2em; /*zone de remplissage */
@@ -233,21 +249,21 @@ header:has(#nav-apropos-popover:popover-open) ~ footer {
   text-align: left;
 }
 
-.signature{
-    text-align: right;
+.signature {
+  text-align: right;
 }
 
-button.lien{
-    margin-top: 5px;
-    border: 1 solid black;
-    border-radius: 30px;
-    padding: 15px;
+button.lien {
+  margin-top: 5px;
+  border: 1 solid black;
+  border-radius: 30px;
+  padding: 15px;
 }
 
-.abstract{
-    margin-left: 50px;
-    margin-right: 50px;
-    text-align: justify;
+.abstract {
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: justify;
 }
 
 /* //////////////////// */

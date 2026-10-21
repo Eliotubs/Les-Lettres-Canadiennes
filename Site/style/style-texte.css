@@ -157,18 +157,6 @@ button {
   position-anchor: --nav-apropos-popover;
 }
 
-@position-try --below-right {
-  inset: unset;
-  top: anchor(bottom);
-  left: anchor(left);
-}
-
-@position-try --below-left {
-  inset: unset;
-  top: anchor(bottom);
-  right: anchor(right);
-}
-
 .popover:popover-open {
   display: grid;
 }
@@ -188,6 +176,26 @@ header:has(#nav-references-popover:popover-open) ~ footer,
 header:has(#nav-apropos-popover:popover-open) ~ main,
 header:has(#nav-apropos-popover:popover-open) ~ footer {
   opacity: 0.3;
+}
+
+@position-try --below-right {
+  inset: unset;
+  top: anchor(bottom);
+  left: anchor(left);
+}
+
+@position-try --below-left {
+  inset: unset;
+  top: anchor(bottom);
+  right: anchor(right);
+}
+
+/* //////////////////// */
+/* HEADER PAGE D'ACCUEIL */
+/* //////////////////// */
+
+#header-accueil:has(#nav-texte-popover:popover-open) ~ main {
+  background: red;
 }
 
 /* //////////////////// */
@@ -396,7 +404,7 @@ main {
 }
 
 /* //////////////////// */
-/* MENU > LETTRE / PAGE : TRANSCRIPTION INTEGRAL */
+/* MENU > LETTRE / PAGE : TRANSCRIPTION INTEGRALE */
 /* //////////////////// */
 
 main .contenaire_transcription_integral {
@@ -468,12 +476,12 @@ main .sommaire .volume {
   font-size: 30px;
 }
 
-.machin .export{
+.machin .export {
   position: relative;
   text-align: right;
 }
 
-.machin .export button{
+.machin .export button {
   margin-top: 15px; /* espace entre les bouttons et le texte */
   margin-bottom: 15px;
   border: 1px solid black;
@@ -517,7 +525,7 @@ main .transcription_integral .texte_lettre {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  text-indent: 4em; /* aliéna */
+  text-indent: 4em; /* alinéa */
   line-height: 33px; /* espace interligne */
   letter-spacing: normal; /* espace interlettrage */
 }
