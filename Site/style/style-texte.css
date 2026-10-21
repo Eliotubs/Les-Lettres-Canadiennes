@@ -791,6 +791,67 @@ main .sommaire {
 
 
 /* //////////////////// */
+/* MENU>A PROPOS>RESSOURCES>PAGES RESSOURCES TBL (MERCURE, GAZETTE...) */
+/* //////////////////// */
+
+.src {
+  width: 100%;
+}
+
+.src h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.src .id {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tbl_src span {
+  font-style: italic;
+}
+
+.tbl_src {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.tbl_src table {
+  border-width: 100%;
+  border-collapse: collapse;
+  border: 1px solid;
+  display: flex;
+  align-content: center;
+  margin-bottom: 30px;
+}
+
+.tbl_src th,
+td {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid grey;
+
+}
+
+.tbl_src th {
+  background-color: rgb(95, 95, 95);
+  color: white;
+}
+
+.src a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.tbl_src tr:nth-child(even) {
+  background-color: rgba(216, 215, 215, 0.445);
+}
+
+
+
+/* //////////////////// */
 /* FOOTER */
 /* //////////////////// */
 
