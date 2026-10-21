@@ -12,8 +12,8 @@ const btn_volume_2 = document.querySelector("#btn-volume-2");
 const fleche_volume_1 = document.querySelector("#btn-volume-1 i");
 const fleche_volume_2 = document.querySelector("#btn-volume-2 i");
 
-let volume_1_ouvert = false;
-let volume_2_ouvert = false;
+let volume_1_ouvert = true;
+let volume_2_ouvert = true;
 
 btn_volume_1.addEventListener("click", (e) => {
   if (volume_1_ouvert == false) {
