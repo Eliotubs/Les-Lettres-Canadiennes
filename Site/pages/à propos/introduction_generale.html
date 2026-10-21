@@ -1,96 +1,101 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Présentation du projet - Lettres canadiennes</title>
-    <link href="../../style/style-texte.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
-    />
 
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-    </style>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction générale - Lettres canadiennes</title>
+  <link href="style-texte.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" />
 
-  <body>
-    <header>
-      <nav class="header-container">
-        <p id="logo-title">Les lettres canadiennes</p>
-        <ul id="nav">
-          <li>
-            <a href="">Accueil</a>
-          </li>
-          <li class="active">
-            <button
-              id="btn-texte-popover"
-              class="btn-menu"
-              popovertarget="nav-texte-popover"
-            >
-              Texte<i class="fa-solid fa-chevron-up"></i>
-            </button>
-            <div class="popover" id="nav-texte-popover" popover>
-              <a href="lettre70_p1.html">Lettres</a>
-              <a href="#">Transcription intégrale</a>
-            </div>
-          </li>
-          <li>
-            <button
-              id="btn-references-popover"
-              class="btn-menu"
-              popovertarget="nav-references-popover"
-            >
-              Références<i class="fa-solid fa-chevron-up"></i>
-            </button>
-            <div class="popover" id="nav-references-popover" popover>
-              <a href="#">Ressources</a>
-              <a href="#">Documentation historique</a>
-              <a href="#">Données</a>
-              <a href="#">Index</a>
-            </div>
-          </li>
-          <li>
-            <button
-              id="btn-apropos-popover"
-              class="btn-menu"
-              popovertarget="nav-apropos-popover"
-            >
-              À propos<i class="fa-solid fa-chevron-up"></i>
-            </button>
-            <div class="popover" id="nav-apropos-popover" popover>
-              <a href="presentation_du_projet.html">Présentation du projet</a>
-              <a href="introduction_generale.html">Introduction générale</a>
-              <a href="#">Choix éditoriaux</a>
-              <a href="#">Contributeurs</a>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="intro_generale">
-        <h1>
-          Introduction générale : Éditer Les lettres canadienes [sic], manuscrit
-          anonyme (1700-1725)
-        </h1>
-        <br />
-        <h2>
-          Nouvelles à la main, correspondances littéraires ou lettres fictives ?
-        </h2>
-        <p></p>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+  </style>
+</head>
 
-        <h2>Description du manuscrit</h2>
-        <h2>Contenu</h2>
-        <h2>Volume I, Lettre 11 : « une description de la ville de Québec »</h2>
-        <h2>Conclusion</h2>
-        <h2>Note sur l’établissement du texte</h2>
-        <div class="btn-pg-suivante">
-          <button><a href="#">Passer à la bibliographie</a></button>
-        </div>
+<body>
+  <header>
+    <nav class="header-container">
+      <p id="logo-title">Les lettres canadiennes</p>
+      <ul id="nav">
+        <li>
+          <a href="">Accueil</a>
+        </li>
+        <li class="active">
+          <button id="btn-texte-popover" class="btn-menu" popovertarget="nav-texte-popover">
+            Texte<i class="fa-solid fa-chevron-up"></i>
+          </button>
+          <div class="popover" id="nav-texte-popover" popover>
+            <a href="lettre70_p1.html">Lettres</a>
+            <a href="#">Transcription intégrale</a>
+          </div>
+        </li>
+        <li>
+          <button id="btn-references-popover" class="btn-menu" popovertarget="nav-references-popover">
+            Références<i class="fa-solid fa-chevron-up"></i>
+          </button>
+          <div class="popover" id="nav-references-popover" popover>
+            <a href="#">Ressources</a>
+            <a href="#">Documentation historique</a>
+            <a href="#">Données</a>
+            <a href="#">Index</a>
+          </div>
+        </li>
+        <li>
+          <button id="btn-apropos-popover" class="btn-menu" popovertarget="nav-apropos-popover">
+            À propos<i class="fa-solid fa-chevron-up"></i>
+          </button>
+          <div class="popover" id="nav-apropos-popover" popover>
+            <a href="presentation_du_projet.html">Présentation du projet</a>
+            <a href="introduction_generale.html">Introduction générale</a>
+            <a href="#">Choix éditoriaux</a>
+            <a href="#">Contributeurs</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="sommaire">
+      <div class="accordeon_titre">Sommaire</div>
+      <div class="accordeon_content">
+        <ol>
+          <li class="point"><a href="#sous-titre1">Nouvelles à la main, correspondances littéraires ou lettres
+              fictives ?</a></li>
+          <li class="point"><a href="#sous-titre2">Description du manuscrit</a></li>
+          <li class="point"><a href="#sous-titre3">Contenu</a></li>
+          <li class="point"><a href="#sous-titre4">Volume I, Lettre 11 : « une description de la ville de Québec »</a>
+          </li>
+          <li class="point"><a href="#sous-titre5">Conclusion</a></li>
+          <li class="point"><a href="#sous-titre6">Note sur l’établissement du texte</a></li>
+
+        </ol>
+
       </div>
-    </main>
-    <footer>Footer</footer>
-  </body>
+      <div class="fleche-sommaire">...</div>
+    </div>
+    <div class="intro_generale">
+      <h1 id="titre">Introduction générale <br /> Éditer Les lettres canadienes [sic], manuscrit anonyme (1700-1725)
+      </h1><br />
+      <h2 id="sous-titre1">Nouvelles à la main, correspondances littéraires ou lettres fictives ?</h2>
+      <p></p>
+
+      <h2 id="sous-titre2">Description du manuscrit</h2>
+      <h2 id="sous-titre3">Contenu</h2>
+      <h2 id="sous-titre4">Volume I, Lettre 11 : « une description de la ville de Québec »</h2>
+      <h2 id="sous-titre5">Conclusion</h2>
+      <h2 id="sous-titre6">Note sur l’établissement du texte</h2>
+      <div class="btn-pg-suivante">
+        <button><a href="#">Passer à la bibliographie</a></button>
+      </div>
+    </div>
+
+  </main>
+  <footer>Footer</footer>
+
+  <script src="index.js"></script>
+  <script src="const fleche_sommaire = document.js"></script>
+</body>
+
 </html>
