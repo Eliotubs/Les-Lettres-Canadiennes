@@ -14,43 +14,61 @@
     </style>
 
   </head>
-  
-  <header>
+    <header>
     <img class="logo_othonè" src="images/othone.png" alt="logo Othonè" href=""/>
     <img class="logo_lettre" src="images/Logo.jpg" alt="logo des Lettres" href=""/>
-    
-    <nav class="page_accueil">
-        <hr class="sidebar">
-        <ul>
-            <li><a href="">Accueil</a></li>
-            <li class="menu-deroulant">
-                <button class="btn-menu">Texte <span class="fleche">&#x23F7</span></button>
-                <ul class="sous-menu">
-                    <li><a href="">Lettres</a></li>
-                    <li><a href="">Transcription intégral</a></li>
-                </ul>
-            </li>
-            <li class="menu-deroulant">
-                <button class="btn-menu">Annexes <span class="fleche">&#x23F7</span></button>
-                <ul class="sous-menu">
-                    <li><a href="">Ressources</a></li>
-                    <li><a href="">Documentation historique</a></li>
-                    <li><a href="">Données</a></li>
-                    <li><a href="">Index</a></li>
-                </ul>
-            </li>
-            <li class="menu-deroulant">
-                <button class="btn-menu">À propos <span class="fleche">&#x23F7</span></button>
-                <ul class="sous-menu">
-                    <li><a href="">Présentation du projet</a></li>
-                    <li><a href="">Introduction générale</a></li>
-                    <li><a href="">Choix éditoriaux</a></li>
-                    <li><a href="">Contributeur</a></li>
-                </ul>
-            </li>
+      <nav class="header-container">
+        <ul id="nav">
+          <li>
+            <a href="template.html">Accueil</a>
+          </li>
+          <li class="active">
+            <button
+              id="btn-texte-popover"
+              class="btn-menu"
+              popovertarget="nav-texte-popover"
+            >
+              Texte<i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <div class="popover" id="nav-texte-popover" popover>
+              <a href="#">Lettres</a>
+              <a href="#">Transcription intégrale</a>
+            </div>
+          </li>
+          <li>
+            <button
+              id="btn-references-popover"
+              class="btn-menu"
+              popovertarget="nav-references-popover"
+            >
+              Références<i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <div class="popover" id="nav-references-popover" popover>
+              <a href="#">Ressources</a>
+              <a href="#">Documentation historique</a>
+              <a href="#">Données</a>
+              <a href="#">Index</a>
+            </div>
+          </li>
+          <li>
+            <button
+              id="btn-apropos-popover"
+              class="btn-menu"
+              popovertarget="nav-apropos-popover"
+            >
+              À propos<i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <div class="popover" id="nav-apropos-popover" popover>
+              <a href="#">Présentation du projet</a>
+              <a href="#">Introduction générale</a>
+              <a href="#">Choix éditoriaux</a>
+              <a href="#">Contributeurs</a>
+            </div>
+          </li>
         </ul>
-    </nav>
+      </nav>
     </header>
+
     <body>
         <div class="image">
             <div class="affective">
@@ -59,13 +77,13 @@
             <p>Curabitur rutrum varius diam a vestibulum. Sed mattis dolor dui, quis suscipit urna vehicula sit amet. Nam vitae venenatis nisi. Nullam magna augue, semper et mauris et, feugiat aliquet sem. Pellentesque sit amet orci elit. Cras a nunc enim. Mauris et tellus vitae quam tristique fringilla. Nunc rutrum vitae risus volutpat fringilla. Praesent fringilla metus id nisi maximus semper. Proin mollis ligula sapien, dapibus suscipit orci consectetur eget. In hac habitasse platea dictumst.</p>
             <p>Fusce commodo sodales diam, at rhoncus nunc dignissim at. Nullam ut augue a mauris sodales euismod. Aenean purus urna, mattis vitae metus a, tempor commodo lorem. Sed sodales placerat ultrices. Nulla facilisi. Suspendisse potenti. Etiam tristique non metus vel vulputate. Quisque consectetur in leo eget mollis.</p>
             <p class="signature">Par xxxxxxxxxxxxxxxxxxx</p>
-            <button href="">Découvrir les Lettres</button>
+            <button class="lien" href="#">Découvrir les Lettres</button>
             </div> 
         </div>
         <div class="abstract">
             <h2>Présentation du projet</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et quam eleifend, sagittis purus non, malesuada purus. Maecenas placerat facilisis tellus. Donec ipsum arcu, volutpat et odio a, pharetra luctus urna. Aliquam convallis urna id libero hendrerit mattis. Nam vestibulum gravida mi eu faucibus. Nulla sed risus ac orci rutrum efficitur sit amet quis elit. Integer a leo ac ipsum laoreet sollicitudin. Ut sagittis tellus tristique sapien sagittis consequat. Integer dolor dolor, vulputate in sapien eu, ornare lacinia arcu. Etiam interdum ligula id sollicitudin semper. Phasellus sapien mauris, mattis vitae gravida vel, posuere at erat. Vivamus lobortis a est vel convallis.</p>      
-            <button href="" class="btn_droite">Lire la suite</button>  
+            <button class="lien" href="#">Lire la suite</button>  
         </div>
         <footer>Footer</footer>
         <script src="index.js"></script>
