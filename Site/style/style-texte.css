@@ -583,6 +583,7 @@ main .transcription_integral .texte_lettre p {
 .btn-pg-suivante {
   display: flex;
   flex-direction: row-reverse;
+
 }
 
 .presentation_projet button {
@@ -590,6 +591,199 @@ main .transcription_integral .texte_lettre p {
   margin: 50px;
   background-color: #aaa;
 }
+
+/* //////////////////// */
+/* MENU > A PROPOS / PAGE : INTRODUCTION GENERALE */
+/* //////////////////// */
+
+
+.intro_generale h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.intro_generale p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.intro_generale button {
+  padding: 10px;
+  margin: 50px;
+  background-color: #aaa;
+}
+
+
+main .sommaire .accordeon_titre {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+main .content_accordeon {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+
+.fleche-sommaire {
+  position: absolute;
+  background: var(--gris160);
+  text-align: center;
+  cursor: pointer;
+  right: -40px;
+  top: 30px;
+  padding: 3px 20px 5px;
+  border-radius: 30% 30% 0% 0%;
+  /* font-size: 2rem; */
+  rotate: 90deg;
+}
+
+main .content_accordeon {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+main .accordeon_content {
+  margin-left: 10px;
+}
+
+main .sommaire {
+  margin-top: 100px;
+  margin-right: 20px;
+  padding: 10px 60px 30px 10px;
+  font-size: 15px;
+  height: fit-content;
+  position: sticky;
+  top: 0px;
+  background-color: var(--gris160);
+  border-radius: 0% 10% 10% 0%;
+  transform: translateX(-180px);
+  transition: 0.2s ease;
+}
+
+/* //////////////////// */
+/* MENU > A PROPOS / PAGE : BIBLIOGRAPHIE GENERALE */
+/* //////////////////// */
+
+
+.bibliographie h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.bibliographie p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.btn-pg-suivante {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.bibliographie button {
+  padding: 10px;
+  margin: 50px;
+  background-color: #aaa;
+}
+
+
+/* //////////////////// */
+/* MENU > A PROPOS / PAGE : CHOIX EDITORIAUX */
+/* //////////////////// */
+
+.choix_ed {
+  width: 100%;
+}
+
+.choix_ed h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.choix_ed p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.btn-pg-suivante {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.choix_ed button {
+  padding: 10px;
+  margin: 50px;
+  background-color: #aaa;
+}
+
+
+/* //////////////////// */
+/* MENU > A PROPOS / PAGE : SOURCES EMPRUNTEES */
+/* //////////////////// */
+
+.src_empruntees {
+  width: 100%;
+}
+
+.src_empruntees h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.src_empruntees .galerie {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  ;
+
+}
+
+.src_empruntees .boxe_src {
+  width: 300px;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-color: 5px black;
+  background-color: grey
+}
+
+.src_empruntees .img {
+  width: 220px;
+  height: 250px;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.src_empruntees img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+}
+
+.src_empruntees figcaption {
+  text-align: center;
+  padding: 10px;
+}
+
+
 
 /* //////////////////// */
 /* FOOTER */
