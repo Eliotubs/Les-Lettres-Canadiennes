@@ -154,6 +154,7 @@
 
 .btn-volume i {
   transition: 0.2s ease-in-out;
+  rotate: 180deg;
 }
 
 .nombre-resultats span {
