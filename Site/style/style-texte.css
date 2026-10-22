@@ -583,7 +583,6 @@ main .transcription_integral .texte_lettre p {
 .btn-pg-suivante {
   display: flex;
   flex-direction: row-reverse;
-
 }
 
 .presentation_projet button {
@@ -595,7 +594,6 @@ main .transcription_integral .texte_lettre p {
 /* //////////////////// */
 /* MENU > A PROPOS / PAGE : INTRODUCTION GENERALE */
 /* //////////////////// */
-
 
 .intro_generale h1 {
   text-align: center;
@@ -615,7 +613,6 @@ main .transcription_integral .texte_lettre p {
   background-color: #aaa;
 }
 
-
 main .sommaire .accordeon_titre {
   font-weight: bold;
   font-size: 16px;
@@ -628,7 +625,6 @@ main .content_accordeon {
   overflow: hidden;
   transition: max-height 0.3s ease;
 }
-
 
 .fleche-sommaire {
   position: absolute;
@@ -671,7 +667,6 @@ main .sommaire {
 /* MENU > A PROPOS / PAGE : BIBLIOGRAPHIE GENERALE */
 /* //////////////////// */
 
-
 .bibliographie h1 {
   text-align: center;
   margin-top: 100px;
@@ -694,7 +689,6 @@ main .sommaire {
   margin: 50px;
   background-color: #aaa;
 }
-
 
 /* //////////////////// */
 /* MENU > A PROPOS / PAGE : CHOIX EDITORIAUX */
@@ -727,7 +721,6 @@ main .sommaire {
   background-color: #aaa;
 }
 
-
 /* //////////////////// */
 /* MENU > A PROPOS / PAGE : RESSOURCES */
 /* //////////////////// */
@@ -747,8 +740,6 @@ main .sommaire {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 30px;
-  ;
-
 }
 
 .ressources .boxe_src {
@@ -780,15 +771,12 @@ main .sommaire {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
-
 }
 
 .ressources figcaption {
   text-align: center;
   padding: 10px;
 }
-
 
 /* //////////////////// */
 /* MENU>A PROPOS>RESSOURCES>PAGES RESSOURCES TBL (MERCURE, GAZETTE...) */
@@ -832,7 +820,6 @@ td {
   text-align: center;
   padding: 20px;
   border-bottom: 1px solid grey;
-
 }
 
 .tbl_src th {
@@ -868,11 +855,11 @@ td {
   margin-bottom: 10px;
 }
 
-a {
+.idx a {
   font-style: italic;
 }
 
-a:hover {
+.idx a:hover {
   color: gray;
   font-weight: bold;
 }
@@ -889,8 +876,6 @@ a:hover {
 .docu_h {
   width: 100%;
 }
-
-
 
 /* //////////////////// */
 /* FOOTER */

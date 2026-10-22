@@ -76,13 +76,7 @@
             <a class="letter-button" href="">< Lettre précédente</a>
           </div>
           <div class="mh-middle">
-            <select id="choix-ressources">
-              <optgroup label="Volume 1">
-                <option value="mentions">Lettre 12</option>
-                <option value="manuscrit">Lettre 32</option>
-                <option value="emprunts" selected>Lettre 70</option>
-              </optgroup>
-            </select>
+            <select id="choix-lettre"></select>
           </div>
           <div class="mh-right">
             <a class="letter-button" href="">Lettre suivante ></a>
@@ -100,10 +94,7 @@
               </select>
             </div>
             <div class="ressources-body">
-              <img
-                src="../../images/manuscrit/Lettre 70_1/fo453.JPG"
-                alt="Lettre 70, page 1"
-              />
+              <img id="image-manuscrit" src="" alt="" />
             </div>
           </div>
           <div id="splitter"></div>
@@ -120,32 +111,16 @@
               >
             </div>
             <div class="text-body">
-              <h1>Lettre 70 [1707]</h1>
-              <h2>À Raoul, à Vienne, en Autriche</h2>
-              <h3 class="abstract">
-                Qu’il faut aimer la lecture ; les Espagnols prennent Alcantara ;
-                mort du roi de Portugal ; naissance du duc de Bretagne
-              </h3>
-              <p>
-                Tu as dû recevoir dans son temps, parmi les livres que je t’ai
-                envoyés,
-                <span class="ref-externe"
-                  ><a
-                    aria="tooltip-1"
-                    href="https://books.google.ca/books?id=WZBjAAAAcAAJ&pg=PA462&dq=Trait%C3%A9+d%E2%80%99origine+contre+Celse&hl=fr&sa=X&ved=0ahUKEwij3u7jhozVAhWI34MKHXjbA4gQ6AEIKTAA#v=onepage&q&f=false"
-                    >le traité d’Origène contre Celse</a
-                  ></span
-                >, ou autrement défense de la religion chrétienne contre les
-                accusations des païens.
-                <span class="pb">[454]</span>
-              </p>
+              <div id="texte-normalise"></div>
             </div>
             <div class="text-footer">
               <div id="btn-pages">
-                <a id="btn-page-pre" href=""><</a
-                ><a id="btn-page-fol" href="">></a>
+                <button id="btn-page-pre" href=""><</button>
+                <button id="btn-page-fol" href="">></button>
               </div>
-              <span id="page-number"> Page 1/6 </span>
+              <span id="page-number">
+                Page <span id="numero-page-active" aria-live="polite"></span>/6
+              </span>
             </div>
           </div>
         </div>
