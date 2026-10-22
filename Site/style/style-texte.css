@@ -849,6 +849,36 @@ td {
   background-color: rgba(216, 215, 215, 0.445);
 }
 
+/* //////////////////// */
+/* MENU>INDEX */
+/* //////////////////// */
+
+.idx {
+  width: 100%;
+  margin: 20px;
+}
+
+.idx h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.idx h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+a {
+  font-style: italic;
+}
+
+a:hover {
+  color: gray;
+  font-weight: bold;
+}
+
+
+
 
 
 /* //////////////////// */
