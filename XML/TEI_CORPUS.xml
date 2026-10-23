@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teiCorpus xmlns="http://tei-c.org" xmlns:xi="http://w3.org">
+   
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>TEICorpus : Les Lettres Canadiennes</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Corpus constituer afin d'appeler l'ensemble des lettres.xml.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Description globale des sources...</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    
+    <!-- Voir plus tard pour classer par année / volume 
+        <biblScope unit="volume">2</biblScope> : dans le header -->
+    <!-- ajouter des id ? -->
+    
+    <div type="volume" n="1">    
+    <xi:include href="Lettres_XML/Lettre-12_L%27Epion%20turc.xml"/>
+    <xi:include href="Lettres_XML/Lettre-32_R%C3%A9collet.xml"/>
+    <xi:include href="Lettres_XML/Lettre-70.xml"/>
+    </div>
+    
+</teiCorpus>
+
