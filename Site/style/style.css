@@ -24,27 +24,14 @@
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 2rem;
   font-family: Georgia, serif;
+  margin-bottom: 20px;
 }
 
 p {
   font-size: 17px;
   font-family: "Poppins", sans-serif;
-}
-
-body .affective h2 {
-  font-family: "Tangerine", cursive;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 50px;
-}
-
-body .affective p {
-  font-family: "Tangerine", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
 }
 
 .sidebar {
@@ -236,17 +223,35 @@ header:has(#nav-apropos-popover:popover-open) ~ footer {
 
 /*//////// Affective //////////*/
 
-.image {
+.affective-container {
   background-color: #000000;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/feuille_marbre.jpg);
   background-position: center;
   background-size: cover; /* ou contain */
-  padding: 3.2em; /*zone de remplissage */
-
+  padding: 50px;
   color: #ffffff;
-  text-align: left;
+}
+
+.affective {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.affective h2 {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5rem;
+  margin-bottom: 50px;
+}
+
+.affective p {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.2rem;
 }
 
 .signature {
@@ -254,16 +259,22 @@ header:has(#nav-apropos-popover:popover-open) ~ footer {
 }
 
 button.lien {
-  margin-top: 5px;
-  border: 1 solid black;
+  margin-top: 20px;
+  border: 1px solid black;
   border-radius: 30px;
   padding: 15px;
 }
 
+#btn-accueil-affective {
+  background: rgba(255, 255, 255);
+}
+
 .abstract {
-  margin-left: 50px;
-  margin-right: 50px;
+  padding: 50px;
   text-align: justify;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* //////////////////// */

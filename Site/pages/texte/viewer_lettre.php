@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interface de lecture - Lettres canadiennes</title>
+    <link href="../../style/style-texte.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" />
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="header-container">
+            <p id="logo-title">Les lettres canadiennes</p>
+            <ul id="nav">
+                <li>
+                    <a href="template.html">Accueil</a>
+                </li>
+                <li class="active">
+                    <button id="btn-texte-popover" class="btn-menu" popovertarget="nav-texte-popover">
+                        Texte<i class="fa-solid fa-chevron-up"></i>
+                    </button>
+                    <div class="popover" id="nav-texte-popover" popover>
+                        <a href="#">Lettres</a>
+                        <a href="#">Transcription intégrale</a>
+                    </div>
+                </li>
+                <li>
+                    <button id="btn-references-popover" class="btn-menu" popovertarget="nav-references-popover">
+                        Références<i class="fa-solid fa-chevron-up"></i>
+                    </button>
+                    <div class="popover" id="nav-references-popover" popover>
+                        <a href="#">Ressources</a>
+                        <a href="#">Documentation historique</a>
+                        <a href="#">Données</a>
+                        <a href="#">Index</a>
+                    </div>
+                </li>
+                <li>
+                    <button id="btn-apropos-popover" class="btn-menu" popovertarget="nav-apropos-popover">
+                        À propos<i class="fa-solid fa-chevron-up"></i>
+                    </button>
+                    <div class="popover" id="nav-apropos-popover" popover>
+                        <a href="#">Présentation du projet</a>
+                        <a href="#">Introduction générale</a>
+                        <a href="#">Choix éditoriaux</a>
+                        <a href="#">Contributeurs</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="main-header">
+                <div class="mh-left">
+                    <a class="work-letter-button" href="">
+                        << /a>
+                            <a class="letter-button" href="">
+                                < Lettre précédente</a>
+                </div>
+                <div class="mh-middle">
+                    <select id="choix-ressources">
+                        <optgroup label="Volume 1">
+                            <option value="mentions">Lettre 12</option>
+                            <option value="manuscrit">Lettre 32</option>
+                            <option value="emprunts" selected>Lettre 70</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="mh-right">
+                    <a class="letter-button" href="">Lettre suivante ></a>
+                    <a class="work-letter-button" href="">></a>
+                </div>
+            </div>
+            <div class="main-body">
+                <div class="main-body-ressources">
+                    <div class="ressources-header">
+                        <select id="choix-ressources">
+                            <option value="manuscrit">Manuscrit</option>
+                            <option value="emprunts">Emprunts</option>
+                            <option value="mentions">Mentions</option>
+                            <option value="cartographie">Cartographie</option>
+                        </select>
+                    </div>
+                    <div class="ressources-body">
+                        <img src="../../images/manuscrit/Lettre 70_1/fo453.JPG" alt="Lettre 70, page 1" />
+                    </div>
+                </div>
+                <div id="splitter"></div>
+                <div class="main-body-text">
+                    <div class="text-header">
+                        <input type="checkbox" id="checkbox-note-visibility" name="checkbox-note-visibility"
+                            value="Affiche l'appareil critique" />
+                        <label for="checkbox-note-visibility">Afficher l'appareil critique</label>
+                    </div>
+                    <div class="text-body">
+                        <h1>Lettre 70 [1707]</h1>
+                        <h2>À Raoul, à Vienne, en Autriche</h2>
+                        <h3 class="abstract">
+                            Qu’il faut aimer la lecture ; les Espagnols prennent Alcantara ;
+                            mort du roi de Portugal ; naissance du duc de Bretagne
+                        </h3>
+                        <p>
+                            Tu as dû recevoir dans son temps, parmi les livres que je t’ai
+                            envoyés,
+                            <span class="ref-externe"><a aria="tooltip-1"
+                                    href="https://books.google.ca/books?id=WZBjAAAAcAAJ&pg=PA462&dq=Trait%C3%A9+d%E2%80%99origine+contre+Celse&hl=fr&sa=X&ved=0ahUKEwij3u7jhozVAhWI34MKHXjbA4gQ6AEIKTAA#v=onepage&q&f=false">le
+                                    traité d’Origène contre Celse</a></span>, ou autrement défense de la religion
+                            chrétienne contre les
+                            accusations des païens.
+                            <span class="pb">[454]</span>
+                        </p>
+                    </div>
+                    <div class="text-footer">
+                        <div id="btn-pages">
+                            <a id="btn-page-pre" href="">
+                                << /a><a id="btn-page-fol" href="">></a>
+                        </div>
+                        <span id="page-number"> Page 1/6 </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>Footer</footer>
+    <script src="../../js/viewer.js"></script>
+</body>
+
+</html>
