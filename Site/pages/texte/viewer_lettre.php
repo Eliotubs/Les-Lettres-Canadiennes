@@ -1,3 +1,105 @@
+<?php
+// Création d'un arary pour stocker toutes les lettres présentes
+$lettres = [
+    'Lettre-12_l_espion_turc' => 'Lettre 12',
+    'Lettre-32_recollet' => 'Lettre 32',
+    'Lettre-70' => 'Lettre 70',
+];
+//Récupération dans l'url des paramètres
+$lettre = $_GET['lettre'] ?? ''; //le numéro de la lettre choisie
+$page = $_GET['page'] ?? ''; //la page de la lettre choisie
+
+$html = ''; //va contenir ensuite tout le texte choisi
+$image = ''; //image du manuscrit
+$pages = []; //va séparer en pages un seul document XML
+
+if (isset($lettres[$lettre])) {
+    //Chemins vers les documents XML et la feuille de transformation XSL
+    $fichierXML = __DIR__ . '/../../../XML/Lettres_XML/' . $lettre . '.xml';
+    $fichierXSL = __DIR__ . '/../../../xslt/tei-html.xsl';
+
+    //Si les deux fichiers existent
+    if (is_file($fichierXML) && is_file($fichierXSL)) {
+        $xml = new DOMDocument();
+
+        //On va venir récupérer les balises <pb> dans les documents XML-TEI
+        //pour séparer ensuite les pages
+        if ($xml->load($fichierXML)) {
+            $xpath = new DOMXPath($xml);
+            $xpath->registerNamespace(
+                'tei',
+                'http://www.tei-c.org/ns/1.0'
+            );
+
+            $balises = $xpath->query('//tei:pb');
+
+            //Pour chaque balise <pb> trouvée, on vient remplir l'array $pages
+            //en renseignant les valeurs des attributs n (numéro de page) et facs (lien vers l'image)
+            foreach ($balises as $pb) {
+                $pages[] = [
+                    'n' => $pb->getAttribute('n'),
+                    'facs' => $pb->getAttribute('facs'),
+                    'node' => $pb
+                ];
+            }
+
+            //S'il n'y a au moins une balise <pb> dans le document
+            if (count($pages) > 0) {
+                $index = 0;
+
+                //
+                foreach ($pages as $i => $p) {
+                    if ($p['n'] === $page) {
+                        $index = $i;
+                        break;
+                    }
+                }
+
+                $page = $pages[$index]['n'];
+                $debut = $pages[$index]['node'];
+                $fin = $pages[$index + 1]['node'] ?? null;
+
+                $fragment = new DOMDocument('1.0', 'UTF-8');
+                $racine = $fragment->createElement('div');
+                $fragment->appendChild($racine);
+
+                $courant = $debut->nextSibling;
+
+                while ($courant && $courant !== $fin) {
+                    $suivant = $courant->nextSibling;
+
+                    if (
+                        !($courant instanceof DOMElement)
+                        || $courant->localName !== 'pb'
+                    ) {
+                        $racine->appendChild(
+                            $fragment->importNode($courant, true)
+                        );
+                    }
+
+                    $courant = $suivant;
+                }
+
+                $xsl = new DOMDocument();
+
+                if ($xsl->load($fichierXSL)) {
+                    $processeur = new XSLTProcessor();
+                    $processeur->importStylesheet($xsl);
+
+                    $html = $processeur->transformToXML($fragment);
+
+                    if ($html === false) {
+                        $html = '';
+                    }
+                }
+
+                $image = $pages[$index]['facs'];
+            }
+        }
+    }
+}
+?>
+
 <!doctype html>
 <html lang="fr">
 
@@ -60,22 +162,26 @@
             <div class="main-header">
                 <div class="mh-left">
                     <a class="work-letter-button" href="">
-                        << /a>
-                            <a class="letter-button" href="">
-                                < Lettre précédente</a>
+                        ←</a>
+                    <a class="letter-button" href="">
+                        < Lettre précédente</a>
                 </div>
                 <div class="mh-middle">
-                    <select id="choix-ressources">
-                        <optgroup label="Volume 1">
-                            <option value="mentions">Lettre 12</option>
-                            <option value="manuscrit">Lettre 32</option>
-                            <option value="emprunts" selected>Lettre 70</option>
-                        </optgroup>
-                    </select>
+                    <form method="GET" action="viewer_lettre.php">
+                        <select class="choix-ressources" name="lettre" onchange="this.form.submit()">
+                            <option value="">-- Choisir une lettre --</option>
+
+                            <?php foreach ($lettres as $valeur => $libelle): ?>
+                                <option value="<?= htmlspecialchars($valeur) ?>" <?= $lettre === $valeur ? 'selected' : '' ?>>
+                                    <?= htmlspecialchars($libelle) ?>
+                                </option>
+                            <?php endforeach; ?>
+                        </select>
+                    </form>
                 </div>
                 <div class="mh-right">
                     <a class="letter-button" href="">Lettre suivante ></a>
-                    <a class="work-letter-button" href="">></a>
+                    <a class="work-letter-button" href="">→</a>
                 </div>
             </div>
             <div class="main-body">
@@ -88,9 +194,12 @@
                             <option value="cartographie">Cartographie</option>
                         </select>
                     </div>
-                    <div class="ressources-body">
-                        <img src="../../images/manuscrit/Lettre 70_1/fo453.JPG" alt="Lettre 70, page 1" />
-                    </div>
+                    <?php if ($page !== '' && $html !== ''): ?>
+                        <div class="image">
+                            <img src="<?= htmlspecialchars($image) ?>"
+                                alt="Photographie du manuscrit, page <?= htmlspecialchars($page) ?>">
+                        </div>
+                    <?php endif; ?>
                 </div>
                 <div id="splitter"></div>
                 <div class="main-body-text">
@@ -100,29 +209,29 @@
                         <label for="checkbox-note-visibility">Afficher l'appareil critique</label>
                     </div>
                     <div class="text-body">
-                        <h1>Lettre 70 [1707]</h1>
-                        <h2>À Raoul, à Vienne, en Autriche</h2>
-                        <h3 class="abstract">
-                            Qu’il faut aimer la lecture ; les Espagnols prennent Alcantara ;
-                            mort du roi de Portugal ; naissance du duc de Bretagne
-                        </h3>
-                        <p>
-                            Tu as dû recevoir dans son temps, parmi les livres que je t’ai
-                            envoyés,
-                            <span class="ref-externe"><a aria="tooltip-1"
-                                    href="https://books.google.ca/books?id=WZBjAAAAcAAJ&pg=PA462&dq=Trait%C3%A9+d%E2%80%99origine+contre+Celse&hl=fr&sa=X&ved=0ahUKEwij3u7jhozVAhWI34MKHXjbA4gQ6AEIKTAA#v=onepage&q&f=false">le
-                                    traité d’Origène contre Celse</a></span>, ou autrement défense de la religion
-                            chrétienne contre les
-                            accusations des païens.
-                            <span class="pb">[454]</span>
-                        </p>
+                        <?php if ($page !== '' && $html !== ''): ?>
+                            <?= $html ?>
+                        <?php endif; ?>
                     </div>
                     <div class="text-footer">
-                        <div id="btn-pages">
-                            <a id="btn-page-pre" href="">
-                                << /a><a id="btn-page-fol" href="">></a>
-                        </div>
-                        <span id="page-number"> Page 1/6 </span>
+                        <?php if ($page !== '' && $html !== ''): ?>
+                            <?php if (isset($pages[$index - 1])): ?>
+                                <a class="btn-page-pre"
+                                    href="?lettre=<?= urlencode($lettre) ?>&page=<?= urlencode($pages[$index - 1]['n']) ?>">
+                                    ← Page précédente
+                                </a>
+                            <?php endif; ?>
+                            <?php if (isset($pages[$index + 1])): ?>
+                                <a class="btn-page-fol"
+                                    href="?lettre=<?= urlencode($lettre) ?>&page=<?= urlencode($pages[$index + 1]['n']) ?>">
+                                    Page suivante →
+                                </a>
+                            <?php endif; ?>
+                        <?php endif; ?>
+
+                        <span>Page
+                            <?= htmlspecialchars($page) ?>
+                        </span>
                     </div>
                 </div>
             </div>
