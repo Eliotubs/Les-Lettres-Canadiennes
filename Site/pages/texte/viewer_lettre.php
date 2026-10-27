@@ -47,31 +47,32 @@ if (isset($lettres[$lettre])) {
             if (count($pages) > 0) {
                 $index = 0;
 
-                //
+                //On repère la page sur laquelle on est
                 foreach ($pages as $i => $p) {
-                    if ($p['n'] === $page) {
+                    if ($p['n'] === $page) { //Ne pas confondre $pages et $page, cette dernière contient le paramètre page de l'url
                         $index = $i;
                         break;
                     }
                 }
 
-                $page = $pages[$index]['n'];
-                $debut = $pages[$index]['node'];
-                $fin = $pages[$index + 1]['node'] ?? null;
+                $page = $pages[$index]['n']; //On récupère le numéro de la page que l'on souhaite
+                $debut = $pages[$index]['node']; //On récupère l'élément complet du noeud <pb> que l'on souhaite
+                $fin = $pages[$index + 1]['node'] ?? null; //On récupère l'élément complet du noeud <pb> qui suit celui que l'on souhaite
 
                 $fragment = new DOMDocument('1.0', 'UTF-8');
                 $racine = $fragment->createElement('div');
                 $fragment->appendChild($racine);
 
-                $courant = $debut->nextSibling;
+                $courant = $debut->nextSibling; //On va chercher le noeud sibling du <pb> de départ, pour avoir le <p>
 
+                // 
                 while ($courant && $courant !== $fin) {
                     $suivant = $courant->nextSibling;
 
-                    if (
+                    if ( //Vérifier qu'il s'agisse bien d'une balise et que ne s'agisse pas d'un <pb>
                         !($courant instanceof DOMElement)
                         || $courant->localName !== 'pb'
-                    ) {
+                    ) { //Injecter dans la page le texte de la balise anlaysée
                         $racine->appendChild(
                             $fragment->importNode($courant, true)
                         );
@@ -93,7 +94,7 @@ if (isset($lettres[$lettre])) {
                     }
                 }
 
-                $image = $pages[$index]['facs'];
+                $image = $pages[$index]['facs']; //Lien relatif de l'image
             }
         }
     }
@@ -171,6 +172,7 @@ if (isset($lettres[$lettre])) {
                         <select class="choix-ressources" name="lettre" onchange="this.form.submit()">
                             <option value="">-- Choisir une lettre --</option>
 
+                            <!-- Création dynamique de la sélection des lettres à partir de l'array $lettres -->
                             <?php foreach ($lettres as $valeur => $libelle): ?>
                                 <option value="<?= htmlspecialchars($valeur) ?>" <?= $lettre === $valeur ? 'selected' : '' ?>>
                                     <?= htmlspecialchars($libelle) ?>
@@ -194,6 +196,7 @@ if (isset($lettres[$lettre])) {
                             <option value="cartographie">Cartographie</option>
                         </select>
                     </div>
+                    <!-- Injectation de l'image du manuscrit -->
                     <?php if ($page !== '' && $html !== ''): ?>
                         <div class="image">
                             <img src="<?= htmlspecialchars($image) ?>"
@@ -209,11 +212,13 @@ if (isset($lettres[$lettre])) {
                         <label for="checkbox-note-visibility">Afficher l'appareil critique</label>
                     </div>
                     <div class="text-body">
+                        <!-- Injectation du texte de la page sélectionnée -->
                         <?php if ($page !== '' && $html !== ''): ?>
                             <?= $html ?>
                         <?php endif; ?>
                     </div>
                     <div class="text-footer">
+                        <!-- Injectation des flèches pour se déplacer dans les pages -->
                         <?php if ($page !== '' && $html !== ''): ?>
                             <?php if (isset($pages[$index - 1])): ?>
                                 <a class="btn-page-pre"
@@ -229,6 +234,7 @@ if (isset($lettres[$lettre])) {
                             <?php endif; ?>
                         <?php endif; ?>
 
+                        <!-- Affichage dynamique de la page actuelle -->
                         <span>Page
                             <?= htmlspecialchars($page) ?>
                         </span>

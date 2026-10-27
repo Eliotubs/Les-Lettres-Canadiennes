@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="../../style/style-texte.css" rel="stylesheet" />
+    <link href="../../style/style_export-pdf.css" rel="stylesheet"/>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+
+    <title>Editions critique</title>
+  </head>
+  <body>
+    <header>
+      <nav class="header-container">
+        <p id="logo-title">Les lettres canadiennes</p>
+        <ul id="nav">
+          <li>
+            <a href="template.html">Accueil</a>
+          </li>
+          <li class="active">
+            <button
+              id="btn-texte-popover"
+              class="btn-menu"
+              popovertarget="nav-texte-popover"
+            >
+              Texte<i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <div class="popover" id="nav-texte-popover" popover>
+              <a href="#">Lettres</a>
+              <a href="#">Transcription intégrale</a>
+            </div>
+          </li>
+          <li>
+            <button
+              id="btn-references-popover"
+              class="btn-menu"
+              popovertarget="nav-references-popover"
+            >
+              Références<i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <div class="popover" id="nav-references-popover" popover>
+              <a href="#">Ressources</a>
+              <a href="#">Documentation historique</a>
+              <a href="#">Données</a>
+              <a href="#">Index</a>
+            </div>
+          </li>
+          <li>
+            <button
+              id="btn-apropos-popover"
+              class="btn-menu"
+              popovertarget="nav-apropos-popover"
+            >
+              À propos<i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <div class="popover" id="nav-apropos-popover" popover>
+              <a href="#">Présentation du projet</a>
+              <a href="#">Introduction générale</a>
+              <a href="#">Choix éditoriaux</a>
+              <a href="#">Contributeurs</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="sommaire-container">
+        <div class="sommaire">
+          <div class="accordeon_titre">Sommaire</div>
+          <div class="accordeon_content">
+            <p class="volume">Volume 1</p>
+            <p class="point"><a href="#Lettre_12">Lettre 12</a></p>
+            <p class="volume">Volume 2</p>
+            <p class="point"><a href="#Lettre_32">Lettre 32</a></p>
+          </div>
+          <div class="fleche-sommaire">...</div>
+        </div>
+      </div>
+
+      <div class="contenaire_transcription_integral">
+        <div class="machin">
+          <h1 class="title_page">Transcription intégrale</h1>
+          <div class="export">
+            <p>Exporter en...</p>
+            <button id="btn-export-xml">XML-TEI</button>
+            <button id="btn-export-pdf">PDF</button>
+            <button id="btn-export-txt">TXT</button>
+          </div>
+          <hr class="sidebar" />
+
+          <div class="transcription_integral" id="contenu-lettre"> <!-- identifiant unique pour l'export / il est parent de la seclection, il prend donc toutes les lettres -->
+            
+            <div id="#Lettre_12"> <!-- identifiant lettre = sommaire -->
+              <div class="en-tête">
+                <h2>Lettre 12 [1701]</h2>
+                <p class="destinataire">À sa mère, à Angers</p>
+                <p class="description">
+                  Il la console sur la mort de son père et lui envoie une lettre
+                  de son frère
+                </p>
+              </div>
+              <div class="texte_lettre">
+                <p>
+                  Vous devez être consolée doublement, ma chère mère, en
+                  recevant de mes nouvelles, dans lesquelles je joins celles que
+                  je reçus hier de mon frère, qui me prie en même temps de vous
+                  faire tenir l’incluse. Je m’estimerais bienheureux si j’avais
+                  bientôt le bonheur d’apprendre par vous-même si
+                  <span class="pb">[75]</span> vous jouissez d’une parfaite
+                  santé. La peur que j’ai que cela ne soit pas me jette dans des
+                  inquiétudes que je ne puis exprimer. J’en ressens encore une
+                  bien plus grande quand je pense que vous pleurez
+                  continuellement mon père que la mort a enlevé d’entre vos
+                  bras, lorsque je n’étais encore âgé que de trois ans. Ainsi,
+                  ne pouvant pas alors partager votre douleur, puisque j’en
+                  étais incapable, il ne m’était pas possible de comprendre la
+                  perte que nous faisions. Mais à présent que l’âge m’a dessillé
+                  les yeux, j’y pense tous les jours, et je ferai par la suite
+                  tout ce que je pourrai pour vous consoler dans toutes vos
+                  peines.
+                </p>
+                <p>
+                  Vous avez perdu celui que vous aimiez le plus au monde, et qui
+                  vous aimait réciproquement avec tant de douceur et de
+                  tendresse,
+                  <span class="pb">[76]</span> vous aviez si bien trouvé le
+                  moyen d’entretenir cette amitié également entre vous deux par
+                  les complaisances continuelles que vous aviez pour lui et par
+                  une obéissance aveugle à ses volontés, dont il n’abusait pas,
+                  vous vous êtes, dis-je, toujours conduite si sagement, qu’il
+                  lui aurait été impossible de vous aimer davantage, ni de
+                  cesser de vous aimer.
+                </p>
+                <p>
+                  Promettez-moi donc, ma chère mère, de me faire sentir les
+                  moindres effets des tendresses que vous aviez pour lui.
+                  Puisque je suis son fils et le vôtre, et que vous m’avez porté
+                  dans vos flancs comme un fruit de votre couche pudique,
+                  j’espère que vous m’accorderez ce que je vous demande. Je ne
+                  puis plus vous rien demander, les larmes qui coulent de mes
+                  yeux baignent mon papier. Recevez-les donc, je vous prie,
+                  <span class="pb">[77]</span> comme un effet de ma tendresse et
+                  de l’amitié que j’ai pour vous, je prie Dieu incessamment
+                  qu’il pourvoie à tous vos besoins en ce monde, qu’il vous
+                  comble de ses plus précieuses bénédictions en l’autre, aussi
+                  bien que dans ce jour que l’an est révolu, et qu’il me fasse
+                  la grâce de vous voir un jour avec mon cher père, dont
+                  j’honore infiniment les mânes, dans le lieu de paix où le
+                  Tout-Puissant appelle tous les bienheureux pour voir et
+                  contempler sa divine face, et y goûter à longs traits les
+                  voluptés célestes dont les justes sont enivrés.
+                </p>
+              </div>
+            </div>
+
+            <div id="#Lettre_32"> <!-- identifiant lettre = sommaire -->
+              <div class="en-tête">
+                <h2>Lettre 32 [1702]</h2>
+                <p class="destinataire">
+                  À un ami qui veut entrer dans les ordres sacrés
+                </p>
+                <p class="description">
+                  Histoire d’un récollet de ses amis qui a abjuré sa religion,
+                  et de la manière qu’il fit.
+                </p>
+              </div>
+              <div class="texte_lettre">
+                <p>
+                  Fais-moi donc savoir si tu m’aimes autant que par le passé. Je
+                  pourrais avec toute justice être en doute là-dessus, parce que
+                  tu ne m’écris pas et que je ne sais de tes nouvelles que par
+                  mon frère. Tu n’es peut-être pas du goût de tant de jeunes
+                  gens qui oublient leurs amis dès qu’ils les ont perdus de vue,
+                  malgré les belles promesses qu’ils leur font à leur départ.
+                  Non, à Dieu ne plaise, je ne te crois pas d’un tel caractère,
+                  je pense autrement en ta faveur. Il faut que tu ne songes plus
+                  qu’à élever ton âme à Dieu pour le supplier de t’éclairer à
+                  bien entrer, à bien vivre et à bien mourir dans les fonctions
+                  de ton sacerdoce.
+                </p>
+                <p>
+                  Reçois donc, je te prie, de bon cœur mon compliment
+                  <span class="pb">[187]</span> sur ce que j’ai appris que tu
+                  voulais être prêtre. Cette nouvelle me cause un vrai plaisir.
+                  Je t’invite à persister dans cette bonne résolution, si tu
+                  sens en toi-même une sainte ardeur qui te pousse à entrer dans
+                  cet état ; que tu sentes, dis-je, secrètement que le
+                  scrutateur de nos cœurs t’y appelle. Persévère pour lors, mon
+                  cher ami. Quel bonheur ce sera pour toi que d’embrasser une
+                  condition si sainte et dans laquelle on ne doit faire que des
+                  actions d’un bon exemple, puisqu’il est vrai que cette dignité
+                  oblige ceux qui l’embrassent à avoir une parfaite modestie,
+                  une conversation plus retenue, une piété plus exemplaire, et à
+                  des mœurs bien plus réglées, qui ne laissent point lieu de
+                  douter qu’ils ne soient ou des parfaits imitateurs des saints,
+                  ou des saints même. Je prie l’éternel en ce moment,
+                  quoiqu’indigne des grâces qui te sont si nécessaires, et qu’il
+                  fasse en toi un saint <span class="pb">[188]</span> modèle
+                  accompli de toute la piété, la charité et la vertu, qui sont
+                  les caractères inséparables d’un bon ministre de la parole de
+                  Dieu. Tu verras dans l’histoire suivante celle d’un homme bien
+                  opposé à ces saintes maximes.
+                </p>
+                <p>
+                  Nous avions en Canada un père récollet dont je veux te taire
+                  le nom, parce que tu peux toujours l’apprendre par d’autres et
+                  que, d’ailleurs, j’ai été son ami. Ce père s’était acquis
+                  l’estime d’un chacun, d’autant qu’il paraissait être ce qu’il
+                  n’était pas et qu’il était bon chimiste et bon pharmacien. De
+                  façon que le public lui avait obligation de beaucoup de belles
+                  cures qu’il avait faites aux malades les plus désespérés, dont
+                  il recevait du salaire (des uns plus, des autres moins), avec
+                  cette différence qu’il avait soin de ne pas rendre au couvent
+                  toutes les sommes qu’il recevait, ainsi que nous l’avons
+                  appris par la suite, aussi bien que l’envie qu’il avait depuis
+                  longtemps d’apostasier, ce qu’il accomplit ainsi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <p>Footer</p>
+      </div>
+    </footer>
+    <script src="../../js/sommaire.js"></script>
+    <script src="../../js/export-pdf.js"></script>
+    <script src="../../js/export-txt.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  </body>
+</html>
