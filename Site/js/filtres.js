@@ -48,3 +48,34 @@ lettres.forEach((lettre) => {
     lettre.classList.toggle("lettre-select");
   });
 });
+
+const sujet_select_all = document.getElementById("filtre-sujet-selectall");
+const sujet_checkbox = document.querySelectorAll(
+  "#filtres-sujet .filtres-intern-container .filtres-label-container .label-filtre .checkbox-filtre",
+);
+
+sujet_select_all.checked = true;
+sujet_checkbox.forEach((checkbox) => {
+  checkbox.checked = true;
+});
+
+sujet_select_all.addEventListener("click", (e) => {
+  console.log("ok");
+  if (sujet_select_all.checked === true) {
+    sujet_checkbox.forEach((checkbox) => {
+      checkbox.checked = true;
+    });
+  } else {
+    sujet_checkbox.forEach((checkbox) => {
+      checkbox.checked = false;
+    });
+  }
+});
+
+sujet_checkbox.forEach((checkbox) => {
+  checkbox.addEventListener("click", (e) => {
+    if (sujet_select_all.checked === true) {
+      sujet_select_all.checked = false;
+    }
+  });
+});
