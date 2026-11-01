@@ -5,7 +5,6 @@ const lettres_allcontainer_volume_2 = document.querySelector(
   "#lettre-container-volume-2",
 );
 const lettres_container = document.querySelector(".display-lettres");
-const lettres = document.querySelectorAll(".lettre");
 
 const btn_volume_1 = document.querySelector("#btn-volume-1");
 const btn_volume_2 = document.querySelector("#btn-volume-2");
@@ -43,14 +42,8 @@ btn_volume_2.addEventListener("click", (e) => {
   }
 });
 
-lettres.forEach((lettre) => {
-  lettre.addEventListener("click", (e) => {
-    lettre.classList.toggle("lettre-select");
-  });
-});
-
 // ////////////////////////
-// GESTIONS DES CASES SÉLECTIONNÉES OU NON
+// GESTIONS DES CASES SÉLECTIONNÉES OU NON (filtres)
 // ////////////////////////
 
 // À optimiser pour ne pas avoir à réécrire 4 fois le même code
@@ -210,5 +203,94 @@ correspondants_checkbox.forEach((checkbox) => {
       correspondants_select_all.checked = true;
     }
     nb_checkbox_selected = 0;
+  });
+});
+
+// ////////////////////////
+// GESTIONS DES CASES SÉLECTIONNÉES OU NON (volumes)
+// ////////////////////////
+
+const volume1_select_all = document.getElementById("volume-1-selectall");
+const volume2_select_all = document.getElementById("volume-2-selectall");
+
+const volume1_lettres = document.querySelectorAll(
+  "#lettre-container-volume-1 .display-lettres span",
+);
+const volume2_lettres = document.querySelectorAll(
+  "#lettre-container-volume-2 .display-lettres span",
+);
+
+nb_lettres_selected_vol1 = volume1_lettres.length;
+nb_lettres_selected_vol2 = volume2_lettres.length;
+
+volume1_select_all.checked = true;
+volume2_select_all.checked = true;
+
+volume1_lettres.forEach((lettre) => {
+  lettre.classList.add("lettre-select");
+});
+volume2_lettres.forEach((lettre) => {
+  lettre.classList.add("lettre-select");
+});
+
+volume1_select_all.addEventListener("click", (e) => {
+  if (volume1_select_all.checked === true) {
+    volume1_lettres.forEach((lettre) => {
+      lettre.classList.add("lettre-select");
+    });
+  } else {
+    volume1_lettres.forEach((lettre) => {
+      lettre.classList.remove("lettre-select");
+    });
+  }
+});
+
+volume1_lettres.forEach((lettre) => {
+  lettre.addEventListener("click", (e) => {
+    if (lettre.classList.contains("lettre-select")) {
+      volume1_select_all.checked = false;
+    }
+
+    lettre.classList.toggle("lettre-select");
+    for (var i = 0; i < volume1_lettres.length; i++) {
+      if (volume1_lettres[i].classList.contains("lettre-select")) {
+        nb_lettres_selected_vol1++;
+      }
+    }
+    if (nb_lettres_selected_vol1 == volume1_lettres.length) {
+      volume1_select_all.checked = true;
+    }
+    nb_lettres_selected_vol1 = 0;
+  });
+});
+
+volume2_select_all.addEventListener("click", (e) => {
+  if (volume2_select_all.checked === true) {
+    volume2_lettres.forEach((lettre) => {
+      lettre.classList.add("lettre-select");
+    });
+  } else {
+    volume2_lettres.forEach((lettre) => {
+      lettre.classList.remove("lettre-select");
+    });
+  }
+});
+
+volume2_lettres.forEach((lettre) => {
+  lettre.addEventListener("click", (e) => {
+    if (lettre.classList.contains("lettre-select")) {
+      volume2_select_all.checked = false;
+    }
+
+    lettre.classList.toggle("lettre-select");
+    for (var i = 0; i < volume2_lettres.length; i++) {
+      if (volume2_lettres[i].classList.contains("lettre-select")) {
+        nb_lettres_selected_vol2++;
+      }
+    }
+    if (nb_lettres_selected_vol2 == volume2_lettres.length) {
+      volume2_select_all.checked = true;
+    }
+    nb_lettres_selected_vol2 = 0;
   });
 });
