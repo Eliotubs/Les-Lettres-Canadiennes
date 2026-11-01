@@ -108,7 +108,7 @@ if (isset($lettres[$lettre])) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interface de lecture - Lettres canadiennes</title>
-    <link href="../../style/style-texte.css" rel="stylesheet" />
+    <link href="../../style/style-general.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" />
 
     <style>

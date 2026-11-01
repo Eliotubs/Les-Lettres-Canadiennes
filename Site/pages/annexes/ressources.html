@@ -1,121 +1,165 @@
 <!doctype html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ressources - Lettres canadiennes</title>
+    <link href="../../style/style-general.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ressources - Lettres canadiennes</title>
-  <link href="style-texte.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+  </head>
 
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-  </style>
-</head>
+  <body>
+    <header>
+      <nav class="header-container">
+        <p id="logo-title">Les lettres canadiennes</p>
+        <ul id="nav">
+          <li>
+            <a href="">Accueil</a>
+          </li>
+          <li class="active">
+            <button
+              id="btn-texte-popover"
+              class="btn-menu"
+              popovertarget="nav-texte-popover"
+            >
+              Texte<i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <div class="popover" id="nav-texte-popover" popover>
+              <a href="lettre70_p1.html">Lettres</a>
+              <a href="#">Transcription intégrale</a>
+            </div>
+          </li>
+          <li>
+            <button
+              id="btn-references-popover"
+              class="btn-menu"
+              popovertarget="nav-references-popover"
+            >
+              Références<i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <div class="popover" id="nav-references-popover" popover>
+              <a href="#">Ressources</a>
+              <a href="#">Documentation historique</a>
+              <a href="#">Données</a>
+              <a href="#">Index</a>
+            </div>
+          </li>
+          <li>
+            <button
+              id="btn-apropos-popover"
+              class="btn-menu"
+              popovertarget="nav-apropos-popover"
+            >
+              À propos<i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <div class="popover" id="nav-apropos-popover" popover>
+              <a href="#">Présentation du projet</a>
+              <a href="#">Introduction générale</a>
+              <a href="#">Choix éditoriaux</a>
+              <a href="#">Contributeurs</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="ressources">
+        <div class="src_empruntees">
+          <h1>Sources empruntées</h1>
+          <br />
+          <div class="galerie">
+            <div class="boxe_src">
+              <figure>
+                <div class="img">
+                  <img
+                    src="mercure-galant.jpg"
+                    alt="image mercure galant"
+                    style="width: 80%"
+                  />
+                </div>
+                <figcaption><a href="#">Mercure galant</a></figcaption>
+              </figure>
+            </div>
+            <div class="boxe_src">
+              <figure>
+                <div class="img">
+                  <img
+                    src="gazette.jpg"
+                    alt="image gazette"
+                    style="width: 80%"
+                  />
+                </div>
+                <figcaption><a href="#">Gazette</a></figcaption>
+              </figure>
+            </div>
+            <div class="boxe_src">
+              <figure>
+                <div class="img">
+                  <img
+                    src="la_gazette_de_lyon.jpg"
+                    alt="image gazette de lyon"
+                    style="width: 80%"
+                  />
+                </div>
+                <figcaption><a href="#">Gazette de Lyon</a></figcaption>
+              </figure>
+            </div>
+            <div class="boxe_src">
+              <figure>
+                <div class="img">
+                  <img
+                    src="mercure.jpg"
+                    alt="image mercure des femmes"
+                    style="width: 80%"
+                  />
+                </div>
+                <figcaption><a href="#">Le mercure des femmes</a></figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
 
-<body>
-  <header>
-    <nav class="header-container">
-      <p id="logo-title">Les lettres canadiennes</p>
-      <ul id="nav">
-        <li>
-          <a href="">Accueil</a>
-        </li>
-        <li class="active">
-          <button id="btn-texte-popover" class="btn-menu" popovertarget="nav-texte-popover">
-            Texte<i class="fa-solid fa-chevron-up"></i>
-          </button>
-          <div class="popover" id="nav-texte-popover" popover>
-            <a href="lettre70_p1.html">Lettres</a>
-            <a href="#">Transcription intégrale</a>
-          </div>
-        </li>
-        <li>
-          <button id="btn-references-popover" class="btn-menu" popovertarget="nav-references-popover">
-            Références<i class="fa-solid fa-chevron-up"></i>
-          </button>
-          <div class="popover" id="nav-references-popover" popover>
-            <a href="#">Ressources</a>
-            <a href="#">Documentation historique</a>
-            <a href="#">Données</a>
-            <a href="#">Index</a>
-          </div>
-        </li>
-        <li>
-          <button id="btn-apropos-popover" class="btn-menu" popovertarget="nav-apropos-popover">
-            À propos<i class="fa-solid fa-chevron-up"></i>
-          </button>
-          <div class="popover" id="nav-apropos-popover" popover>
-            <a href="#">Présentation du projet</a>
-            <a href="#">Introduction générale</a>
-            <a href="#">Choix éditoriaux</a>
-            <a href="#">Contributeurs</a>
-          </div>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="ressources">
-      <div class="src_empruntees">
-        <h1>Sources empruntées</h1><br />
-        <div class="galerie">
-          <div class="boxe_src">
-            <figure>
-              <div class="img"><img src="mercure-galant.jpg" alt="image mercure galant" style="width: 80%;"></div>
-              <figcaption><a href="#">Mercure galant</a></figcaption>
-            </figure>
-          </div>
-          <div class="boxe_src">
-            <figure>
-              <div class="img"><img src="gazette.jpg" alt="image gazette" style="width: 80%;"></div>
-              <figcaption><a href="#">Gazette</a></figcaption>
-            </figure>
-          </div>
-          <div class="boxe_src">
-            <figure>
-              <div class="img"><img src="la_gazette_de_lyon.jpg" alt="image gazette de lyon" style="width: 80%;"></div>
-              <figcaption><a href="#">Gazette de Lyon</a></figcaption>
-            </figure>
-          </div>
-          <div class="boxe_src">
-            <figure>
-              <div class="img"><img src="mercure.jpg" alt="image mercure des femmes" style="width: 80%;"></div>
-              <figcaption><a href="#">Le mercure des femmes</a></figcaption>
-            </figure>
+        <div class="src_inspi">
+          <h1>Sources d'inspiration</h1>
+          <br />
+          <div class="galerie">
+            <div class="boxe_src">
+              <figure>
+                <div class="img">
+                  <img src="#" alt="image mercure galant" style="width: 80%" />
+                </div>
+                <figcaption><a href="#">Mercure galant</a></figcaption>
+              </figure>
+            </div>
+            <div class="boxe_src">
+              <figure>
+                <div class="img">
+                  <img src="#" alt="image gazette" style="width: 80%" />
+                </div>
+                <figcaption><a href="#">Gazette</a></figcaption>
+              </figure>
+            </div>
+            <div class="boxe_src">
+              <figure>
+                <div class="img">
+                  <img src="#" alt="image gazette de lyon" style="width: 80%" />
+                </div>
+                <figcaption><a href="#">Gazette de Lyon</a></figcaption>
+              </figure>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="src_inspi">
-        <h1>Sources d'inspiration</h1><br />
-        <div class="galerie">
-          <div class="boxe_src">
-            <figure>
-              <div class="img"><img src="#" alt="image mercure galant" style="width: 80%;"></div>
-              <figcaption><a href="#">Mercure galant</a></figcaption>
-            </figure>
-          </div>
-          <div class="boxe_src">
-            <figure>
-              <div class="img"><img src="#" alt="image gazette" style="width: 80%;"></div>
-              <figcaption><a href="#">Gazette</a></figcaption>
-            </figure>
-          </div>
-          <div class="boxe_src">
-            <figure>
-              <div class="img"><img src="#" alt="image gazette de lyon" style="width: 80%;"></div>
-              <figcaption><a href="#">Gazette de Lyon</a></figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </main>
-  <footer>Footer</footer>
-  <script src="index.js"></script>
-  <script src="const fleche_sommaire = document.js"></script>
-</body>
-
+    </main>
+    <footer>Footer</footer>
+    <script src="index.js"></script>
+    <script src="const fleche_sommaire = document.js"></script>
+  </body>
 </html>

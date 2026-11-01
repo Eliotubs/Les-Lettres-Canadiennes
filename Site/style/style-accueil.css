@@ -1,0 +1,129 @@
+#body-accueil {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr 100px;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: Georgia, serif;
+  margin-bottom: 20px;
+}
+
+.sidebar {
+  border: none;
+  border-top: 2px solid black;
+  margin-bottom: 1.5%;
+  width: 85%;
+}
+
+/* il y aura deux sorte de menue par page donc on les distingue de leurs premier nav avec la classe page_accueil */
+/* gap: 60px; /* espace entre des éléments */
+
+/* //////////////////// */
+/* HEADER */
+/* //////////////////// */
+
+#body-accueil header {
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  padding-top: 50px;
+  background: white;
+}
+
+.images-header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo_lettre {
+  width: 70%;
+  max-width: 1300px;
+}
+
+#logo_othonè {
+  width: 10%;
+  max-width: 100px;
+}
+
+#body-accueil #nav {
+  margin: 50px 0 20px;
+}
+
+/* //////////////////// */
+/* MAIN */
+/* //////////////////// */
+
+#body-accueil main {
+  display: flex;
+  flex-direction: column;
+}
+
+/*//////// Affective //////////*/
+
+.affective-container {
+  background-color: #000000;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/feuille_marbre.jpg);
+  background-position: center;
+  background-size: cover; /* ou contain */
+  padding: 50px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.affective {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.affective h2 {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5rem;
+  margin-bottom: 50px;
+}
+
+.affective p {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.2rem;
+}
+
+.signature {
+  margin-top: 30px;
+  text-align: right;
+}
+
+#body-accueil main a {
+  margin-top: 30px;
+  border: 1px solid black;
+  border-radius: var(--border_radius_all);
+  padding: 15px;
+  background: #ffffff;
+  align-self: self-start;
+}
+
+.abstract {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  text-align: justify;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}

@@ -1,141 +1,204 @@
 <!doctype html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index - Lettres canadiennes</title>
+    <link href="../../style/style-general.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Index - Lettres canadiennes</title>
-  <link href="style-texte.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+  </head>
 
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-  </style>
-</head>
+  <body>
+    <header>
+      <nav class="header-container">
+        <p id="logo-title">Les lettres canadiennes</p>
+        <ul id="nav">
+          <li>
+            <a href="">Accueil</a>
+          </li>
+          <li class="active">
+            <button
+              id="btn-texte-popover"
+              class="btn-menu"
+              popovertarget="nav-texte-popover"
+            >
+              Texte<i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <div class="popover" id="nav-texte-popover" popover>
+              <a href="lettre70_p1.html">Lettres</a>
+              <a href="#">Transcription intégrale</a>
+            </div>
+          </li>
+          <li>
+            <button
+              id="btn-references-popover"
+              class="btn-menu"
+              popovertarget="nav-references-popover"
+            >
+              Références<i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <div class="popover" id="nav-references-popover" popover>
+              <a href="#">Ressources</a>
+              <a href="#">Documentation historique</a>
+              <a href="#">Données</a>
+              <a href="#">Index</a>
+            </div>
+          </li>
+          <li>
+            <button
+              id="btn-apropos-popover"
+              class="btn-menu"
+              popovertarget="nav-apropos-popover"
+            >
+              À propos<i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <div class="popover" id="nav-apropos-popover" popover>
+              <a href="#">Présentation du projet</a>
+              <a href="#">Introduction générale</a>
+              <a href="#">Choix éditoriaux</a>
+              <a href="#">Contributeurs</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="idx">
+        <h1>Index</h1>
+        <br />
+        <h2>Sujet</h2>
+        <ul>
+          <li>
+            Canada : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>,
+            <a href="#">Lettre 15</a>, <a href="#">Lettre 40</a>,
+            <a href="#">Lettre 52</a>, <a href="#">Lettre 68</a>,
+            <a href="#">Lettre 72</a>, <a href="#">Lettre 80</a>
+          </li>
+          <li>
+            Lettres adressées à sa famille :<a href="#">Lettre 2</a>,
+            <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>
+          </li>
+          <li>
+            Louis XIV : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>,
+            <a href="#">Lettre 15</a>, <a href="#">Lettre 40</a>
+          </li>
+          <li>
+            Paris : <a href="#">Lettre 52</a>, <a href="#">Lettre 68</a>,
+            <a href="#">Lettre 72</a>
+          </li>
+        </ul>
 
-<body>
-  <header>
-    <nav class="header-container">
-      <p id="logo-title">Les lettres canadiennes</p>
-      <ul id="nav">
-        <li>
-          <a href="">Accueil</a>
-        </li>
-        <li class="active">
-          <button id="btn-texte-popover" class="btn-menu" popovertarget="nav-texte-popover">
-            Texte<i class="fa-solid fa-chevron-up"></i>
-          </button>
-          <div class="popover" id="nav-texte-popover" popover>
-            <a href="lettre70_p1.html">Lettres</a>
-            <a href="#">Transcription intégrale</a>
-          </div>
-        </li>
-        <li>
-          <button id="btn-references-popover" class="btn-menu" popovertarget="nav-references-popover">
-            Références<i class="fa-solid fa-chevron-up"></i>
-          </button>
-          <div class="popover" id="nav-references-popover" popover>
-            <a href="#">Ressources</a>
-            <a href="#">Documentation historique</a>
-            <a href="#">Données</a>
-            <a href="#">Index</a>
-          </div>
-        </li>
-        <li>
-          <button id="btn-apropos-popover" class="btn-menu" popovertarget="nav-apropos-popover">
-            À propos<i class="fa-solid fa-chevron-up"></i>
-          </button>
-          <div class="popover" id="nav-apropos-popover" popover>
-            <a href="#">Présentation du projet</a>
-            <a href="#">Introduction générale</a>
-            <a href="#">Choix éditoriaux</a>
-            <a href="#">Contributeurs</a>
-          </div>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main>
+        <h2>Emprunt</h2>
+        <ul>
+          <li>
+            Gazette de Lyon : <a href="#">Lettre 2</a>,
+            <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>,
+            <a href="#">Lettre 40</a>
+          </li>
+          <li>
+            Gazette de Paris : <a href="#">Lettre 2</a>,
+            <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>,
+            <a href="#">Lettre 40</a>
+          </li>
+          <li>
+            Gazette étudiante :<a href="#">Lettre 2</a>,
+            <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>
+          </li>
+          <li>
+            La Gazette : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>,
+            <a href="#">Lettre 15</a>, <a href="#">Lettre 40</a>
+          </li>
+          <li>
+            Le Mercure des femmes : <a href="#">Lettre 2</a>,
+            <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>,
+            <a href="#">Lettre 40</a>
+          </li>
+          <li>
+            Mercure galant : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>,
+            <a href="#">Lettre 15</a>, <a href="#">Lettre 40</a>,
+            <a href="#">Lettre 52</a>, <a href="#">Lettre 68</a>,
+            <a href="#">Lettre 72</a>, <a href="#">Lettre 80</a>
+          </li>
+        </ul>
 
-    <div class="idx">
-      <h1>Index</h1>
-      <br />
-      <h2>Sujet</h2>
-      <ul>
-        <li>Canada : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>, <a href="#">Lettre
-            40</a>, <a href="#">Lettre 52</a>, <a href="#">Lettre 68</a>, <a href="#">Lettre 72</a>, <a href="#">Lettre
-            80</a></li>
-        <li>Lettres adressées à sa famille :<a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>, <a href="#">Lettre
-            15</a></li>
-        <li>Louis XIV : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>, <a
-            href="#">Lettre 40</a></li>
-        <li>Paris : <a href="#">Lettre 52</a>, <a href="#">Lettre 68</a>, <a href="#">Lettre 72</a></li>
-      </ul>
+        <h2>Mention</h2>
+        <ul>
+          <li>
+            Journal de Paris : <a href="#">Lettre 2</a>,
+            <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>,
+            <a href="#">Lettre 40</a>, <a href="#">Lettre 52</a>,
+            <a href="#">Lettre 68</a>, <a href="#">Lettre 72</a>,
+            <a href="#">Lettre 80</a>
+          </li>
+          <li>
+            Le petit journal : <a href="#">Lettre 2</a>,
+            <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>,
+            <a href="#">Lettre 40</a>
+          </li>
+          <li>
+            Les caractères :<a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>,
+            <a href="#">Lettre 15</a>
+          </li>
+          <li>
+            Métamorphose : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>,
+            <a href="#">Lettre 15</a>, <a href="#">Lettre 40</a>
+          </li>
+        </ul>
 
-      <h2>Emprunt</h2>
-      <ul>
-        <li>Gazette de Lyon : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>, <a
-            href="#">Lettre 40</a></li>
-        <li>Gazette de Paris : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>, <a
-            href="#">Lettre 40</a></li>
-        <li>Gazette étudiante :<a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>, <a href="#">Lettre
-            15</a></li>
-        <li>La Gazette : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>, <a
-            href="#">Lettre 40</a></li>
-        <li>Le Mercure des femmes : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>, <a
-            href="#">Lettre 40</a></li>
-        <li>Mercure galant : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>, <a
-            href="#">Lettre
-            40</a>, <a href="#">Lettre 52</a>, <a href="#">Lettre 68</a>, <a href="#">Lettre 72</a>, <a href="#">Lettre
-            80</a></li>
-      </ul>
+        <h2>Correspondant</h2>
+        <ul>
+          <li>
+            Destinataire inconnu : <a href="#">Lettre 2</a>,
+            <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>,
+            <a href="#">Lettre 134</a>
+          </li>
+          <li>
+            Hichet Henri : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>,
+            <a href="#">Lettre 15</a>, <a href="#">Lettre 40</a>,
+            <a href="#">Lettre 52</a>, <a href="#">Lettre 68</a>,
+            <a href="#">Lettre 72</a>, <a href="#">Lettre 80</a>
+          </li>
+          <li>
+            La mère de l'auteur :<a href="#">Lettre 2</a>,
+            <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>
+          </li>
+          <li>
+            Le frère de l'auteur : <a href="#">Lettre 2</a>,
+            <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>,
+            <a href="#">Lettre 40</a>
+          </li>
+        </ul>
 
-      <h2>Mention</h2>
-      <ul>
-        <li>Journal de Paris : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>, <a
-            href="#">Lettre
-            40</a>, <a href="#">Lettre 52</a>, <a href="#">Lettre 68</a>, <a href="#">Lettre 72</a>, <a href="#">Lettre
-            80</a></li>
-        <li>Le petit journal : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>, <a
-            href="#">Lettre 40</a></li>
-        <li>Les caractères :<a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>, <a href="#">Lettre
-            15</a></li>
-        <li>Métamorphose : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>, <a
-            href="#">Lettre 40</a></li>
-
-      </ul>
-
-      <h2>Correspondant</h2>
-      <ul>
-        <li>Destinataire inconnu : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>, <a
-            href="#">Lettre 134</a></li>
-        <li>Hichet Henri : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>, <a
-            href="#">Lettre
-            40</a>, <a href="#">Lettre 52</a>, <a href="#">Lettre 68</a>, <a href="#">Lettre 72</a>, <a href="#">Lettre
-            80</a></li>
-        <li>La mère de l'auteur :<a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>, <a href="#">Lettre
-            15</a></li>
-        <li>Le frère de l'auteur : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>, <a
-            href="#">Lettre 40</a></li>
-
-      </ul>
-
-      <h2>Lieu</h2>
-      <ul>
-        <li>Lorient : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>, <a href="#">Lettre
-            40</a></li>
-        <li>Lyon :<a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>, <a href="#">Lettre
-            15</a></li>
-        <li>Paris : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>, <a href="#">Lettre
-            40</a>, <a href="#">Lettre 52</a>, <a href="#">Lettre 68</a>, <a href="#">Lettre 72</a>, <a href="#">Lettre
-            80</a></li>
-        <li>Toronto : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>, <a href="#">Lettre 15</a>, <a href="#">Lettre
-            121</a></li>
-      </ul>
-
-    </div>
-  </main>
-  <footer>Footer</footer>
-</body>
-
+        <h2>Lieu</h2>
+        <ul>
+          <li>
+            Lorient : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>,
+            <a href="#">Lettre 15</a>, <a href="#">Lettre 40</a>
+          </li>
+          <li>
+            Lyon :<a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>,
+            <a href="#">Lettre 15</a>
+          </li>
+          <li>
+            Paris : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>,
+            <a href="#">Lettre 15</a>, <a href="#">Lettre 40</a>,
+            <a href="#">Lettre 52</a>, <a href="#">Lettre 68</a>,
+            <a href="#">Lettre 72</a>, <a href="#">Lettre 80</a>
+          </li>
+          <li>
+            Toronto : <a href="#">Lettre 2</a>, <a href="#">Lettre 8</a>,
+            <a href="#">Lettre 15</a>, <a href="#">Lettre 121</a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer>Footer</footer>
+  </body>
 </html>
