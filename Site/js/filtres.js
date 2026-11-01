@@ -220,11 +220,23 @@ const volume2_lettres = document.querySelectorAll(
   "#lettre-container-volume-2 .display-lettres span",
 );
 
+const compteur_lettres_selected_vol1 = document.querySelector(
+  "#btn-volume-1 .nombre-resultats span",
+);
+const compteur_lettres_selected_vol2 = document.querySelector(
+  "#btn-volume-2 .nombre-resultats span",
+);
+
 nb_lettres_selected_vol1 = volume1_lettres.length;
 nb_lettres_selected_vol2 = volume2_lettres.length;
 
 volume1_select_all.checked = true;
 volume2_select_all.checked = true;
+
+compteur_lettres_selected_vol1.innerHTML =
+  "Nombre de résultats : " + volume1_lettres.length;
+compteur_lettres_selected_vol2.innerHTML =
+  "Nombre de résultats : " + volume2_lettres.length;
 
 volume1_lettres.forEach((lettre) => {
   lettre.classList.add("lettre-select");
