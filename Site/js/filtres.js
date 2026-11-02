@@ -94,49 +94,30 @@ correspondants_checkbox.forEach((checkbox) => {
 
 //Lorsqu'on clique sur "Tout sélectionner", toutes les cases deviennent sélectionnées
 //Mais si la case était déjà sélectionnée, alors toutes les cases deviennent non-sélectionées
+function update_select_all_filtres(select_all, checkboxes) {
+  if (select_all.checked === true) {
+    checkboxes.forEach((checkbox) => {
+      checkbox.checked = true;
+    });
+  } else {
+    checkboxes.forEach((checkbox) => {
+      checkbox.checked = false;
+    });
+  }
+}
+
 sujet_select_all.addEventListener("click", (e) => {
-  if (sujet_select_all.checked === true) {
-    sujet_checkbox.forEach((checkbox) => {
-      checkbox.checked = true;
-    });
-  } else {
-    sujet_checkbox.forEach((checkbox) => {
-      checkbox.checked = false;
-    });
-  }
+  update_select_all_filtres(sujet_select_all, sujet_checkbox);
 });
+
 emprunts_select_all.addEventListener("click", (e) => {
-  if (emprunts_select_all.checked === true) {
-    emprunts_checkbox.forEach((checkbox) => {
-      checkbox.checked = true;
-    });
-  } else {
-    emprunts_checkbox.forEach((checkbox) => {
-      checkbox.checked = false;
-    });
-  }
+  update_select_all_filtres(emprunts_select_all, emprunts_checkbox);
 });
 mentions_select_all.addEventListener("click", (e) => {
-  if (mentions_select_all.checked === true) {
-    mentions_checkbox.forEach((checkbox) => {
-      checkbox.checked = true;
-    });
-  } else {
-    mentions_checkbox.forEach((checkbox) => {
-      checkbox.checked = false;
-    });
-  }
+  update_select_all_filtres(mentions_select_all, mentions_checkbox);
 });
 correspondants_select_all.addEventListener("click", (e) => {
-  if (correspondants_select_all.checked === true) {
-    correspondants_checkbox.forEach((checkbox) => {
-      checkbox.checked = true;
-    });
-  } else {
-    correspondants_checkbox.forEach((checkbox) => {
-      checkbox.checked = false;
-    });
-  }
+  update_select_all_filtres(correspondants_select_all, correspondants_checkbox);
 });
 
 //Si une case est manuellement déselectionnée, alors "Tout sélectionner" devient non-sélectionné
@@ -245,16 +226,20 @@ volume2_lettres.forEach((lettre) => {
   lettre.classList.add("lettre-select");
 });
 
-volume1_select_all.addEventListener("click", (e) => {
-  if (volume1_select_all.checked === true) {
-    volume1_lettres.forEach((lettre) => {
+function update_select_all_volume(volume_select_all, volume) {
+  if (volume_select_all.checked === true) {
+    volume.forEach((lettre) => {
       lettre.classList.add("lettre-select");
     });
   } else {
-    volume1_lettres.forEach((lettre) => {
+    volume.forEach((lettre) => {
       lettre.classList.remove("lettre-select");
     });
   }
+}
+
+volume1_select_all.addEventListener("click", (e) => {
+  update_select_all_volume(volume1_select_all, volume1_lettres);
 });
 
 volume1_lettres.forEach((lettre) => {
@@ -277,15 +262,7 @@ volume1_lettres.forEach((lettre) => {
 });
 
 volume2_select_all.addEventListener("click", (e) => {
-  if (volume2_select_all.checked === true) {
-    volume2_lettres.forEach((lettre) => {
-      lettre.classList.add("lettre-select");
-    });
-  } else {
-    volume2_lettres.forEach((lettre) => {
-      lettre.classList.remove("lettre-select");
-    });
-  }
+  update_select_all_volume(volume2_select_all, volume2_lettres);
 });
 
 volume2_lettres.forEach((lettre) => {
