@@ -238,8 +238,33 @@ function update_select_all_volume(volume_select_all, volume) {
   }
 }
 
+const link_lecture_selection = document.getElementById("btn-lecture-selection");
+
+function update_link_lecture_selection() {
+  lettres_selected = [];
+  volume1_lettres.forEach((lettre) => {
+    if (lettre.classList.contains("lettre-select")) {
+      lettres_selected.push(lettre.innerHTML.replace("Lettre ", ""));
+      console.log(lettre);
+    }
+  });
+  if (lettres_selected.length == 0) {
+    lettres_selected.push("1");
+  }
+  str_lettres_selected = "";
+  for (var i = 0; i < lettres_selected.length; i++) {
+    str_lettres_selected += lettres_selected[i] + "-";
+  }
+  link_lecture_selection.href =
+    "viewer_lettre.php?lettre=" +
+    lettres_selected[0] +
+    "&page=1&selection=" +
+    str_lettres_selected;
+}
+
 volume1_select_all.addEventListener("click", (e) => {
   update_select_all_volume(volume1_select_all, volume1_lettres);
+  update_link_lecture_selection();
 });
 
 volume1_lettres.forEach((lettre) => {
@@ -258,6 +283,7 @@ volume1_lettres.forEach((lettre) => {
       volume1_select_all.checked = true;
     }
     nb_lettres_selected_vol1 = 0;
+    update_link_lecture_selection();
   });
 });
 
