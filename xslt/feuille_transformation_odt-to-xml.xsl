@@ -24,19 +24,19 @@
     <!-- Paramètre de transformation des titres dans des balises head -->
 
     <xsl:template match="text:h[@text:outline-level = '1']">
-        <head>
+        <head type="1">
             <xsl:apply-templates/>
         </head>
     </xsl:template>
 
     <xsl:template match="text:h[@text:outline-level = '2']">
-        <head>
+        <head type="2">
             <xsl:apply-templates/>
         </head>
     </xsl:template>
 
     <xsl:template match="text:h[@text:outline-level = '3']">
-        <head>
+        <head type="3">
             <xsl:apply-templates/>
         </head>
         <lb/>
