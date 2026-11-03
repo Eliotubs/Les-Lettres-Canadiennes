@@ -23,13 +23,19 @@
     <!-- -->
     <!-- Paramètre de transformation des titres dans des balises head -->
 
+    <xsl:template match="text:h[@text:outline-level = '1']">
+        <head>
+            <xsl:apply-templates/>
+        </head>
+    </xsl:template>
+
     <xsl:template match="text:h[@text:outline-level = '2']">
         <head>
             <xsl:apply-templates/>
         </head>
     </xsl:template>
 
-    <xsl:template match="text:h[@text:style-name = 'titreh3' or @text:style-name='Titre_5f_h3']">
+    <xsl:template match="text:h[@text:outline-level = '3']">
         <head>
             <xsl:apply-templates/>
         </head>
@@ -47,7 +53,7 @@
 
     <!-- Balise avec attribue correspondant pour la section de destinataire de la lettre et destinataire -->
 
-    <xsl:template match="text:p[@text:style-name = 'destinataire' or @text:style-name = 'Destinataire']">
+    <xsl:template match="text:p[@text:style-name = 'correspAction']">
         <correspAction type="received"> <!-- information du destinataire : type="sent" pour l'expéditeur -->
             <p>
                 <xsl:apply-templates/>
@@ -56,7 +62,7 @@
         </correspAction>
     </xsl:template>
 
-    <xsl:template match="text:p[@text:style-name = 'description' or @text:style-name = 'Description']">
+    <xsl:template match="text:p[@text:style-name = 'argument']">
         <argument> <!-- résumé ou une introduction au début d'une section  -->
             <p>
                 <hi rend="italic">

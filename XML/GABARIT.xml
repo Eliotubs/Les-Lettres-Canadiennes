@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<office:document-content xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
+    xmlns:ooo="http://openoffice.org/2004/office"
+    xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0"
+    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0"
+    xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
+    xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"
+    xmlns:rpt="http://openoffice.org/2005/report"
+    xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"
+    xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0"
+    xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0"
+    xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0"
+    xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0"
+    xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"
+    xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc"
+    xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2"
+    xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:tableooo="http://openoffice.org/2009/table"
+    xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0"
+    xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0"
+    xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0"
+    xmlns:math="http://www.w3.org/1998/Math/MathML"
+    xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0"
+    xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0"
+    xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0"
+    xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:css3t="http://www.w3.org/TR/css3-text/"
+    xmlns:officeooo="http://openoffice.org/2009/office" office:version="1.4">
+    <office:scripts/>
+    <office:font-face-decls>
+        <style:font-face style:name="Aptos" svg:font-family="Aptos"
+            style:font-family-generic="swiss" style:font-pitch="variable"/>
+        <style:font-face style:name="Aptos Display" svg:font-family="&apos;Aptos Display&apos;"
+            style:font-family-generic="swiss" style:font-pitch="variable"/>
+        <style:font-face style:name="Calibri Light" svg:font-family="&apos;Calibri Light&apos;"
+            style:font-family-generic="swiss" style:font-pitch="variable"/>
+        <style:font-face style:name="Cambria" svg:font-family="Cambria"
+            style:font-family-generic="roman" style:font-pitch="variable"/>
+        <style:font-face style:name="Courier New" svg:font-family="&apos;Courier New&apos;"
+            style:font-family-generic="modern" style:font-pitch="fixed"/>
+        <style:font-face style:name="DengXian Light" svg:font-family="&apos;DengXian Light&apos;"
+            style:font-family-generic="system" style:font-pitch="variable"/>
+        <style:font-face style:name="Minion Pro" svg:font-family="&apos;Minion Pro&apos;"
+            style:font-family-generic="roman" style:font-pitch="variable"/>
+        <style:font-face style:name="Times New Roman" svg:font-family="&apos;Times New Roman&apos;"
+            style:font-family-generic="roman" style:font-pitch="variable"/>
+    </office:font-face-decls>
+    <office:automatic-styles>
+        <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Titre_20_1"
+            style:master-page-name="MP0">
+            <style:paragraph-properties style:page-number="auto" fo:break-before="page"/>
+        </style:style>
+        <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Titre_20_2">
+            <style:text-properties officeooo:paragraph-rsid="001a302c"/>
+        </style:style>
+        <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Destinataire">
+            <style:text-properties fo:language="fr" fo:country="CA"/>
+        </style:style>
+        <style:style style:name="T1" style:family="text">
+            <style:text-properties fo:language="fr" fo:country="CA"/>
+        </style:style>
+        <style:style style:name="T48" style:family="text">
+            <style:text-properties fo:language="fr" fo:country="CA" officeooo:rsid="0012e127"/>
+        </style:style>
+        <style:style style:name="T49" style:family="text">
+            <style:text-properties fo:language="fr" fo:country="CA" fo:background-color="#00ff00"
+                loext:char-shading-value="0"/>
+        </style:style>
+        <style:style style:name="T50" style:family="text">
+            <style:text-properties fo:language="fr" fo:country="CA"
+                fo:background-color="transparent" loext:char-shading-value="0"/>
+        </style:style>
+        <style:style style:name="T51" style:family="text">
+            <style:text-properties fo:language="fr" fo:country="CA" officeooo:rsid="00075bd8"
+                fo:background-color="transparent" loext:char-shading-value="0"/>
+        </style:style>
+        <style:style style:name="T52" style:family="text">
+            <style:text-properties fo:language="fr" fo:country="CA" fo:background-color="#00ffff"
+                loext:char-shading-value="0"/>
+        </style:style>
+        <style:style style:name="T53" style:family="text">
+            <style:text-properties fo:language="fr" fo:country="CA" fo:background-color="#ffff00"
+                loext:char-shading-value="0"/>
+        </style:style>
+        <style:style style:name="T54" style:family="text">
+            <style:text-properties style:text-position="0% 100%" fo:language="fr" fo:country="CA"/>
+        </style:style>
+        <style:style style:name="T55" style:family="text">
+            <style:text-properties fo:language="fr" fo:country="FR"/>
+        </style:style>
+    </office:automatic-styles>
+    <office:body>
+        <office:text>
+            <text:sequence-decls>
+                <text:sequence-decl text:display-outline-level="0" text:name="Illustration"/>
+                <text:sequence-decl text:display-outline-level="0" text:name="Table"/>
+                <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
+                <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
+                <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
+            </text:sequence-decls>
+            <text:h text:style-name="P2" text:outline-level="1"><text:span
+                    text:style-name="Police_20_par_20_défaut"><text:span text:style-name="T1">Titre
+                        de la lettre - niveau h</text:span></text:span><text:span
+                    text:style-name="Police_20_par_20_défaut"><text:span text:style-name="T48"
+                        >1</text:span></text:span><text:span
+                    text:style-name="Police_20_par_20_défaut"><text:span text:style-name="T1"
+                    > </text:span></text:span><text:span text:style-name="Police_20_par_20_défaut"
+                        ><text:span text:style-name="T49"
+                >[datte-AAAA]</text:span></text:span></text:h>
+            <text:h text:style-name="P3" text:outline-level="2">Titre niveau 2 – style de
+                pragraphe</text:h>
+            <text:h text:style-name="Titre_20_3" text:outline-level="3"><text:span
+                    text:style-name="Police_20_par_20_défaut"><text:span text:style-name="T50">Titre
+                        de niveau 3 - style de paragraphe </text:span></text:span><text:span
+                    text:style-name="Police_20_par_20_défaut"><text:span text:style-name="T51"
+                        >(Titreh3)</text:span></text:span></text:h>
+            <text:p text:style-name="P4"/>
+            <text:p text:style-name="correspAction"><text:span
+                    text:style-name="Police_20_par_20_défaut"><text:span text:style-name="T1"
+                        >Destinataire de la lettre... </text:span></text:span><text:span
+                    text:style-name="Police_20_par_20_défaut"><text:span text:style-name="T52">lieux
+                        en bleu</text:span></text:span><text:span
+                    text:style-name="Police_20_par_20_défaut"><text:span text:style-name="T1"> et
+                    </text:span></text:span><text:span text:style-name="Police_20_par_20_défaut"
+                        ><text:span text:style-name="T53">personne en
+                jaune</text:span></text:span></text:p>
+            <text:p text:style-name="argument">Description de la lettre : sujet évoque, nom de
+                personne ou lieux</text:p>
+            <text:p text:style-name="argument"/>
+            <text:p text:style-name="Normal"><text:span text:style-name="Police_20_par_20_défaut"
+                        ><text:span text:style-name="T1">Corps du texte, utiliser avec le style
+                        “corps de texte”. Ce dernier peut contenir des numéro de page
+                    </text:span></text:span><text:span text:style-name="Numero_20_de_20_page"
+                        ><text:span text:style-name="T1">[style : “numéro de
+                    page”].</text:span></text:span><text:span
+                    text:style-name="Police_20_par_20_défaut"><text:span text:style-name="T1"> Il
+                        contient aussi des notes de bas de page identifiable avec un numéro
+                        attribuer à la fin de la phrase</text:span></text:span><text:span
+                    text:style-name="Appel_20_note_20_de_20_bas_20_de_20_p."><text:span
+                        text:style-name="T54"><text:note text:id="ftn1" text:note-class="footnote">
+                            <text:note-citation>1</text:note-citation>
+                            <text:note-body>
+                                <text:p text:style-name="Note_20_de_20_bas_20_de_20_page"
+                                        ><text:s/><text:span
+                                        text:style-name="Police_20_par_20_défaut"><text:span
+                                            text:style-name="T55">La note de bas de page arrive ici.
+                                        </text:span></text:span></text:p>
+                            </text:note-body>
+                        </text:note></text:span></text:span><text:span
+                    text:style-name="Police_20_par_20_défaut"><text:span text:style-name="T1">.
+                    </text:span></text:span></text:p>
+            <text:p text:style-name="Normal"><text:span text:style-name="Police_20_par_20_défaut"
+                        ><text:span text:style-name="T1">Il existe également un style de
+                    </text:span></text:span><text:span text:style-name="Titre_20_ouvrage"
+                    >titre_ouvrage</text:span><text:span text:style-name="Police_20_par_20_défaut"
+                        ><text:span text:style-name="T1"> pour les Nom
+                    d’ouvrage...</text:span></text:span></text:p>
+            <text:p text:style-name="Normal">Attention à ne pas surligner les numéros de bas de page
+                si ces derniers ne sont pas concernés. Cela peut entraîner un beug lors de la
+                transformation XSL. </text:p>
+            <text:p text:style-name="Normal"><text:span text:style-name="Police_20_par_20_défaut"
+                    >Pour pouvoir récupérer les styles, il suffit de copier-coller cette page dans
+                    un éditeur de texte (LibreOffice ou Word). Attention ! Le document doit être
+                    enregistrer sous format ODT pour la transformation. </text:span></text:p>
+        </office:text>
+    </office:body>
+</office:document-content>
