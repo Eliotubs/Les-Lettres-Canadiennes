@@ -44,7 +44,7 @@
     
     <!-- Paramètre de transformation du corps de texte dans des balises p -->
 
-    <xsl:template match="text:p[@text:style-name = 'Normal']">
+    <xsl:template match="text:p[@text:style-name = 'Normal' or @text:style-name = 'Police_20_par_20_défaut']">
         <p>
             <xsl:apply-templates/>
         </p>
