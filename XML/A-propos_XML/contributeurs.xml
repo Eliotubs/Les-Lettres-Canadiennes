@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
+    xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"
+    xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
+    xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0">
+    <teiHeader/>
+    <text>
+        <body>
+            <head type="1">Collaborateurs·trices</head>
+            <p>Beverley Hinterhoeller</p>
+            <lb/>
+            <p>Cheryl Harper</p>
+            <lb/>
+            <p>Daniel Blondin</p>
+            <lb/>
+            <p>Elizabeth Ferretti</p>
+            <lb/>
+            <p>Francesseca Lelong</p>
+            <lb/>
+            <p>Isabelle Laberge</p>
+            <lb/>
+            <p>Jean-François Lozier</p>
+            <lb/>
+            <p>Jeanette Schramm</p>
+            <lb/>
+            <p>Jillian Harper</p>
+            <lb/>
+            <p>Jordon Bell</p>
+            <lb/>
+            <p>Katelynn Vautour</p>
+            <lb/>
+            <p>Kimvy Ngo</p>
+            <lb/>
+            <p>Lubuya Tshiswaka</p>
+            <lb/>
+            <p>Malika Rogosin</p>
+            <lb/>
+            <p>Maxine Monsour</p>
+            <lb/>
+            <p>Megan Quin</p>
+            <lb/>
+            <p>Mélissa Poirier Chapdelaine</p>
+            <lb/>
+            <p>Natalia Fomenko</p>
+            <lb/>
+            <p>Natalie Mohamed</p>
+            <lb/>
+            <p>Pamela Pascal</p>
+            <lb/>
+            <p>Petronella Duda</p>
+            <lb/>
+            <p>Raven Desroches</p>
+            <lb/>
+            <p>Rebecca Sykes</p>
+            <lb/>
+            <p>Sabrina Diotte</p>
+            <lb/>
+            <p>Sarah Parvaiz</p>
+            <lb/>
+            <p>Sébastien Drouin</p>
+            <lb/>
+            <p>Serge Akono Ekomo</p>
+            <lb/>
+            <p>Stephanie Elliott</p>
+            <lb/>
+            <p>Tanya Megaro</p>
+            <lb/>
+            <p>Tessa Sharpe</p>
+            <lb/>
+            <p>Transkribus</p>
+            <lb/>
+            <p/>
+            <lb/>
+        </body>
+    </text>
+</TEI>
