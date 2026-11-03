@@ -857,6 +857,7 @@ td {
   background-color: rgba(216, 215, 215, 0.445);
 }
 
+
 /* //////////////////// */
 /* MENU>INDEX */
 /* //////////////////// */
@@ -869,11 +870,19 @@ td {
 .idx h1 {
   text-align: center;
   margin-top: 100px;
+  color: #000;
 }
 
 .idx h2 {
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.idx li{
+  list-style-type: disc;
+  margin: 10px;
+  margin-left: 20px;
+
 }
 
 .idx a {
