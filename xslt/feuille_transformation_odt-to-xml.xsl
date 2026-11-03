@@ -7,6 +7,8 @@
     xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0">
     <xsl:strip-space elements="*"/>
 
+    <!-- Affichage du contenu par template -->
+
     <xsl:template match="/">
         <TEI>
             <teiHeader/>
@@ -19,6 +21,7 @@
     </xsl:template>
 
     <!-- -->
+    <!-- Paramètre de transformation des titres dans des balises head -->
 
     <xsl:template match="text:h[@text:outline-level = '2']">
         <head>
@@ -26,19 +29,23 @@
         </head>
     </xsl:template>
 
-    <xsl:template match="text:h[@text:style-name = 'titreh3']">
+    <xsl:template match="text:h[@text:style-name = 'titreh3' or @text:style-name='Titre_5f_h3']">
         <head>
             <xsl:apply-templates/>
         </head>
         <lb/>
     </xsl:template>
+    
+    <!-- Paramètre de transformation du corps de texte dans des balises p -->
 
     <xsl:template match="text:p[@text:style-name = 'Normal']">
         <p>
             <xsl:apply-templates/>
         </p>
-        <lb/>
+        <lb/> <!-- lb permet des retours à la ligne -->
     </xsl:template>
+
+    <!-- Balise avec attribue correspondant pour la section de destinataire de la lettre et destinataire -->
 
     <xsl:template match="text:p[@text:style-name = 'destinataire' or @text:style-name = 'Destinataire']">
         <correspAction type="received"> <!-- information du destinataire : type="sent" pour l'expéditeur -->
@@ -60,6 +67,7 @@
         </argument>
     </xsl:template>
 
+    <!-- Selection des notes et attribution d'un numéro (permet d'en compter le nombre) -->
 
     <xsl:template match="text:span[@text:style-name = 'numero_20_de_20_page' or @text:style-name ='Numerodepage']">
         <xsl:variable name="page"
@@ -71,15 +79,17 @@
             <xsl:apply-templates/>
         </pb>
     </xsl:template>
+    
+    <!-- Identifier les titres d'ouvrage et mise en italique -->
 
-    <xsl:template match="text:span[@text:style-name = 'titre_ouvrageCar']">
-        <hi rend="italique" type="titre_ouvrage">
+    <xsl:template match="text:span[@text:style-name = 'Titre_20_ouvrage']">
+        <hi rend="italique" type="Titre_20_ouvrage">
             <xsl:apply-templates/>
         </hi>
     </xsl:template>
 
-
-
+    <!-- Boucle : pour les balises dates, persnames et placename -->
+    
     <xsl:template match="text:span">
         <xsl:variable name="styleName" select="@text:style-name"/>
         <xsl:variable name="properties"
@@ -91,7 +101,7 @@
 
 
         <xsl:choose>
-            <!-- Vert -> date -->
+            <!-- Vert -> date --> <!-- doublons de couleurs maj et min pour éviter les beugs -->
             <xsl:when test="$bgColor = '#00ff00' or $bgColor = '#00FF00'">
                 <date>
                     <xsl:call-template name="appliquer-format-texte">
@@ -101,7 +111,7 @@
                 </date>
             </xsl:when>
 
-            <!-- Cyan -> placeName (Correction du doublon de couleur) -->
+            <!-- Cyan -> placeName -->
             <xsl:when test="$bgColor = '#00ffff' or $bgColor = '#00FFFF'">
                 <placeName>
                     <xsl:call-template name="appliquer-format-texte">
@@ -121,7 +131,7 @@
                 </persName>
             </xsl:when>
 
-            <!-- Pas de couleur -> On applique directement le format de texte sans balise enveloppante -->
+            <!-- Pas de couleur --> 
             <xsl:otherwise>
                 <xsl:call-template name="appliquer-format-texte">
                     <xsl:with-param name="it" select="$caracter_it"/>
@@ -131,13 +141,14 @@
         </xsl:choose>
     </xsl:template>
 
-    <!-- Sous-template optimisé pour cumuler proprement gras et italique -->
+    <!-- cumulation du gras et de l'italique en même temps -->
+    
     <xsl:template name="appliquer-format-texte">
         <xsl:param name="it"/>
         <xsl:param name="bold"/>
 
         <xsl:choose>
-            <!-- Cas : Gras ET Italique en même temps -->
+            <!-- Cas : Gras et Italique en même temps -->
             <xsl:when
                 test="($it = 'italic' or $it = '#italic') and ($bold = 'bold' or $bold = '#bold')">
                 <hi rend="bold">
@@ -167,6 +178,7 @@
 
 
     <!-- Introduire les notes -->
+    
     <xsl:template match="text:note">
         <!-- On compte le numéro de la note -->
         <xsl:variable name="note" select="count(preceding::text:note) + 1"/>
