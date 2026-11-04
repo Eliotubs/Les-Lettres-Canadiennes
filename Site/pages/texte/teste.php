@@ -70,13 +70,15 @@
       </nav>
     </header>
 
+<!-- Trouver un moyen de mettre du php dans le sommaire pour qu'il s'automatise -->
     <main>
       <div class="sommaire-container">
         <div class="sommaire">
           <div class="accordeon_titre">Sommaire</div>
           <div class="accordeon_content">
             <p class="volume">Volume 1</p>
-            <p class="point"><a href="#Lettre_12">Lettre 12</a></p>
+            <p class="point"> 
+            <a href="#Lettre_12">Lettre 12</a></p>
             <p class="volume">Volume 2</p>
             <p class="point"><a href="#Lettre_32">Lettre 32</a></p>
           </div>
@@ -110,19 +112,15 @@ $lettres = [
     'C:\wamp64\www\Les-Lettres-Canadiennes\XML\Lettres_XML\l70.xml'
 ];
 
-
 // copier les chemin en intégralité
 $xslFile = 'C:\wamp64\www\Les-Lettres-Canadiennes\xslt\tei-html.xsl';
-
 
 // Chargement unique de la feuille XSL
 $xsl = new DOMDocument();
 $xsl->load($xslFile);
 
-
 $processor = new XSLTProcessor();
 $processor->importStyleSheet($xsl);
-
 
 // Boucle sur les 3 documents
 foreach ($lettres as $index => $xmlPath) {
@@ -152,20 +150,9 @@ foreach ($lettres as $index => $xmlPath) {
     }
 }
 ?>
-
 </div>
 <!-- Balise avec nom pour la mise en forme plus valide -->
-            <div id="#Lettre_12">
-              <div class="text-body">
-                <div id="texte-normalise"></div>
-              </div>
-            </div>
-
-            <div id="#Lettre_32">
-             <div class="text-body">
-              <div id="texte-normalise"></div>
-            </div>
-          </div>      
+            
               </div>
             </div>
           </div>
