@@ -1,21 +1,26 @@
-document.getElementById('btn-export-xml').addEventListener('click', function () {
-    
-   const liens = document.querySelectorAll('$lettres=".xml"]'); // Ajustez le sélecteur si besoin
 
-    if (liens.length === 0) {
-        alert("Aucun lien XML trouvé sur la page.");
-        return;
-    }
+document.addEventListener('DOMContentLoaded', function () {
+    const boutonExport = document.getElementById('btn-export-xml');
 
-    // 2. On prend le premier lien et on force son téléchargement
-    const urlXml = liens[0].href;
-    
-    // Création d'un lien invisible pour forcer le téléchargement
-    const a = document.createElement('a');
-    a.href = urlXml;
-    a.download = ''; // Le navigateur télécharge le fichier cible
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+    if (!boutonExport) return;
+
+    boutonExport.addEventListener('click', function () {
+        // La variable "liensXml" vient de la page HTML
+        if (typeof liensXml === 'undefined' || liensXml.length === 0) {
+            alert("Aucun fichier à télécharger.");
+            return;
+        }
+
+        liensXml.forEach((cheminWeb, index) => {
+            setTimeout(() => {
+                const a = document.createElement('a');
+                a.href = cheminWeb;
+                a.download = cheminWeb.split('/').pop(); 
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            }, index * 300);
+        });
+    });
 });
   
