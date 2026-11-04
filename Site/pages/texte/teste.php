@@ -127,7 +127,7 @@ $proc->importStyleSheet($xsl); // Attacher la règle XSLT
 echo $proc->transformToXML($xml);
 ?>
 
-
+<!-- Balise avec nom pour la mise en forme plus valide -->
             <div id="#Lettre_12">
               <div class="text-body">
                 <div id="texte-normalise"></div>
