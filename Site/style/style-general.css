@@ -267,6 +267,12 @@ main {
   border-radius: 100px;
 }
 
+.mh-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .main-body {
   display: grid;
   grid-template-columns: minmax(400px, 40%) 5px minmax(400px, 60%);
@@ -857,7 +863,6 @@ td {
   background-color: rgba(216, 215, 215, 0.445);
 }
 
-
 /* //////////////////// */
 /* MENU>INDEX */
 /* //////////////////// */
@@ -878,11 +883,10 @@ td {
   margin-bottom: 10px;
 }
 
-.idx li{
+.idx li {
   list-style-type: disc;
   margin: 10px;
   margin-left: 20px;
-
 }
 
 .idx a {
