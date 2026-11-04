@@ -253,14 +253,15 @@ function update_link_lecture_selection() {
   }
   str_lettres_selected = "";
   for (var i = 0; i < lettres_selected.length; i++) {
-    str_lettres_selected += lettres_selected[i] + "-";
+    str_lettres_selected += "l" + lettres_selected[i] + "-";
   }
   link_lecture_selection.href =
-    "viewer_lettre.php?lettre=" +
+    "viewer_lettre.php?lettre=l" +
     lettres_selected[0] +
     "&page=1&selection=" +
     str_lettres_selected;
 }
+update_link_lecture_selection();
 
 volume1_select_all.addEventListener("click", (e) => {
   update_select_all_volume(volume1_select_all, volume1_lettres);
