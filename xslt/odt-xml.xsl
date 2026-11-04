@@ -77,15 +77,9 @@
 
     <!-- Selection des notes et attribution d'un numéro (permet d'en compter le nombre) -->
 
-    <xsl:template match="text:span[@text:style-name = 'numero_20_de_20_page' or @text:style-name ='Numerodepage']">
-        <xsl:variable name="page"
-            select="count(preceding::text:span[@text:style-name = 'numero_20_de_20_page' or @text:style-name ='Numerodepage']) + 1"/>
-        <pb>
-            <xsl:attribute name="n">
-                <xsl:value-of select="$page"/>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </pb>
+    <xsl:template match="text:span[@text:style-name = 'numero_20_de_20_page' or @text:style-name = 'Numero_20_de_20_page' or @text:style-name ='Numerodepage']">
+        <pb n="{count(preceding::text:span[@text:style-name = 'numero_20_de_20_page' or @text:style-name = 'Numero_20_de_20_page' or @text:style-name ='Numerodepage']) + 1}"/>
+        <xsl:apply-templates/>
     </xsl:template>
     
     <!-- Identifier les titres d'ouvrage et mise en italique -->
