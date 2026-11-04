@@ -98,6 +98,36 @@
           <div class="transcription_integral" id="contenu-lettre">
             <!-- identifiant unique pour l'export / il est parent de la seclection, il prend donc toutes les lettres -->
 
+          <?php
+// Création d'un arary pour stocker toutes les lettres présentes
+            $lettres = [
+                'l12' => 'Lettre 12',
+                'l32' => 'Lettre 32',
+                'l70' => 'Lettre 70',
+];
+//Récupération dans l'url des paramètres
+$lettre = $_GET['lettre'] ?? ''; //le numéro de la lettre choisie
+
+$fichierXML = __DIR__ . '/../../../XML/Lettres_XML/' . $lettre . '.xml';
+$fichierXSL = __DIR__ . '/../../../xslt/tei-html.xsl';
+
+// 2. Charger le fichier XML
+$xml = new DOMDocument();
+$xml->load($fichierXml);
+
+// 3. Charger la feuille XSLT
+$xsl = new DOMDocument();
+$xsl->load($fichierXslt);
+
+// 4. Configurer le processeur de transformation
+$proc = new XSLTProcessor();
+$proc->importStyleSheet($xsl); // Attacher la règle XSLT
+
+// 5. Appliquer la transformation et afficher le résultat en HTML
+echo $proc->transformToXML($xml);
+?>
+
+
             <div id="#Lettre_12">
               <div class="text-body">
                 <div id="texte-normalise"></div>
