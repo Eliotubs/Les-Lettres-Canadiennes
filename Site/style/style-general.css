@@ -319,6 +319,10 @@ main {
   padding: 20px;
 }
 
+.text-header {
+  user-select: none;
+}
+
 .text-body {
   max-width: 800px;
   margin: 0 auto;
@@ -342,7 +346,7 @@ main {
 }
 
 .text-body p:first-of-type {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .text-body p:not(:last-child) {
@@ -412,10 +416,18 @@ main {
   position: relative;
 }
 
+.btn-pages {
+  align-self: center;
+}
+
 #btn-page-pre {
   border: 1px solid var(--gris120);
   padding: 5px 10px;
   border-radius: 100px 0 0 100px;
+}
+
+#btn-page-pre i {
+  rotate: 270deg;
 }
 
 #btn-page-fol {
@@ -424,7 +436,11 @@ main {
   border-radius: 0 100px 100px 0;
 }
 
-#page-number {
+#btn-page-fol i {
+  rotate: 90deg;
+}
+
+#numero-page {
   position: absolute;
   right: 0;
   font-size: 0.8rem;

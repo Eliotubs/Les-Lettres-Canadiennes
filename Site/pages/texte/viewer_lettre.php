@@ -199,9 +199,11 @@ if (isset($lettres[$lettre])) {
                     </div>
                     <!-- Injectation de l'image du manuscrit -->
                     <?php if ($page !== '' && $html !== ''): ?>
-                        <div class="image">
-                            <img src="<?= htmlspecialchars($image) ?>"
-                                alt="Photographie du manuscrit, page <?= htmlspecialchars($page) ?>">
+                        <div class="ressources-body">
+                            <div class="image">
+                                <img src="<?= htmlspecialchars($image) ?>"
+                                    alt="Photographie du manuscrit, page <?= htmlspecialchars($page) ?>">
+                            </div>
                         </div>
                     <?php endif; ?>
                 </div>
@@ -219,25 +221,27 @@ if (isset($lettres[$lettre])) {
                         <?php endif; ?>
                     </div>
                     <div class="text-footer">
-                        <!-- Injectation des flèches pour se déplacer dans les pages -->
-                        <?php if ($page !== '' && $html !== ''): ?>
-                            <?php if (isset($pages[$index - 1])): ?>
-                                <a class="btn-page-pre"
-                                    href="?lettre=<?= urlencode($lettre) ?>&page=<?= urlencode($pages[$index - 1]['n']) ?>">
-                                    ← Page précédente
-                                </a>
+                        <div class="btn-pages">
+                            <!-- Injectation des flèches pour se déplacer dans les pages -->
+                            <?php if ($page !== '' && $html !== ''): ?>
+                                <?php if (isset($pages[$index - 1])): ?>
+                                    <a id="btn-page-pre"
+                                        href="?lettre=<?= urlencode($lettre) ?>&page=<?= urlencode($pages[$index - 1]['n']) ?>">
+                                        <i class="fa-solid fa-chevron-up"></i>
+                                    </a>
+                                <?php endif; ?>
+                                <?php if (isset($pages[$index + 1])): ?>
+                                    <a id="btn-page-fol"
+                                        href="?lettre=<?= urlencode($lettre) ?>&page=<?= urlencode($pages[$index + 1]['n']) ?>">
+                                        <i class="fa-solid fa-chevron-up"></i>
+                                    </a>
+                                <?php endif; ?>
                             <?php endif; ?>
-                            <?php if (isset($pages[$index + 1])): ?>
-                                <a class="btn-page-fol"
-                                    href="?lettre=<?= urlencode($lettre) ?>&page=<?= urlencode($pages[$index + 1]['n']) ?>">
-                                    Page suivante →
-                                </a>
-                            <?php endif; ?>
-                        <?php endif; ?>
+                        </div>
 
                         <!-- Affichage dynamique de la page actuelle -->
-                        <span>Page
-                            <?= htmlspecialchars($page) ?>
+                        <span id="numero-page">Page
+                            <?= htmlspecialchars($page) ?> sur <?= htmlspecialchars(count($pages)) ?>
                         </span>
                     </div>
                 </div>
