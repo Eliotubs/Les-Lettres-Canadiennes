@@ -97,36 +97,42 @@
 
           <div class="transcription_integral" id="contenu-lettre">
             <!-- identifiant unique pour l'export / il est parent de la seclection, il prend donc toutes les lettres -->
-
+          <div class="text-body">
           <?php
-// Création d'un arary pour stocker toutes les lettres présentes
-            $lettres = [
-                'l12' => 'Lettre 12',
-                'l32' => 'Lettre 32',
-                'l70' => 'Lettre 70',
+
+// Je n'ai pas réussie à invoquer le TEI_CORPUS : ceci est une solution bricolage à redéfinir pendant le stage
+// Tableau Aray des lettres
+
+$lettres = [
+    'C:\wamp64\www\Les-Lettres-Canadiennes\XML\Lettres_XML\l12.xml',
+    'C:\wamp64\www\Les-Lettres-Canadiennes\XML\Lettres_XML\l32.xml',
+    'C:\wamp64\www\Les-Lettres-Canadiennes\XML\Lettres_XML\l70.xml'
 ];
-//Récupération dans l'url des paramètres
-$lettre = $_GET['lettre'] ?? ''; //le numéro de la lettre choisie
 
-$fichierXML = __DIR__ . '/../../../XML/Lettres_XML/' . $lettre . '.xml';
-$fichierXSL = __DIR__ . '/../../../xslt/tei-html.xsl';
+// copier les chemin en intégralité
+$xslFile = 'C:\wamp64\www\Les-Lettres-Canadiennes\xslt\tei-html.xsl';
 
-// 2. Charger le fichier XML
-$xml = new DOMDocument();
-$xml->load($fichierXml);
-
-// 3. Charger la feuille XSLT
+// Chargement unique de la feuille XSL
 $xsl = new DOMDocument();
-$xsl->load($fichierXslt);
+$xsl->load($xslFile);
 
-// 4. Configurer le processeur de transformation
-$proc = new XSLTProcessor();
-$proc->importStyleSheet($xsl); // Attacher la règle XSLT
+$processor = new XSLTProcessor();
+$processor->importStyleSheet($xsl);
 
-// 5. Appliquer la transformation et afficher le résultat en HTML
-echo $proc->transformToXML($xml);
+// Boucle sur les 3 documents
+foreach ($lettres as $index => $xmlPath) {
+    if (file_exists($xmlPath)) {
+        $xml = new DOMDocument();
+        $xml->load($xmlPath);
+        
+        echo "<div>";
+        // Affiche le résultat transformé (HTML ou autre)
+        echo $processor->transformToXML($xml);
+        echo "</div>";
+    }
+}
 ?>
-
+</div>
 <!-- Balise avec nom pour la mise en forme plus valide -->
             <div id="#Lettre_12">
               <div class="text-body">
