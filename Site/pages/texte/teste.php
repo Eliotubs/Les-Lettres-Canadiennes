@@ -98,8 +98,9 @@
           <div class="transcription_integral" id="contenu-lettre">
             <!-- identifiant unique pour l'export / il est parent de la seclection, il prend donc toutes les lettres -->
           <div class="text-body">
+          
+          
           <?php
-
 // Je n'ai pas réussie à invoquer le TEI_CORPUS : ceci est une solution bricolage à redéfinir pendant le stage
 // Tableau Aray des lettres
 
@@ -109,15 +110,19 @@ $lettres = [
     'C:\wamp64\www\Les-Lettres-Canadiennes\XML\Lettres_XML\l70.xml'
 ];
 
+
 // copier les chemin en intégralité
 $xslFile = 'C:\wamp64\www\Les-Lettres-Canadiennes\xslt\tei-html.xsl';
+
 
 // Chargement unique de la feuille XSL
 $xsl = new DOMDocument();
 $xsl->load($xslFile);
 
+
 $processor = new XSLTProcessor();
 $processor->importStyleSheet($xsl);
+
 
 // Boucle sur les 3 documents
 foreach ($lettres as $index => $xmlPath) {
@@ -125,13 +130,29 @@ foreach ($lettres as $index => $xmlPath) {
         $xml = new DOMDocument();
         $xml->load($xmlPath);
         
+        // --- DÉBUT DU FILTRAGE (Bricolage PHP) ---
+        $xpath = new DOMXPath($xml);
+        
+        // Supprimer toutes les notes
+        foreach ($xpath->query('//*[local-name()="note"]') as $node) {
+            $node->parentNode->removeChild($node);
+        }
+        
+        // Ne garder que le body (en supprimant teiHeader, front, back)
+        foreach ($xpath->query('//*[local-name()="teiHeader" or local-name()="front" or local-name()="back"]') as $node) {
+            $node->parentNode->removeChild($node);
+        }
+        // --- FIN DU FILTRAGE ---
+
         echo "<div>";
         // Affiche le résultat transformé (HTML ou autre)
         echo $processor->transformToXML($xml);
         echo "</div>";
+        
     }
 }
 ?>
+
 </div>
 <!-- Balise avec nom pour la mise en forme plus valide -->
             <div id="#Lettre_12">
