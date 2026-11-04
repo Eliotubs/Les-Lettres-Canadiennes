@@ -150,8 +150,6 @@ foreach ($lettres as $index => $xmlPath) {
 }
 ?>
 </div>
-<!-- Balise avec nom pour la mise en forme plus valide -->
-            
               </div>
             </div>
           </div>
@@ -167,6 +165,7 @@ foreach ($lettres as $index => $xmlPath) {
     <script src="../../js/export-pdf.js"></script>
     <script src="../../js/export-txt.js"></script>
     <script src="../../js/export-xml.js"></script>
+      <script> const liensXml = <?php echo json_encode($lettres); ?>;</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   </body>
 </html>
