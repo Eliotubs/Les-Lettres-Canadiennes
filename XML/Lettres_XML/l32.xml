@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0"
-    xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
-    xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
-    xmlns:tei="http://www.tei-c.org/ns/1.0"
-    xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0">
+     xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
+     xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
+     xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -11,7 +12,7 @@
                 <author anonymous="true"/>
                 <!-- auteur anonyme -->
                 <!-- éditeur scientifique -->
-                <editor xml:id="#">Sébastien Côté</editor>
+                <editor xml:id="a">Sébastien Côté</editor>
             </titleStmt>
             <publicationStmt/>
             <sourceDesc>
@@ -32,22 +33,18 @@
     </teiHeader>
     <text>
         <body>
-            <pb n="1">[186]</pb>
+            <pb n="1" facs="../../images/manuscrit/lettre32/lettre32-p1.JPG"/>
             <head type='n2'>Lettre 32<date>[1702]</date></head>
-            <p/>
-            <lb/>
             <correspAction type="received">
                 <p>
                     <persName>À un ami qui veut entrer dans les ordres sacrés</persName>
                 </p>
-                <lb/>
             </correspAction>
             <argument>
                 <p>
                     <hi rend="italic">Histoire d’un récollet de ses amis qui a abjuré sa religion,
                         et de la manière qu’il fit.</hi>
                 </p>
-                <lb/>
             </argument>
             <p>Fais-moi donc savoir si tu m’aimes autant que par le passé. Je pourrais avec toute
                 justice être en doute là-dessus, parce que tu ne m’écris pas et que je ne sais de
@@ -58,7 +55,7 @@
                 tu ne songes plus qu’à élever ton âme à Dieu pour le supplier de t’éclairer à bien
                 entrer, à bien vivre et à bien mourir dans les fonctions de ton sacerdoce.</p>
             <lb/>
-            <p>Reçois donc, je te prie, de bon cœur mon compliment<pb n="2">[187]</pb>sur ce que
+            <p>Reçois donc, je te prie, de bon cœur mon compliment</p><pb n="2" facs="../../images/manuscrit/lettre32/lettre32-p2.JPG">[187]</pb><p>sur ce que
                 j’ai appris que tu voulais être prêtre. Cette nouvelle me cause un vrai plaisir. Je
                 t’invite à persister dans cette bonne résolution, si tu sens en toi-même une sainte
                 ardeur qui te pousse à entrer dans cet état ; que tu sentes, dis-je, secrètement que
@@ -69,8 +66,8 @@
                 retenue, une piété plus exemplaire, et à des mœurs bien plus réglées, qui ne
                 laissent point lieu de douter qu’ils ne soient ou des parfaits imitateurs des
                 saints, ou des saints même. Je prie l’éternel en ce moment, quoiqu’indigne des
-                grâces qui te sont si nécessaires, et qu’il fasse en toi un saint<pb n="3"
-                    >[188]</pb>modèle accompli de toute la piété, la charité et la vertu, qui sont
+                grâces qui te sont si nécessaires, et qu’il fasse en toi un saint</p><pb n="3" facs="../../images/manuscrit/lettre32/lettre32-p3.JPG"
+                >[188]</pb><p>modèle accompli de toute la piété, la charité et la vertu, qui sont
                 les caractères inséparables d’un bon ministre de la parole de Dieu. Tu verras dans
                 l’histoire suivante celle d’un homme bien opposé à ces saintes maximes.</p>
             <lb/>
@@ -85,10 +82,10 @@
                 suite, aussi bien que l’envie qu’il avait depuis longtemps d’apostasier, ce qu’il
                 accomplit ainsi.</p>
             <lb/>
-            <p><pb n="4">[189]</pb>Il est d’usage chez ces bons religieux d’aller à la quête une
+            <pb n="4" facs="../../images/manuscrit/lettre32/lettre32-p4.JPG">[189]</pb><p>Il est d’usage chez ces bons religieux d’aller à la quête une
                 fois l’an. Pour cet effet, ils choisissent la saison du printemps, qui est la plus
                 belle, et ils envoient un des leurs dans un grand bateau qui est mené par quatre
-                soldats, qu’ils défraient seulement pour tout salaire et qui leur aide à recueillir
+                soldats, qu’ils défraient tout salaire et qui l seulement poureur aide à recueillir
                 les denrées et autres choses qu’on veut bien leur donner dans cette quête.</p>
             <lb/>
             <p>Celui de qui je parle fut cette année-là un de ceux sur qui on jeta les yeux, dans la
@@ -99,22 +96,22 @@
             <p>La première chose qu’il fit en s’embarquant dans son bateau fut d’y faire charger un
                 grand coffre qu’il supposa être rempli de médicaments convenables à porter dans les
                 campagnes. Cela ne souffrit aucune difficulté. Il partit donc ainsi et proposa
-                d’abord aux quatre hommes<pb n="5">[190]</pb>qui le menaient de prendre une route
+                d’abord aux quatre hommes</p><pb n="5" facs="../../images/manuscrit/lettre32/lettre32-p5.JPG">[190]</pb><p>qui le menaient de prendre une route
                 toute opposée à celle qu’ils devaient tenir. Ces soldats ne manquèrent pas de lui
                 représenter qu’il n’y avait pas d’habitations françaises dans cette route et, par
                 conséquent, qu’ils n’y trouveraient point de personnes charitables. À quoi le
                 religieux répondit : « Allez où je vous dis et ne vous mettez pas en peine, vous
                 serez toujours récompensés de façon ou d’autres ». Quand ils furent dans
-                    le<placeName>lac Champlain</placeName>, qui est à dix lieues
-                    de<placeName>Montréal</placeName>, il leur montra un gros paquet de lettres et
+                le<placeName>lac Champlain</placeName>, qui est à dix lieues
+                de<placeName>Montréal</placeName>, il leur montra un gros paquet de lettres et
                 leur dit que le gouverneur l’envoyait porter des ordres secrets
-                    en<placeName>Angleterre</placeName>, qu’il en avait de lui de ne leur en parler
+                en<placeName>Angleterre</placeName>, qu’il en avait de lui de ne leur en parler
                 qu’en cet endroit, et que l’occasion de la quête n’était qu’un faux prétexte, qu’il
                 y avait un homme qui les attendait pour leur livrer un canot léger et, enfin, que
                 s’ils faisaient diligence, que leur fortune était faite. Ces bonnes gens l’en
-                crurent sur sa parole et le menèrent dans<pb n="6"
-                    >[191]</pb>la<placeName>Nouvelle-Angleterre</placeName>, du côté
-                    de<placeName>Corlaer</placeName><note class="contenu-note" n="1">Manuscrit :<hi
+                crurent sur sa parole et le menèrent dans</p><pb n="6" facs="../../images/manuscrit/lettre32/lettre32-p6.JPG"
+                >[191]</pb><p>la<placeName>Nouvelle-Angleterre</placeName>, du côté
+                de<placeName>Corlaer</placeName><note class="contenu-note" n="1">Manuscrit :<hi
                         rend="italic">corlak</hi>. Il s’agit de
                     Schenectady.<p/><lb/><p/><lb/></note>, où il désirait aller. Quand ils furent
                 près d’y arriver, il leur montra l’endroit, disant qu’il fallait y porter son coffre
@@ -128,7 +125,7 @@
                 sans en rien excepter et firent en même temps les quatre soldats prisonniers.</p>
             <lb/>
             <p>Pendant que la chose se passait ainsi, les religieux de son couvent ainsi que tous
-                les habitants<pb n="7">[192]</pb>de<placeName>Montréal</placeName>marquèrent une
+                les habitants</p><pb n="7" facs="../../images/manuscrit/lettre32/lettre32-p7.JPG">[192]</pb><p>de<placeName>Montréal</placeName>marquèrent une
                 grande consternation et ne doutèrent plus, ni les uns ni les autres, qu’ils ne
                 fussent ou noyés, ou faits prisonniers par les Iroquois. Plusieurs étaient de ce
                 sentiment. Enfin, après bien des recherches, on sut au juste qu’ils n’avaient point
@@ -140,8 +137,8 @@
                 les quatre soldats qui l’avaient accompagné. Ce fut là où je te jure en vérité que
                 je ne pus m’empêcher de pleurer comme on doit pleurer un bon ami qui nous était
                 cher, mais quelque peu de temps après la médaille retourna bien autrement. Nous
-                fûmes en course sur les Anglais et nous fîmes des prisonniers qui<pb n="8"
-                    >[193]</pb>nous apprirent mot à mot les étranges circonstances que je viens de
+                fûmes en course sur les Anglais et nous fîmes des prisonniers qui</p><pb n="8" facs="../../images/manuscrit/lettre32/lettre32-p8.JPG"
+                >[193]</pb><p>nous apprirent mot à mot les étranges circonstances que je viens de
                 te raconter, qui nous furent certifiées par d’autres endroits. Ainsi, l’amitié qu’on
                 lui avait portée se tourna en fureur et son portrait fut envoyé par toute l’Amérique
                 ainsi qu’en Europe, pour qu’il fût arrêté si on le trouvait. Et enfin, les soldats

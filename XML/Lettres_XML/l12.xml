@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0"
-    xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
-    xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
-    xmlns:tei="http://www.tei-c.org/ns/1.0"
-    xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0">
+     xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
+     xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
+     xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0">
     <teiHeader/>
     <text>
         <body>
+            <pb n="1"/>
             <head type='2'>Lettre 12 <date>[1701]</date><note class="contenu-note" n="1">Transcription de
                     Francesseca Lelong (2015). Révisée par moi (13 août 2015). Semble inspirée par
                     la Lettre XLC du volume 2 de L’Espion turc :
@@ -27,7 +29,7 @@
                 dans lesquelles je joins celles que je reçus hierde mon frère, qui me prie en même
                 temps de vous faire tenir l’incluse<note class="contenu-note" n="3">Expression
                     courante : la lettre ci-jointe.<p/><lb/></note>. Je m’estimerais bienheureux si
-                j’avais bientôt le bonheur d’apprendre par vous-même si </p><pb n="1">[75]</pb><p> vous jouissez d’une
+                j’avais bientôt le bonheur d’apprendre par vous-même si </p><pb n="2">[75]</pb><p> vous jouissez d’une
                 parfaite santé. La peur que j’ai que cela ne soit pas me jette dans des inquiétudes
                 que je ne puis exprimer. J’en ressens encore une bien plus grande quand je pense que
                 vous pleurez continuellement mon père que la mort a enlevé d’entre vos bras, lorsque
@@ -38,7 +40,7 @@
                 dans toutes vos peines.</p>
             <lb/>
             <p>Vous avez perdu celui que vous aimiez le plus au monde, et qui vous aimait
-                réciproquement avec tant de douceur et de tendresse, </p><pb n="2">[76]</pb><p> vous aviez si bien trouvé
+                réciproquement avec tant de douceur et de tendresse, </p><pb n="3">[76]</pb><p> vous aviez si bien trouvé
                 le moyen d’entretenir cette amitié également entre vous deux par les complaisances
                 continuelles que vous aviez pour lui et par une obéissance aveugle à ses volontés,
                 dont il n’abusait pas, vous vous êtes, dis-je, toujours conduite si sagement, qu’il
@@ -49,7 +51,7 @@
                 vous m’avez porté dans vos flancs comme un fruit de votre couche pudique, j’espère
                 que vous m’accorderez ce que je vous demande. Je ne puis plus vous rien demander,
                 les larmes qui coulent de mes yeux baignent mon papier. Recevez-les donc, je vous
-                prie, </p><pb n="3">[77]</pb><p> comme un effet de ma tendresse et de l’amitié que j’ai pour vous, je prie
+                prie, </p><pb n="4">[77]</pb><p> comme un effet de ma tendresse et de l’amitié que j’ai pour vous, je prie
                 Dieu incessamment qu’il pourvoie à tous vos besoins en ce monde, qu’il vous comble
                 de ses plus précieuses bénédictions en l’autre, aussi bien que dans ce jour que l’an
                 est révolu, et qu’il me fasse la grâce de vous voir un jour avec mon cher père, dont
