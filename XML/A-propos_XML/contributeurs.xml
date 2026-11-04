@@ -1,77 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TEI xmlns:tei="http://www.tei-c.org/ns/1.0"
-    xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
-    xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"
-    xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
-    xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0">
-    <teiHeader/>
-    <text>
-        <body>
-            <head type="1">Collaborateurs·trices</head>
-            <p>Beverley Hinterhoeller</p>
-            <lb/>
-            <p>Cheryl Harper</p>
-            <lb/>
-            <p>Daniel Blondin</p>
-            <lb/>
-            <p>Elizabeth Ferretti</p>
-            <lb/>
-            <p>Francesseca Lelong</p>
-            <lb/>
-            <p>Isabelle Laberge</p>
-            <lb/>
-            <p>Jean-François Lozier</p>
-            <lb/>
-            <p>Jeanette Schramm</p>
-            <lb/>
-            <p>Jillian Harper</p>
-            <lb/>
-            <p>Jordon Bell</p>
-            <lb/>
-            <p>Katelynn Vautour</p>
-            <lb/>
-            <p>Kimvy Ngo</p>
-            <lb/>
-            <p>Lubuya Tshiswaka</p>
-            <lb/>
-            <p>Malika Rogosin</p>
-            <lb/>
-            <p>Maxine Monsour</p>
-            <lb/>
-            <p>Megan Quin</p>
-            <lb/>
-            <p>Mélissa Poirier Chapdelaine</p>
-            <lb/>
-            <p>Natalia Fomenko</p>
-            <lb/>
-            <p>Natalie Mohamed</p>
-            <lb/>
-            <p>Pamela Pascal</p>
-            <lb/>
-            <p>Petronella Duda</p>
-            <lb/>
-            <p>Raven Desroches</p>
-            <lb/>
-            <p>Rebecca Sykes</p>
-            <lb/>
-            <p>Sabrina Diotte</p>
-            <lb/>
-            <p>Sarah Parvaiz</p>
-            <lb/>
-            <p>Sébastien Drouin</p>
-            <lb/>
-            <p>Serge Akono Ekomo</p>
-            <lb/>
-            <p>Stephanie Elliott</p>
-            <lb/>
-            <p>Tanya Megaro</p>
-            <lb/>
-            <p>Tessa Sharpe</p>
-            <lb/>
-            <p>Transkribus</p>
-            <lb/>
-            <p/>
-            <lb/>
-        </body>
-    </text>
-</TEI>
+<?xml version="1.0" encoding="utf-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><fileDesc><titleStmt><title/></titleStmt><publicationStmt><p/></publicationStmt><sourceDesc><p/></sourceDesc></fileDesc></teiHeader><text><body>
+            
+                
+                
+                
+                
+                
+            
+            <head xmlns:tei="http://www.tei-c.org/ns/1.0" type="1">Collaborateurs·trices</head>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Beverley Hinterhoeller</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Cheryl Harper</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Daniel Blondin</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Elizabeth Ferretti</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Francesseca Lelong</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Isabelle Laberge</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Jean-François Lozier</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Jeanette Schramm</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Jillian Harper</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Jordon Bell</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Katelynn Vautour</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Kimvy Ngo</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Lubuya Tshiswaka</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Malika Rogosin</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Maxine Monsour</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Megan Quin</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Mélissa Poirier Chapdelaine</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Natalia Fomenko</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Natalie Mohamed</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Pamela Pascal</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Petronella Duda</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Raven Desroches</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Rebecca Sykes</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Sabrina Diotte</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Sarah Parvaiz</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Sébastien Drouin</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Serge Akono Ekomo</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Stephanie Elliott</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Tanya Megaro</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Tessa Sharpe</p>
+            <p xmlns:tei="http://www.tei-c.org/ns/1.0">Transkribus</p>
+            
+        </body></text></TEI>
