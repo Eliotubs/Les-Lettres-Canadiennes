@@ -106,9 +106,9 @@
 // Tableau Aray des lettres
 
 $lettres = [
-    'C:\wamp64\www\Les-Lettres-Canadiennes\XML\Lettres_XML\l12.xml',
-    'C:\wamp64\www\Les-Lettres-Canadiennes\XML\Lettres_XML\l32.xml',
-    'C:\wamp64\www\Les-Lettres-Canadiennes\XML\Lettres_XML\l70.xml'
+    '/../../../XML/Lettres_XML/l12.xml',
+    '/../../../XML/Lettres_XML/l32.xml',
+    '/../../..//XML/Lettres_XML/l70.xml'
 ];
 
 // copier les chemin en intégralité
