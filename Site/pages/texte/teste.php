@@ -98,9 +98,8 @@
           <hr class="sidebar" />
 
           <div class="transcription_integral" id="contenu-lettre">
-            <!-- identifiant unique pour l'export / il est parent de la seclection, il prend donc toutes les lettres -->
+            <!-- identifiant unique pour l'export dans le code js/ il est parent de la seclection, il prend donc toutes les lettres -->
           <div class="text-body">
-          
           
           <?php
 // Je n'ai pas réussie à invoquer le TEI_CORPUS : ceci est une solution bricolage à redéfinir pendant le stage
@@ -167,6 +166,7 @@ foreach ($lettres as $index => $xmlPath) {
     <script src="../../js/sommaire.js"></script>
     <script src="../../js/export-pdf.js"></script>
     <script src="../../js/export-txt.js"></script>
+    <script src="../../js/export-xml.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   </body>
 </html>
