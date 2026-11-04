@@ -1,9 +1,9 @@
 <?php
 // Création d'un arary pour stocker toutes les lettres présentes
 $lettres = [
-    'Lettre-12_l_espion_turc' => 'Lettre 12',
-    'Lettre-32_recollet' => 'Lettre 32',
-    'Lettre-70' => 'Lettre 70',
+    'l12' => 'Lettre 12',
+    'l32' => 'Lettre 32',
+    'l70' => 'Lettre 70',
 ];
 //Récupération dans l'url des paramètres
 $lettre = $_GET['lettre'] ?? ''; //le numéro de la lettre choisie
@@ -65,7 +65,8 @@ if (isset($lettres[$lettre])) {
 
                 $courant = $debut->nextSibling; //On va chercher le noeud sibling du <pb> de départ, pour avoir le <p>
 
-                // 
+                // Tant que l'on n'est pas arrivé au <pb> suivant, on continue à parcourir les noeuds siblings
+                ///// ATTENTION !! \\\\\ Ce n'est pas la bonne manière de faire, car les balises <pb> ne sont pas forcément siblings, elles peuvent être contenues dans des balises <p>
                 while ($courant && $courant !== $fin) {
                     $suivant = $courant->nextSibling;
 
