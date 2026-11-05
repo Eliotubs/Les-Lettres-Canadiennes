@@ -609,82 +609,8 @@ main .transcription_integral .texte_lettre p {
 }
 
 /* //////////////////// */
-/* MENU > ANNEXES / PAGE : DONNEES */
+/* MENU ACCORDEON */
 /* //////////////////// */
-
-.gephi {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.gephi h1 {
-  margin-bottom: 10px;
-}
-
-.gephi p {
-  margin-bottom: 10px;
-}
-
-.gephi_contente {
-  display: block;
-}
-
-/* //////////////////// */
-/* MENU > A PROPOS / PAGE : PRESENTATION DU PROJET */
-/* //////////////////// */
-
-.a_propos{
-  padding: 10px;
-}
-
-.conteneur_a-propos h1 {
-  text-align: center;
-  margin-top: 80px;
-}
-.presentation_projet ol {
-  margin: 0px 100px;
-}
-.conteneur_a-propos p {
-  padding: 20px;
-}
-
-.btn-pg-suivante {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.presentation_projet button {
-  padding: 10px;
-  margin: 50px;
-  background-color: #aaa;
-}
-
-/* //////////////////// */
-/* MENU > A PROPOS / PAGE : INTRODUCTION GENERALE */
-/* //////////////////// */
-
-.intro_generale h1 {
-  text-align: center;
-  margin-top: 100px;
-}
-
-.intro_generale p {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.intro_generale button {
-  padding: 10px;
-  margin: 50px;
-  background-color: #aaa;
-}
 
 main .sommaire .accordeon_titre {
   font-weight: bold;
@@ -737,50 +663,70 @@ main .sommaire {
 }
 
 /* //////////////////// */
-/* MENU > A PROPOS / PAGE : BIBLIOGRAPHIE GENERALE */
+/* MENU > ANNEXES / PAGE : DONNEES */
 /* //////////////////// */
 
-.bibliographie h1 {
-  text-align: center;
-  margin-top: 100px;
-}
-
-.bibliographie p {
+.gephi {
   margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.btn-pg-suivante {
   display: flex;
-  flex-direction: row-reverse;
-}
-
-.bibliographie button {
-  padding: 10px;
-  margin: 50px;
-  background-color: #aaa;
-}
-
-/* //////////////////// */
-/* MENU > A PROPOS / PAGE : CHOIX EDITORIAUX */
-/* //////////////////// */
-
-.choix_ed {
+  flex-direction: column;
   width: 100%;
+
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.choix_ed h1 {
+.gephi h1 {
+  margin-bottom: 10px;
+}
+
+.gephi p {
+  margin-bottom: 10px;
+}
+
+.gephi_contente {
+  display: block;
+}
+
+/* //////////////////// */
+/* MENU > A PROPOS / PAGE : MISE EN PAGE GENERAL */
+/* //////////////////// */
+
+.a_propos{
+  width: 100%;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.conteneur_a-propos h1 {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
-.choix_ed p {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 50px;
-  margin-right: 50px;
+.a_propos_page{
+  padding: 40px;
+}
+
+.conteneur_a-propos h2{
+  margin-bottom: 10px;
+}
+
+.conteneur_a-propos h2.sous-titre{
+  text-align: center;
+}
+
+.conteneur_a-propos p {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.conteneur_a-propos ol {
+  margin: 0px 100px;
+}
+
+.conteneur_a-propos li{
+  margin-bottom: 10px;
 }
 
 .btn-pg-suivante {
@@ -788,14 +734,14 @@ main .sommaire {
   flex-direction: row-reverse;
 }
 
-.choix_ed button {
+.conteneur_a-propos button {
   padding: 10px;
   margin: 50px;
   background-color: #aaa;
 }
 
 /* //////////////////// */
-/* MENU > A PROPOS / PAGE : RESSOURCES */
+/* MENU > ANNEXES / PAGE : RESSOURCES */
 /* //////////////////// */
 
 .ressources {
@@ -852,7 +798,7 @@ main .sommaire {
 }
 
 /* //////////////////// */
-/* MENU>A PROPOS>RESSOURCES>PAGES RESSOURCES TBL (MERCURE, GAZETTE...) */
+/* MENU > ANNEXES > RESSOURCES>PAGES RESSOURCES TBL (MERCURE, GAZETTE...) */
 /* //////////////////// */
 
 .src {
@@ -910,7 +856,7 @@ td {
 }
 
 /* //////////////////// */
-/* MENU>INDEX */
+/* MENU > INDEX */
 /* //////////////////// */
 
 .idx {
@@ -945,7 +891,7 @@ td {
 }
 
 /* //////////////////// */
-/* MENU>DOCUMENTATION HISTORIQUE */
+/* MENU > DOCUMENTATION HISTORIQUE */
 /* //////////////////// */
 
 .docu_h h1 {
