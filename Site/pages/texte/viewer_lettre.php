@@ -255,13 +255,13 @@ if (isset($lettres[$lettre])) {
                             <?php if ($page !== '' && $html !== ''): ?>
                                 <?php if (isset($pages[$index - 1])): ?>
                                     <a id="btn-page-pre"
-                                        href="?lettre=<?= urlencode($lettre) ?>&page=<?= urlencode($pages[$index - 1]['n']) ?>">
+                                        href="?lettre=<?= urlencode($lettre) ?>&page=<?= urlencode($pages[$index - 1]['n']) ?>&selection=<?= urlencode($selection_brut) ?>">
                                         <i class="fa-solid fa-chevron-up"></i>
                                     </a>
                                 <?php endif; ?>
                                 <?php if (isset($pages[$index + 1])): ?>
                                     <a id="btn-page-fol"
-                                        href="?lettre=<?= urlencode($lettre) ?>&page=<?= urlencode($pages[$index + 1]['n']) ?>">
+                                        href="?lettre=<?= urlencode($lettre) ?>&page=<?= urlencode($pages[$index + 1]['n']) ?>&selection=<?= urlencode($selection_brut) ?>">
                                         <i class="fa-solid fa-chevron-up"></i>
                                     </a>
                                 <?php endif; ?>
