@@ -139,7 +139,11 @@ if (isset($lettres[$lettre])) {
 <body>
     <header>
         <nav class="header-container">
-            <p id="logo-title">Les lettres canadiennes</p>
+            <div id="logo-title">
+                <a href="../../accueil.html">
+                    <img src="../../images/logo.png" />
+                </a>
+            </div>
             <ul id="nav">
                 <li>
                     <a href="../../accueil.html">Accueil</a>

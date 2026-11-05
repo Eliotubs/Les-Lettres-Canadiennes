@@ -94,10 +94,15 @@ header {
 }
 
 #logo-title {
-  font-size: 1.5rem;
   cursor: pointer;
+  width: 30%;
+  max-width: 400px;
+  height: 100%;
+}
+
+#logo-title img {
   width: auto;
-  background: var(--gris200);
+  height: 100px;
 }
 
 #nav {
@@ -692,7 +697,7 @@ main .sommaire {
 /* MENU > A PROPOS / PAGE : MISE EN PAGE GENERAL */
 /* //////////////////// */
 
-.a_propos{
+.a_propos {
   width: 100%;
   padding: 10px;
   margin-right: 10px;
@@ -704,15 +709,15 @@ main .sommaire {
   margin-top: 80px;
 }
 
-.a_propos_page{
+.a_propos_page {
   padding: 40px;
 }
 
-.conteneur_a-propos h2{
+.conteneur_a-propos h2 {
   margin-bottom: 10px;
 }
 
-.conteneur_a-propos h2.sous-titre{
+.conteneur_a-propos h2.sous-titre {
   text-align: center;
 }
 
@@ -725,7 +730,7 @@ main .sommaire {
   margin: 0px 100px;
 }
 
-.conteneur_a-propos li{
+.conteneur_a-propos li {
   margin-bottom: 10px;
 }
 
