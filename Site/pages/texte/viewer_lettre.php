@@ -8,6 +8,25 @@ $lettres = [
 //Récupération dans l'url des paramètres
 $lettre = $_GET['lettre'] ?? ''; //le numéro de la lettre choisie
 $page = $_GET['page'] ?? ''; //la page de la lettre choisie
+$selection_brut = $_GET['selection'] ?? ''; //La sélection de lettre
+$selection = explode("-", $selection_brut); //La sélection nettoyée et mise en tableau
+
+$position_selection = array_search($lettre, $selection);
+
+$chapitre_sui = null;
+$chapitre_pre = null;
+
+if ($position_selection !== false && isset($selection[$position_selection + 1])) {
+    $chapitre_sui = $selection[$position_selection + 1];
+} else {
+    $chapitre_sui = null;
+}
+
+if ($position_selection !== false && $position_selection > 0) {
+    $chapitre_pre = $selection[$position_selection - 1];
+} else {
+    $chapitre_pre = null;
+}
 
 $html = ''; //va contenir ensuite tout le texte choisi
 $image = ''; //image du manuscrit
@@ -16,7 +35,7 @@ $pages = []; //va séparer en pages un seul document XML
 if (isset($lettres[$lettre])) {
     //Chemins vers les documents XML et la feuille de transformation XSL
     $fichierXML = __DIR__ . '/../../../XML/Lettres_XML/' . $lettre . '.xml';
-    $fichierXSL = __DIR__ . '/../../../xslt/tei-html.xsl';
+    $fichierXSL = __DIR__ . '/../../../xslt/transformation_xml_vers_html.xsl';
 
     //Si les deux fichiers existent
     if (is_file($fichierXML) && is_file($fichierXSL)) {
@@ -163,8 +182,10 @@ if (isset($lettres[$lettre])) {
         <div class="main-container">
             <div class="main-header">
                 <div class="mh-left">
-                    <a class="work-letter-button" href="">
-                        ←</a>
+                    <?php if ($chapitre_pre !== null): ?>
+                        <a class="work-letter-button"
+                            href="viewer_lettre.php?lettre=<?= urlencode($chapitre_pre) ?>&page=1&selection=<?= urlencode($selection_brut) ?>">←</a>
+                    <?php endif; ?>
                     <a class="letter-button" href="">
                         < Lettre précédente</a>
                 </div>
@@ -184,10 +205,13 @@ if (isset($lettres[$lettre])) {
                 </div>
                 <div class="mh-right">
                     <a class="letter-button" href="">Lettre suivante ></a>
-                    <a class="work-letter-button" href="">→</a>
+                    <?php if ($chapitre_sui !== null): ?>
+                        <a class="work-letter-button"
+                            href="viewer_lettre.php?lettre=<?= urlencode($chapitre_sui) ?>&page=1&selection=<?= urlencode($selection_brut) ?>">→</a>
+                    <?php endif; ?>
                 </div>
             </div>
-            <div class="main-body">
+            <div class=" main-body">
                 <div class="main-body-ressources">
                     <div class="ressources-header">
                         <select id="choix-ressources">
