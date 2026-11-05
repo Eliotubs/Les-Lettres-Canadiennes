@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- xml-model à créer -->
+
+<!-- indexation des lieux pour les premières lettres indexe -->
+
+<lisPlace>
+    <place xml:id="autriche">
+        <name>Autriche</name>
+        <identifier type="wikipedia"/>
+
+        <place xml:id="vienne">
+            <name>Vienne</name>
+            <identifier type="wikipedia"/>
+            <identifier type="geonames"/>
+        </place>
+
+    </place>
+
+
+    <place xml:id="france">
+        <name>France</name>
+        <identifier type="wikipedia"/>
+
+        <place xml:id="angers">
+            <name>Angers</name>
+            <identifier type="wikipedia"/>
+            <identifier type="geonames"/>
+        </place>
+
+    </place>
+    
+    <place xml:id="canada">
+        <name>Canada</name>
+        <identifier type="wikipedia"/>
+        
+        <place xml:id="">
+            <name></name>
+            <identifier type="wikipedia"/>
+            <identifier type="geonames"/>
+        </place>
+        
+    </place>
+</lisPlace>

@@ -85,7 +85,7 @@
     <!-- Identifier les titres d'ouvrage et mise en italique -->
 
     <xsl:template match="text:span[@text:style-name = 'Titre_20_ouvrage']">
-        <hi rend="italique" type="Titre_20_ouvrage">
+        <hi rend="italique">
             <xsl:apply-templates/>
         </hi>
     </xsl:template>

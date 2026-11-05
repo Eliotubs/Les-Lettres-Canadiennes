@@ -1,10 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <listPerson>
     
-    <person xml:id="">
+    <person xml:id="ami_ordres_sacrés"> <!-- identifiant à redéfinir -->
         <name>Ami qui veut entrer dans les ordres sacrés</name>
         <ref target=""/> <!-- chemin relatif au lettre où elles apparaissent -->
     </person>
     
+    <person xml:id="">
+        <name>Badourin</name>
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="">
+        <name>Baout (Baoût, ou Daout ?)</name>
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="">
+        <name>Butewegh</name>
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="">
+        <name>Danet (ami, moine de la charité)</name>
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="">
+        <name>Fils (son)</name>
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="">
+        <name>Frère (son)</name>
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="">
+        <name>Grand Maître de Malte</name>
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="">
+        <name>Hermeskerq</name>
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="">
+        <name>Hiché, Henry (ou Henri)</name>
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="">
+        <name>Marchand de Marseille</name>
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="">
+        <name>Médecin anglais (ami)</name>
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="mère">
+        <name>Mère (sa)</name>
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="">
+        <name>Michel (ami)</name>
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="">
+        <name>Mirador</name>
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="">
+        <name>Morin</name>
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="">
+        <name>Oliveto</name>
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="">
+        <name>Parents (à un de ses)</name> <!-- Question de comment l'indexer -->
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="raoul">
+        <name>Raoul</name>
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="">
+        <name>Regnault</name>
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="">
+        <name>Skarre (Skarne)</name>
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="">
+        <name>Smith l’aîné</name>
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="">
+        <name>Smith le jeune</name>
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="">
+        <name>Très Révérend Père XXXXXX, Récollet</name>
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="">
+        <name>Wiest</name>
+        <ref target=""/> 
+    </person>
+    
+    <person xml:id="">
+        <name>Willam (ou Willan/Willem)</name>
+        <ref target=""/> 
+    </person>
     
 </listPerson>

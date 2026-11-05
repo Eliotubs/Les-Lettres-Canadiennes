@@ -17,12 +17,17 @@
     
     <!-- Voir plus tard pour classer par année / volume 
         <biblScope unit="volume">2</biblScope> : dans le header -->
-    <!-- ajouter des id ? -->
+    <!-- xml:id pour le corpus + key ou id dans les lettres -->
     
-    <div type="volume" n="1">    
-    <xi:include href="Lettres_XML/Lettre-12_L%27Epion%20turc.xml"/>
-    <xi:include href="Lettres_XML/Lettre-32_R%C3%A9collet.xml"/>
-    <xi:include href="Lettres_XML/Lettre-70.xml"/>
+    <div type="volume" n="1">
+        <xi:include xml:id="" href=""/>
+        <xi:include xml:id="l12" href="Lettres_XML/Lettre-12_L%27Epion%20turc.xml"/>
+        <xi:include xml:id="l32" href="Lettres_XML/Lettre-32_R%C3%A9collet.xml"/>
+        <xi:include xml:id="l70" href="Lettres_XML/Lettre-70.xml"/>
+    </div>
+    
+    <div type="volume" n="2">
+        <xi:include xml:id="" href=""/>
     </div>
     
 </teiCorpus>
