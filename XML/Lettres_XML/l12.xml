@@ -7,7 +7,10 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title/>
+                <title key=""/>
+                <!-- titre de la lettre et numero -->
+                <editor key="">Sébastien Côté</editor>
+                <author> Anonyme </author>
             </titleStmt>
             <publicationStmt>
                 <p/>
@@ -16,6 +19,20 @@
                 <p/>
             </sourceDesc>
         </fileDesc>
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="received">
+                    <persName key=""/>
+                    <!-- nom du destinataire -->
+                    <placeName key=""/>
+                    <!-- lieux (non obligatoire = dans les cas où il n'y a pas l'information) -->
+                </correspAction>
+            </correspDesc>
+            <abstract>
+                <p/>
+                <!-- Résumé de la lettre -->
+            </abstract>
+        </profileDesc>
     </teiHeader>
     <text>
         <body>
@@ -27,7 +44,8 @@
                         https://gallica.bnf.fr/ark:/12148/bpt6k6349779m/f157.item.r=mere<p/>
                     </note></head>
                 <salute>
-                    <persName key="mère">À sa mère</persName>, <placeName key="angers">à Angers</placeName>
+                    <persName key="mère">À sa mère</persName>, <placeName key="angers">à
+                        Angers</placeName>
                 </salute>
                 <argument>
                     <p>

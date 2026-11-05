@@ -11,7 +11,32 @@
 
     <xsl:template match="/">
         <TEI>
-            <teiHeader/>
+            <teiHeader>
+                <fileDesc>
+                    <titleStmt>
+                        <title key=""></title> <!-- titre de la lettre et numero -->
+                        <editor key="">Sébastien Côté</editor>
+                        <author> Anonyme </author>
+                    </titleStmt>
+                    <publicationStmt>
+                        <p/>
+                    </publicationStmt>
+                    <sourceDesc>
+                        <p/>
+                    </sourceDesc>
+                </fileDesc>
+                <profileDesc>
+                    <correspDesc>
+                        <correspAction type="received">
+                            <persName key=""/> <!-- nom du destinataire -->
+                            <placeName key=""/> <!-- lieux (non obligatoire = dans les cas où il n'y a pas l'information) -->
+                        </correspAction>
+                    </correspDesc>
+                    <abstract>
+                        <p/> <!-- Résumé de la lettre -->
+                    </abstract>
+                </profileDesc>
+            </teiHeader>
             <text>
                 <body>
                     <xsl:apply-templates select="//office:text"/>
@@ -45,7 +70,7 @@
 
     <!-- [@text:style-name = 'Normal' or @text:style-name = 'Police_20_par_20_défaut'] = garder au cas où -->
 
-    <xsl:template match="text:p">
+    <xsl:template match="text:p"> <!-- A corriger pour le stage = pas tout les text:p = cibler QUE les débuts de paragraphe -->
         <p>
             <xsl:apply-templates/>
         </p>
