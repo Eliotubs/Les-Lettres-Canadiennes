@@ -666,22 +666,21 @@ main .sommaire {
 /* MENU > ANNEXES / PAGE : DONNEES */
 /* //////////////////// */
 
-.gephi {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
+.annexes{
   width: 100%;
-
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 16px;
 }
 
-.gephi h1 {
-  margin-bottom: 10px;
+.conteneur_annexes h1 {
+  text-align: center;
+  padding: 30px;
 }
 
-.gephi p {
-  margin-bottom: 10px;
+.conteneur_annexes p {
+  margin-bottom: 20px;
 }
 
 .gephi_contente {
@@ -697,6 +696,7 @@ main .sommaire {
   padding: 10px;
   margin-right: 10px;
   margin-left: 10px;
+  font-size: 16px;
 }
 
 .conteneur_a-propos h1 {
@@ -705,7 +705,10 @@ main .sommaire {
 }
 
 .a_propos_page{
-  padding: 40px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 .conteneur_a-propos h2{
@@ -726,7 +729,9 @@ main .sommaire {
 }
 
 .conteneur_a-propos li{
-  margin-bottom: 10px;
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .btn-pg-suivante {

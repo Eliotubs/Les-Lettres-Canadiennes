@@ -8,7 +8,7 @@ document.getElementById('btn-export-pdf').addEventListener('click', function () 
         filename:     'Les_lettres_canadiennes.pdf',
         html2canvas:  { scale: 2, useCORS: true },
         jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
-        pagebreak:    { mode: ['css', 'legacy'], avoid: ['img', 'h2', 'h3'] }
+        pagebreak:    { mode: ['css', 'legacy'], avoid: ['img', 'h2', 'h3'] },
     };
 
     element.classList.add('style_export-pdf');
