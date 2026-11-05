@@ -1,3 +1,7 @@
+// ////////////////////////
+// GESTION DE L'OUVERTURE / FERMETURE DES VOLUMES
+// ////////////////////////
+
 const lettres_allcontainer_volume_1 = document.querySelector(
   "#lettre-container-volume-1",
 );
@@ -245,7 +249,6 @@ function update_link_lecture_selection() {
   volume1_lettres.forEach((lettre) => {
     if (lettre.classList.contains("lettre-select")) {
       lettres_selected.push(lettre.innerHTML.replace("Lettre ", ""));
-      console.log(lettre);
     }
   });
   if (lettres_selected.length == 0) {
@@ -259,7 +262,7 @@ function update_link_lecture_selection() {
     "viewer_lettre.php?lettre=l" +
     lettres_selected[0] +
     "&page=1&selection=" +
-    str_lettres_selected;
+    str_lettres_selected.slice(0, -1);
 }
 update_link_lecture_selection();
 
@@ -308,5 +311,59 @@ volume2_lettres.forEach((lettre) => {
       volume2_select_all.checked = true;
     }
     nb_lettres_selected_vol2 = 0;
+  });
+});
+
+// ////////////////////////
+// AFFICHAGE DE LA DESCRIPTION AU SURVOL
+// ////////////////////////
+
+const all_lettres = document.querySelectorAll(".volume-container .lettre");
+const container_description_lettre = document.querySelector(
+  ".description_lettre",
+);
+
+lettres_description = [
+  {
+    id: "12",
+    nom: "Lettre 12",
+    destinataire: "À sa mère, à Angers.",
+    contenu:
+      "Il la console sur la mort de son père et lui envoie une lettre de son frère.",
+  },
+  {
+    id: "32",
+    nom: "Lettre 32",
+    destinataire: "À un de ses amis qui veut entrer dans les ordres sacrés.",
+    contenu:
+      "Histoire d’un récollet qui a abjuré sa religion, et de la manière qu’il le fit.",
+  },
+  {
+    id: "70",
+    nom: "Lettre 70",
+    destinataire: "À Raoul, à Vienne, en Autriche.",
+    contenu:
+      "Qu’il faut aimer la lecture, les Espagnols prennent Alcantara, mort du roi de Portugal, naissance du duc de Bretagne.",
+  },
+];
+
+all_lettres.forEach((lettre) => {
+  lettre.addEventListener("mouseover", (e) => {
+    container_description_lettre.replaceChildren();
+    for (var i = 0; i < lettres_description.length; i++) {
+      if (lettres_description[i]["nom"] == e.target.textContent) {
+        let p_nom_lettre = document.createElement("h3");
+        let p_destinataire = document.createElement("p");
+        let p_contenu = document.createElement("p");
+        p_nom_lettre.append(lettres_description[i]["nom"]);
+        p_destinataire.append(lettres_description[i]["destinataire"]);
+        p_contenu.append(lettres_description[i]["contenu"]);
+        container_description_lettre.append(
+          p_nom_lettre,
+          p_destinataire,
+          p_contenu,
+        );
+      }
+    }
   });
 });
