@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<listEvent>
+    <event xml:id="">
+        <label>Evènement du Canada</label>
+        <ref target=""/> <!-- chemin relatif des lettres -->
+        <ref target=""/>
+        <ref target=""/>
+    </event>
+    
+    
+    
+</listEvent>
