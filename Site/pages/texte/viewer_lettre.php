@@ -142,26 +142,26 @@ if (isset($lettres[$lettre])) {
             <p id="logo-title">Les lettres canadiennes</p>
             <ul id="nav">
                 <li>
-                    <a href="template.html">Accueil</a>
+                    <a href="../../accueil.html">Accueil</a>
                 </li>
                 <li class="active">
                     <button id="btn-texte-popover" class="btn-menu" popovertarget="nav-texte-popover">
                         Texte<i class="fa-solid fa-chevron-up"></i>
                     </button>
                     <div class="popover" id="nav-texte-popover" popover>
-                        <a href="#">Lettres</a>
-                        <a href="#">Transcription intégrale</a>
+                        <a href="filtres-lettres.html">Lettres</a>
+                        <a href="transcription_integrale.php">Transcription intégrale</a>
                     </div>
                 </li>
                 <li>
                     <button id="btn-references-popover" class="btn-menu" popovertarget="nav-references-popover">
-                        Références<i class="fa-solid fa-chevron-up"></i>
+                        Annexes<i class="fa-solid fa-chevron-up"></i>
                     </button>
                     <div class="popover" id="nav-references-popover" popover>
-                        <a href="#">Ressources</a>
-                        <a href="#">Documentation historique</a>
-                        <a href="#">Données</a>
-                        <a href="#">Index</a>
+                        <a href="../annexes/ressources.html">Ressources</a>
+                        <a href="../annexes/documentation_historique.html">Documentation historique</a>
+                        <a href="../annexes/données.html">Données</a>
+                        <a href="../annexes/index.html">Index</a>
                     </div>
                 </li>
                 <li>
@@ -169,10 +169,11 @@ if (isset($lettres[$lettre])) {
                         À propos<i class="fa-solid fa-chevron-up"></i>
                     </button>
                     <div class="popover" id="nav-apropos-popover" popover>
-                        <a href="#">Présentation du projet</a>
-                        <a href="#">Introduction générale</a>
-                        <a href="#">Choix éditoriaux</a>
-                        <a href="#">Contributeurs</a>
+                        <a href="../a_propos/presentation_du_projet.html">Présentation du projet</a>
+                        <a href="../a_propos/introduction_generale.html">Introduction générale</a>
+                        <a href="../a_propos/bibliographie.html">Bibliographie</a>
+                        <a href="../a_propos/choix_editoriaux.html">Choix éditoriaux</a>
+                        <a href="../a_propos/contributeurs.html">Contributeurs</a>
                     </div>
                 </li>
             </ul>
