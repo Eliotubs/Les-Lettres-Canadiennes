@@ -638,20 +638,19 @@ main .transcription_integral .texte_lettre p {
 /* MENU > A PROPOS / PAGE : PRESENTATION DU PROJET */
 /* //////////////////// */
 
-.presentation_projet h1 {
-  text-align: center;
-  margin-top: 100px;
+.a_propos{
+  padding: 10px;
 }
 
+.conteneur_a-propos h1 {
+  text-align: center;
+  margin-top: 80px;
+}
 .presentation_projet ol {
   margin: 0px 100px;
 }
-
-.presentation_projet p {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 50px;
-  margin-right: 50px;
+.conteneur_a-propos p {
+  padding: 20px;
 }
 
 .btn-pg-suivante {
