@@ -324,8 +324,9 @@ main {
 }
 
 .text-body {
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
+  font-family: var(--font_texte);
 }
 
 .text-body h1,
@@ -342,7 +343,8 @@ main {
 
 .text-body p {
   text-align: justify;
-  line-height: 1.8rem;
+  line-height: 2rem;
+  font-size: 1.1rem;
 }
 
 .text-body p:first-of-type {
@@ -444,6 +446,35 @@ main {
   position: absolute;
   right: 0;
   font-size: 0.8rem;
+}
+
+/* //////////////////// */
+/* APPAREIL CRITIQUE */
+/* //////////////////// */
+
+.note-off {
+  display: none;
+}
+
+p:has(.note.editeur) {
+  margin-left: 10px;
+}
+
+.note.editeur {
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--gris080);
+  position: relative;
+}
+
+.note.editeur::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: purple;
 }
 
 /* //////////////////// */
