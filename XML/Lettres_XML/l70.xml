@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0"
-    xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
-    xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
-    xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
-    xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0">
+     xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
+     xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
+     xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -36,102 +36,98 @@
     </teiHeader>
     <text>
         <body>
-            <div>
-                <pb n="1" facs="../../images/manuscrit/lettre70/lettre70-p1.JPG"/>
-                <head type="2">Lettre 70 <date>[1707]</date><note type="contenu-note" n="1">Lettre
-                        transcrite par Francesseca Lelong, modernisée et révisée par moi le 10 juin
-                        2018. </note></head>
-                <salute>
-                    <persName key="raoul">À Raoul</persName>, <placeName key="vienne">à Vienne, en Autriche</placeName>
-                </salute>
-                <argument>
-                    <p>
-                        <hi rend="italic">Qu’il faut aimer la lecture ; les Espagnols prennent
-                                <placeName>Alcantara</placeName> ; mort du <persName>roi de
-                                Portugal</persName> ; naissance du <persName>duc de
-                                Bretagne</persName></hi>
-                    </p>
-                </argument>
-            </div>
-            <div>
-                <p>Tu as dû recevoir dans son temps, parmi les livres<hi rend="italic"> que je t’ai
-                        envoyés</hi>, le traité d’Origène contre Celse, ou autrement défense de la
-                    religion chrétienne contre les accusations des païens<note type="contenu-note"
-                        n="2"><hi rend="italic">Traité d’Origène contre Celse…</hi>, Amsterdam,
-                        1700. </note>. <pb n="2"
-                        facs="../../images/manuscrit/lettre70/lettre70-p2.JPG"/>[454] Tu y verras à
-                    découvert les erreurs de cet ancien père condamnées. Lis et profites-en, ne sois
-                    pas semblable à ceux qui ont beaucoup de livres en leur possession, qui se
-                    trouvent tous neufs après leur mort. Quoi qu’il en soit, tire-moi d’inquiétude
-                    en m’en accusant la réception et reçois pour maxime constante qu’un des plus
-                    agréables emplois que l’on puisse se procurer est assurément celui de la
-                    lecture. On en prend qu’autant qu’on le veut, c’est un emploi que l’ennui ne
-                    peut interdire, il est toujours à nous et il n’y a point de disgrâce qui nous le
-                    puisse ôter. C’est dans mon sens de tous les emplois celui qui altère le moins
-                    la santé et qui plaît le plus à l’esprit.</p>
+            <pb n="1" facs="../../images/manuscrit/lettre70/lettre70-p1.JPG"/>
+            <head type="2">Lettre 70 <date>[1707]</date><note type="contenu-note" n="1">Lettre
+                    transcrite par Francesseca Lelong, modernisée et révisée par moi le 10 juin
+                    2018. </note></head>
+            <salute>
+                <persName key="raoul">À Raoul</persName>, <placeName key="vienne">à Vienne, en Autriche</placeName>
+            </salute>
+            <argument>
+                <p>
+                    <hi rend="italic">Qu’il faut aimer la lecture ; les Espagnols prennent
+                        <placeName>Alcantara</placeName> ; mort du <persName>roi de
+                            Portugal</persName> ; naissance du <persName>duc de
+                            Bretagne</persName></hi>
+                </p>
+            </argument>
+            <p>Tu as dû recevoir dans son temps, parmi les livres<hi rend="italic"> que je t’ai
+                    envoyés</hi>, le traité d’Origène contre Celse, ou autrement défense de la
+                religion chrétienne contre les accusations des païens<note type="contenu-note"
+                                                                           n="2"><hi rend="italic">Traité d’Origène contre Celse…</hi>, Amsterdam,
+                    1700. </note>. </p><pb n="2"
+                                   facs="../../images/manuscrit/lettre70/lettre70-p2.JPG"/><p>[454] Tu y verras à
+                découvert les erreurs de cet ancien père condamnées. Lis et profites-en, ne sois
+                pas semblable à ceux qui ont beaucoup de livres en leur possession, qui se
+                trouvent tous neufs après leur mort. Quoi qu’il en soit, tire-moi d’inquiétude
+                en m’en accusant la réception et reçois pour maxime constante qu’un des plus
+                agréables emplois que l’on puisse se procurer est assurément celui de la
+                lecture. On en prend qu’autant qu’on le veut, c’est un emploi que l’ennui ne
+                peut interdire, il est toujours à nous et il n’y a point de disgrâce qui nous le
+                puisse ôter. C’est dans mon sens de tous les emplois celui qui altère le moins
+                la santé et qui plaît le plus à l’esprit.</p>
 
-                <p>C’est un emploi de jour et de nuit, de ville et de campagne, de tous les âges et
-                    de toutes les saisons<note type="contenu-note" n="3">L’abbé Goussault, <hi
-                            rend="italic">Le portrait d’un honnête homme</hi>, 2e éd., Paris, Michel
-                        Brunet, 1693, p. 10 sq. </note>. L’un et l’autre sexe y trouve de l’agrément
-                    dans la prospérité et de la consolation dans les disgrâces de la vie. <pb n="3"
-                        facs="../../images/manuscrit/lettre70/lettre70-p3.JPG"/>[455] Cet emploi
-                    instruit et forme la jeunesse, anime et fortifie ceux qui sont dans un âge plus
-                    avancé et tient lieu de compagnie à ceux qui ne les aiment plus. Quelque temps
-                    qu’il fasse et en quelque lieu que l’on se trouve, dès qu’on s’ennuie, on n’a
-                    qu’à lire, on cesse d’être seul et d’être à charge à soi-même.</p>
+            <p>C’est un emploi de jour et de nuit, de ville et de campagne, de tous les âges et
+                de toutes les saisons<note type="contenu-note" n="3">L’abbé Goussault, <hi
+                        rend="italic">Le portrait d’un honnête homme</hi>, 2e éd., Paris, Michel
+                    Brunet, 1693, p. 10 sq. </note>. L’un et l’autre sexe y trouve de l’agrément
+                dans la prospérité et de la consolation dans les disgrâces de la vie.</p><pb n="3"
+                                                                                         facs="../../images/manuscrit/lettre70/lettre70-p3.JPG"/><p>[455] Cet emploi
+                instruit et forme la jeunesse, anime et fortifie ceux qui sont dans un âge plus
+                avancé et tient lieu de compagnie à ceux qui ne les aiment plus. Quelque temps
+                qu’il fasse et en quelque lieu que l’on se trouve, dès qu’on s’ennuie, on n’a
+                qu’à lire, on cesse d’être seul et d’être à charge à soi-même.</p>
 
-                <p>Il ne faut point d’équipage pour aller chercher compagnie de cette manière. Il ne
-                    faut point mettre la main à la bourse pour la régaler, ni avoir recours aux
-                    compliments pour s’en défaire. La lecture, comme une bonne amie, est toujours
-                    prête à nous bien recevoir. Elle ne nous reproche ni notre paresse, ni nos
-                    affaires, Elle s’accommode à nos humeurs, à nos esprits et à nos inclinations.
-                    Elle ne nous retient jamais malgré nous et ne veut de nous que ce que nous
-                    voulons d’elle. Enfin, nous la trouvons et nous la quittons quand il nous plaît.
-                        <pb n="4" facs="../../images/manuscrit/lettre70/lettre70-p4.JPG"/>[456] Cet
-                    emploi est utile aux uns et agréable aux autres, chacun y trouve ce qu’il
-                    cherche. C’est une maîtresse en qui on découvre tous les jours de nouveaux
-                    traits de beauté<note type="contenu-note" n="4">Ms. de sa beauté. </note>. C’est
-                    un trésor où l’on puise à tous moments de nouvelles richesses. C’est un char
-                    qui, sans nous enlever du lieu où nous sommes, nous faire promener partout et
-                    voir ce qui s’y passe. C’est un écho qui nous répète et qui nous apprend tout ce
-                    qui s’est fait depuis la création du monde.</p>
+            <p>Il ne faut point d’équipage pour aller chercher compagnie de cette manière. Il ne
+                faut point mettre la main à la bourse pour la régaler, ni avoir recours aux
+                compliments pour s’en défaire. La lecture, comme une bonne amie, est toujours
+                prête à nous bien recevoir. Elle ne nous reproche ni notre paresse, ni nos
+                affaires, Elle s’accommode à nos humeurs, à nos esprits et à nos inclinations.
+                Elle ne nous retient jamais malgré nous et ne veut de nous que ce que nous
+                voulons d’elle. Enfin, nous la trouvons et nous la quittons quand il nous plaît.
+            </p><pb n="4" facs="../../images/manuscrit/lettre70/lettre70-p4.JPG"/><p>[456] Cet
+                emploi est utile aux uns et agréable aux autres, chacun y trouve ce qu’il
+                cherche. C’est une maîtresse en qui on découvre tous les jours de nouveaux
+                traits de beauté<note type="contenu-note" n="4">Ms. de sa beauté.</note>. C’est
+                un trésor où l’on puise à tous moments de nouvelles richesses. C’est un char
+                qui, sans nous enlever du lieu où nous sommes, nous faire promener partout et
+                voir ce qui s’y passe. C’est un écho qui nous répète et qui nous apprend tout ce
+                qui s’est fait depuis la création du monde.</p>
 
-                <p>Quand on n’est pas d’humeur à sortir, qu’importe ? On a des livres, c’est assez,
-                    et on en a de bons à juste prix. On est à soi dans cet emploi et on se possède ;
-                    dans les autres, on est à ceux qui nous y ont mis ou à ceux pour qui on nous y a
-                    mis.</p>
+            <p>Quand on n’est pas d’humeur à sortir, qu’importe ? On a des livres, c’est assez,
+                et on en a de bons à juste prix. On est à soi dans cet emploi et on se possède ;
+                dans les autres, on est à ceux qui nous y ont mis ou à ceux pour qui on nous y a
+                mis.</p>
 
-                <p><persName>Dom Joseph d’Armendariz</persName>, Espagnol, ayant avec quelques
-                    soldats escaladé les murailles d’<placeName>Alcantara</placeName> et ayant tué
-                    les sentinelles, ils eurent le moyen de se saisir d’une porte, par laquelle ils
-                    firent <pb n="5" facs="../../images/manuscrit/lettre70/lettre70-p5.JPG"/>[457]
-                    entrer les autres<note type="contenu-note" n="5">Source possible : <hi
-                            rend="italic">Gazette de Lyon</hi>, 1706, p. 6. </note>. Les Portugais,
-                    qui étaient presqu’en aussi grand nombre que ceux qui les attaquaient, prirent
-                    les armes. Mais après quelque résistance, ils se rendirent prisonniers avec
-                    toute la garnison. On a trouvé dans la place mille quintaux de poudre, deux
-                    mille quintaux de balles de mousquet, trente-huit pièces de canon et un convoi
-                    de deux cents charrettes qui y étaient arrivées deux jours auparavant chargées
-                    de provisions, et on y a pris onze étendards ou drapeaux. Cette place ferme le
-                    passage aux ennemis du côté de Portugal et l’ouvre aux troupes du <persName>roi
-                        d’Espagne</persName>.</p>
+            <p><persName>Dom Joseph d’Armendariz</persName>, Espagnol, ayant avec quelques
+                soldats escaladé les murailles d’<placeName>Alcantara</placeName> et ayant tué
+                les sentinelles, ils eurent le moyen de se saisir d’une porte, par laquelle ils
+                firent </p><pb n="5" facs="../../images/manuscrit/lettre70/lettre70-p5.JPG"/><p>[457]
+                entrer les autres<note type="contenu-note" n="5">Source possible : <hi
+                        rend="italic">Gazette de Lyon</hi>, 1706, p. 6. </note>. Les Portugais,
+                qui étaient presqu’en aussi grand nombre que ceux qui les attaquaient, prirent
+                les armes. Mais après quelque résistance, ils se rendirent prisonniers avec
+                toute la garnison. On a trouvé dans la place mille quintaux de poudre, deux
+                mille quintaux de balles de mousquet, trente-huit pièces de canon et un convoi
+                de deux cents charrettes qui y étaient arrivées deux jours auparavant chargées
+                de provisions, et on y a pris onze étendards ou drapeaux. Cette place ferme le
+                passage aux ennemis du côté de Portugal et l’ouvre aux troupes du <persName>roi
+                    d’Espagne</persName>.</p>
 
-                <p>Le <persName>roi de Portugal</persName> est mort le <date>9 de janvier</date> de
-                    cette année dans sa maison de plaisance d’<placeName>Alcantara</placeName> près
-                    de <placeName>Lisbonne</placeName>. <persName>Le prince du Brésil</persName>,
-                    son fils aîné, lui succède sous le nom de <persName>Jean V</persName>.</p>
+            <p>Le <persName>roi de Portugal</persName> est mort le <date>9 de janvier</date> de
+                cette année dans sa maison de plaisance d’<placeName>Alcantara</placeName> près
+                de <placeName>Lisbonne</placeName>. <persName>Le prince du Brésil</persName>,
+                son fils aîné, lui succède sous le nom de <persName>Jean V</persName>.</p>
 
-                <p><persName>Madame la duchesse </persName>
-                    <pb n="6" facs="../../images/manuscrit/lettre70/lettre70-p6.JPG"/>[458]
-                        <persName>de Bourgogne</persName> accoucha fort heureusement le <date>8
-                        janvier</date>, aussi même année, d’un prince que le roi a nommé
-                        <persName>duc de Bretagne</persName><note type="contenu-note" n="6">Source
-                        possible : <hi rend="italic">Gazette de Lyon</hi>, 1707, p. 12.</note>.</p>
+            <p><persName>Madame la duchesse </persName></p>
+            <pb n="6" facs="../../images/manuscrit/lettre70/lettre70-p6.JPG"/><p>[458]
+                <persName>de Bourgogne</persName> accoucha fort heureusement le <date>8
+                    janvier</date>, aussi même année, d’un prince que le roi a nommé
+                <persName>duc de Bretagne</persName><note type="contenu-note" n="6">Source
+                    possible : <hi rend="italic">Gazette de Lyon</hi>, 1707, p. 12.</note>.</p>
 
-                <p>Je ne laisserai pas échapper un moment qui puisse me donner la moindre occasion
-                    de te prouver que je suis et que serai toute ma vie ton fidèle ami. </p>
-            </div>
+            <p>Je ne laisserai pas échapper un moment qui puisse me donner la moindre occasion
+                de te prouver que je suis et que serai toute ma vie ton fidèle ami. </p>
         </body>
     </text>
 </TEI>
