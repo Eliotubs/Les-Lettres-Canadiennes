@@ -757,7 +757,7 @@ main .sommaire {
 .conteneur_a-propos button {
   padding: 10px;
   margin: 50px;
-  background-color: #aaa;
+  background-color: rgba(216, 215, 215, 0.445);
 }
 
 /* //////////////////// */
@@ -785,8 +785,6 @@ main .sommaire {
   width: 300px;
   padding: 20px;
   margin-bottom: 30px;
-  border-color: 5px black;
-  background-color: grey;
   justify-content: center;
 }
 
@@ -814,6 +812,8 @@ main .sommaire {
 
 .ressources figcaption {
   text-align: center;
+  font-weight: 800;
+  font-size: large;
   padding: 10px;
 }
 
