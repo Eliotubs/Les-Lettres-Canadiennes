@@ -94,10 +94,15 @@ header {
 }
 
 #logo-title {
-  font-size: 1.5rem;
   cursor: pointer;
+  width: 30%;
+  max-width: 400px;
+  height: 100%;
+}
+
+#logo-title img {
   width: auto;
-  background: var(--gris200);
+  height: 100px;
 }
 
 #nav {
@@ -691,7 +696,7 @@ main .sommaire {
 /* MENU > A PROPOS / PAGE : MISE EN PAGE GENERAL */
 /* //////////////////// */
 
-.a_propos{
+.a_propos {
   width: 100%;
   padding: 10px;
   margin-right: 10px;
@@ -704,18 +709,23 @@ main .sommaire {
   margin-top: 80px;
 }
 
+<<<<<<< HEAD
 .a_propos_page{
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
+=======
+.a_propos_page {
+  padding: 40px;
+>>>>>>> 3286ee75b6afa600cae9b3e92a23c9a215da781e
 }
 
-.conteneur_a-propos h2{
+.conteneur_a-propos h2 {
   margin-bottom: 10px;
 }
 
-.conteneur_a-propos h2.sous-titre{
+.conteneur_a-propos h2.sous-titre {
   text-align: center;
 }
 
@@ -728,10 +738,15 @@ main .sommaire {
   margin: 0px 100px;
 }
 
+<<<<<<< HEAD
 .conteneur_a-propos li{
   text-align: justify;
   margin-top: 20px;
   margin-bottom: 20px;
+=======
+.conteneur_a-propos li {
+  margin-bottom: 10px;
+>>>>>>> 3286ee75b6afa600cae9b3e92a23c9a215da781e
 }
 
 .btn-pg-suivante {
