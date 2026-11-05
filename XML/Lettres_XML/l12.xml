@@ -1,66 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0"
-     xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
-     xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
-     xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0">
-    <teiHeader/>
+    xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
+    xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
+    xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
     <text>
         <body>
-            <pb n="1" facs="../../images/manuscrit/lettre12/lettre12-p1.JPG"/>
-            <head type='2'>Lettre 12 <date>[1701]</date><note class="contenu-note" n="1">Transcription de
-                    Francesseca Lelong (2015). Révisée par moi (13 août 2015). Semble inspirée par
-                    la Lettre XLC du volume 2 de L’Espion turc :
-                    https://gallica.bnf.fr/ark:/12148/bpt6k6349779m/f157.item.r=mere<p/><lb/></note></head>
-            <correspAction type="received">
-                <p><persName>À sa mère</persName>, <placeName>à Angers</placeName></p>
-                <lb/>
-            </correspAction>
-            <argument>
-                <p>
-                    <hi rend="italic">Il la console sur la mort de son père et lui envoie une lettre
-                        de son frère<note class="contenu-note" n="2">Annotation dans la marge de
-                            gauche: « Insignifiante ».<p/><lb/></note></hi>
-                </p>
-                <lb/>
-            </argument>
-            <p>Vous devez être consolée doublement, ma chère mère, en recevant de mes nouvelles,
-                dans lesquelles je joins celles que je reçus hierde mon frère, qui me prie en même
-                temps de vous faire tenir l’incluse<note class="contenu-note" n="3">Expression
-                    courante : la lettre ci-jointe.<p/><lb/></note>. Je m’estimerais bienheureux si
-                j’avais bientôt le bonheur d’apprendre par vous-même si </p><pb n="2" facs="../../images/manuscrit/lettre12/lettre12-p2.JPG">[75]</pb><p> vous jouissez d’une
-                parfaite santé. La peur que j’ai que cela ne soit pas me jette dans des inquiétudes
-                que je ne puis exprimer. J’en ressens encore une bien plus grande quand je pense que
-                vous pleurez continuellement mon père que la mort a enlevé d’entre vos bras, lorsque
-                je n’étais encore âgé que de trois ans. Ainsi, ne pouvant pas alors partager votre
-                douleur, puisque j’en étais incapable, il ne m’était pas possible de comprendre la
-                perte que nous faisions. Mais à présent que l’âge m’a dessilléles yeux, j’y pense
-                tous les jours, et je ferai par la suite tout ce que je pourrai pour vous consoler
-                dans toutes vos peines.</p>
-            <lb/>
-            <p>Vous avez perdu celui que vous aimiez le plus au monde, et qui vous aimait
-                réciproquement avec tant de douceur et de tendresse, </p><pb n="3" facs="../../images/manuscrit/lettre12/lettre12-p3.JPG">[76]</pb><p> vous aviez si bien trouvé
-                le moyen d’entretenir cette amitié également entre vous deux par les complaisances
-                continuelles que vous aviez pour lui et par une obéissance aveugle à ses volontés,
-                dont il n’abusait pas, vous vous êtes, dis-je, toujours conduite si sagement, qu’il
-                lui aurait été impossible de vous aimer davantage, ni de cesser de vous aimer.</p>
-            <lb/>
-            <p>Promettez-moi donc, ma chère mère, de me faire sentir les moindres effets des
-                tendresses que vous aviez pour lui. Puisque je suis son fils et le vôtre, et que
-                vous m’avez porté dans vos flancs comme un fruit de votre couche pudique, j’espère
-                que vous m’accorderez ce que je vous demande. Je ne puis plus vous rien demander,
-                les larmes qui coulent de mes yeux baignent mon papier. Recevez-les donc, je vous
-                prie, </p><pb n="4" facs="../../images/manuscrit/lettre12/lettre12-p4.JPG">[77]</pb><p> comme un effet de ma tendresse et de l’amitié que j’ai pour vous, je prie
-                Dieu incessamment qu’il pourvoie à tous vos besoins en ce monde, qu’il vous comble
-                de ses plus précieuses bénédictions en l’autre, aussi bien que dans ce jour que l’an
-                est révolu, et qu’il me fasse la grâce de vous voir un jour avec mon cher père, dont
-                j’honore infiniment les mânes, dans le lieu de paix où le Tout-Puissant appelle tous
-                les bienheureux pour voir et contempler sa divine face, et y goûter à longs traits
-                les voluptés célestes dont les justes sont enivrés.</p>
-            <lb/>
-            <p/>
-            <lb/>
+            <div>
+                <pb n="1" facs="../../images/manuscrit/lettre12/lettre12-p1.JPG"/>
+                <head type="2">Lettre 12 <date>[1701]</date><note type="contenu-note" n="1"
+                        >Transcription de Francesseca Lelong (2015). Révisée par moi (13 août 2015).
+                        Semble inspirée par la Lettre XLC du volume 2 de L’Espion turc :
+                        https://gallica.bnf.fr/ark:/12148/bpt6k6349779m/f157.item.r=mere<p/>
+                    </note></head>
+                <salute>
+                    <persName key="mère">À sa mère</persName>, <placeName key="angers">à Angers</placeName>
+                </salute>
+                <argument>
+                    <p>
+                        <hi rend="italic">Il la console sur la mort de son père et lui envoie une
+                            lettre de son frère<note type="contenu-note" n="2">Annotation dans la
+                                marge de gauche: « Insignifiante ».<p/>
+                            </note></hi>
+                    </p>
+                </argument>
+            </div>
+            <div>
+                <p>Vous devez être consolée doublement, ma chère mère, en recevant de mes nouvelles,
+                    dans lesquelles je joins celles que je reçus hierde mon frère, qui me prie en
+                    même temps de vous faire tenir l’incluse<note type="contenu-note" n="3"
+                        >Expression courante : la lettre ci-jointe.<p/>
+                    </note>. Je m’estimerais bienheureux si j’avais bientôt le bonheur d’apprendre
+                    par vous-même si <pb n="2"
+                        facs="../../images/manuscrit/lettre12/lettre12-p2.JPG"/> [75] vous jouissez
+                    d’une parfaite santé. La peur que j’ai que cela ne soit pas me jette dans des
+                    inquiétudes que je ne puis exprimer. J’en ressens encore une bien plus grande
+                    quand je pense que vous pleurez continuellement mon père que la mort a enlevé
+                    d’entre vos bras, lorsque je n’étais encore âgé que de trois ans. Ainsi, ne
+                    pouvant pas alors partager votre douleur, puisque j’en étais incapable, il ne
+                    m’était pas possible de comprendre la perte que nous faisions. Mais à présent
+                    que l’âge m’a dessilléles yeux, j’y pense tous les jours, et je ferai par la
+                    suite tout ce que je pourrai pour vous consoler dans toutes vos peines.</p>
+
+                <p>Vous avez perdu celui que vous aimiez le plus au monde, et qui vous aimait
+                    réciproquement avec tant de douceur et de tendresse, <pb n="3"
+                        facs="../../images/manuscrit/lettre12/lettre12-p3.JPG"/>[76] vous aviez si
+                    bien trouvé le moyen d’entretenir cette amitié également entre vous deux par les
+                    complaisances continuelles que vous aviez pour lui et par une obéissance aveugle
+                    à ses volontés, dont il n’abusait pas, vous vous êtes, dis-je, toujours conduite
+                    si sagement, qu’il lui aurait été impossible de vous aimer davantage, ni de
+                    cesser de vous aimer.</p>
+
+                <p>Promettez-moi donc, ma chère mère, de me faire sentir les moindres effets des
+                    tendresses que vous aviez pour lui. Puisque je suis son fils et le vôtre, et que
+                    vous m’avez porté dans vos flancs comme un fruit de votre couche pudique,
+                    j’espère que vous m’accorderez ce que je vous demande. Je ne puis plus vous rien
+                    demander, les larmes qui coulent de mes yeux baignent mon papier. Recevez-les
+                    donc, je vous prie, <pb n="4"
+                        facs="../../images/manuscrit/lettre12/lettre12-p4.JPG"/>[77] comme un effet
+                    de ma tendresse et de l’amitié que j’ai pour vous, je prie Dieu incessamment
+                    qu’il pourvoie à tous vos besoins en ce monde, qu’il vous comble de ses plus
+                    précieuses bénédictions en l’autre, aussi bien que dans ce jour que l’an est
+                    révolu, et qu’il me fasse la grâce de vous voir un jour avec mon cher père, dont
+                    j’honore infiniment les mânes, dans le lieu de paix où le Tout-Puissant appelle
+                    tous les bienheureux pour voir et contempler sa divine face, et y goûter à longs
+                    traits les voluptés célestes dont les justes sont enivrés.</p>
+                <p/>
+            </div>
         </body>
     </text>
 </TEI>

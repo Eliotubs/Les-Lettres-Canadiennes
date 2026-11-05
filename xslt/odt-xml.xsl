@@ -39,49 +39,47 @@
         <head type="3">
             <xsl:apply-templates/>
         </head>
-        <lb/>
     </xsl:template>
-    
+
     <!-- Paramètre de transformation du corps de texte dans des balises p -->
 
-<!-- [@text:style-name = 'Normal' or @text:style-name = 'Police_20_par_20_défaut'] = garder au cas où -->
+    <!-- [@text:style-name = 'Normal' or @text:style-name = 'Police_20_par_20_défaut'] = garder au cas où -->
 
     <xsl:template match="text:p">
         <p>
             <xsl:apply-templates/>
         </p>
-        <lb/> <!-- lb permet des retours à la ligne -->
     </xsl:template>
 
     <!-- Balise avec attribue correspondant pour la section de destinataire de la lettre et destinataire -->
 
     <xsl:template match="text:p[@text:style-name = 'correspAction']">
-        <correspAction type="received"> <!-- information du destinataire : type="sent" pour l'expéditeur -->
-            <p>
-                <xsl:apply-templates/>
-            </p>
-            <lb/>
-        </correspAction>
+        <salute>
+            <!-- information du destinataire : type="sent" pour l'expéditeur -->
+            <xsl:apply-templates/>
+        </salute>
     </xsl:template>
 
     <xsl:template match="text:p[@text:style-name = 'argument']">
-        <argument> <!-- résumé ou une introduction au début d'une section  -->
+        <argument>
+            <!-- résumé ou une introduction au début d'une section  -->
             <p>
                 <hi rend="italic">
                     <xsl:apply-templates/>
                 </hi>
             </p>
-            <lb/>
         </argument>
     </xsl:template>
 
     <!-- Selection des notes et attribution d'un numéro (permet d'en compter le nombre) -->
 
-    <xsl:template match="text:span[@text:style-name = 'numero_20_de_20_page' or @text:style-name = 'Numero_20_de_20_page' or @text:style-name ='Numerodepage']">
-        <pb n="{count(preceding::text:span[@text:style-name = 'numero_20_de_20_page' or @text:style-name = 'Numero_20_de_20_page' or @text:style-name ='Numerodepage']) + 1}"/>
+    <xsl:template
+        match="text:span[@text:style-name = 'numero_20_de_20_page' or @text:style-name = 'Numero_20_de_20_page' or @text:style-name = 'Numerodepage']">
+        <pb
+            n="{count(preceding::text:span[@text:style-name = 'numero_20_de_20_page' or @text:style-name = 'Numero_20_de_20_page' or @text:style-name ='Numerodepage']) + 1}"/>
         <xsl:apply-templates/>
     </xsl:template>
-    
+
     <!-- Identifier les titres d'ouvrage et mise en italique -->
 
     <xsl:template match="text:span[@text:style-name = 'Titre_20_ouvrage']">
@@ -91,7 +89,7 @@
     </xsl:template>
 
     <!-- Boucle : pour les balises dates, persnames et placename -->
-    
+
     <xsl:template match="text:span">
         <xsl:variable name="styleName" select="@text:style-name"/>
         <xsl:variable name="properties"
@@ -103,7 +101,8 @@
 
 
         <xsl:choose>
-            <!-- Vert -> date --> <!-- doublons de couleurs maj et min pour éviter les beugs -->
+            <!-- Vert -> date -->
+            <!-- doublons de couleurs maj et min pour éviter les beugs -->
             <xsl:when test="$bgColor = '#00ff00' or $bgColor = '#00FF00'">
                 <date>
                     <xsl:call-template name="appliquer-format-texte">
@@ -133,7 +132,7 @@
                 </persName>
             </xsl:when>
 
-            <!-- Pas de couleur --> 
+            <!-- Pas de couleur -->
             <xsl:otherwise>
                 <xsl:call-template name="appliquer-format-texte">
                     <xsl:with-param name="it" select="$caracter_it"/>
@@ -144,7 +143,7 @@
     </xsl:template>
 
     <!-- cumulation du gras et de l'italique en même temps -->
-    
+
     <xsl:template name="appliquer-format-texte">
         <xsl:param name="it"/>
         <xsl:param name="bold"/>
@@ -180,11 +179,11 @@
 
 
     <!-- Introduire les notes -->
-    
+
     <xsl:template match="text:note">
         <!-- On compte le numéro de la note -->
         <xsl:variable name="note" select="count(preceding::text:note) + 1"/>
-        <note class="contenu-note">
+        <note type="contenu-note">
             <xsl:attribute name="n">
                 <xsl:value-of select="$note"/>
             </xsl:attribute>
