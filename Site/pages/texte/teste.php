@@ -106,13 +106,13 @@
 // Tableau Aray des lettres
 
 $lettres = [
-    'XML\Lettres_XML\l12.xml',
-    'XML\Lettres_XML\l32.xml',
-    'XML\Lettres_XML\l70.xml'
+    '../../../XML/Lettres_XML/l12.xml',
+    '../../../XML/Lettres_XML/l32.xml',
+    '../../../XML/Lettres_XML/l70.xml'
 ];
 
 // copier les chemin en intégralité
-$xslFile = 'xslt\tei-html.xsl';
+$xslFile = '../../../xslt/tei-html.xsl';
 
 // Chargement unique de la feuille XSL
 $xsl = new DOMDocument();
