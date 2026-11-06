@@ -11,17 +11,19 @@ $page = $_GET['page'] ?? ''; //la page de la lettre choisie
 $selection_brut = $_GET['selection'] ?? ''; //La sélection de lettre
 $selection = explode("-", $selection_brut); //La sélection nettoyée et mise en tableau
 
-$position_selection = array_search($lettre, $selection);
+$position_selection = array_search($lettre, $selection); //Récupère la position de la lettre actuelle dans la liste des lettres sélectionnées
 
 $chapitre_sui = null;
 $chapitre_pre = null;
 
+//Si la lettre actuelle n'est pas la dernière de la sélection, définit le numéro de la lettre suivante dans la sélection
 if ($position_selection !== false && isset($selection[$position_selection + 1])) {
     $chapitre_sui = $selection[$position_selection + 1];
 } else {
     $chapitre_sui = null;
 }
 
+//Si la lettre actuelle n'est pas la premières, définit le numéro de la lettre précédente dans la sélection
 if ($position_selection !== false && $position_selection > 0) {
     $chapitre_pre = $selection[$position_selection - 1];
 } else {
