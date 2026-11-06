@@ -517,7 +517,7 @@ main .sommaire {
   top: 0;
   background-color: var(--gris160);
   transform: translateX(0px);
-  border-radius: 0% 10% 10% 0%;
+  border-radius: 0 15px 15px 0;
   transition: 0.2s ease;
 }
 
@@ -529,7 +529,7 @@ main .sommaire {
   right: -40px;
   top: 30px;
   padding: 3px 20px 5px;
-  border-radius: 30% 30% 0% 0%;
+  border-radius: 15px 15px 0 0;
   user-select: none;
 
   rotate: 90deg;
@@ -638,7 +638,7 @@ main .content_accordeon {
   right: -40px;
   top: 30px;
   padding: 3px 20px 5px;
-  border-radius: 30% 30% 0% 0%;
+  border-radius: 15px 15px 0 0;
   /* font-size: 2rem; */
   rotate: 90deg;
 }
@@ -662,7 +662,7 @@ main .sommaire {
   position: sticky;
   top: 0px;
   background-color: var(--gris160);
-  border-radius: 0% 10% 10% 0%;
+  border-radius: 0 15px 15px 0;
   transform: translateX(-180px);
   transition: 0.2s ease;
 }

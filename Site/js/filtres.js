@@ -15,16 +15,20 @@ const btn_volume_2 = document.querySelector("#btn-volume-2");
 const fleche_volume_1 = document.querySelector("#btn-volume-1 i");
 const fleche_volume_2 = document.querySelector("#btn-volume-2 i");
 
+// Les volumes sont toujours ouverts quand on arrive sur la page
 let volume_1_ouvert = true;
 let volume_2_ouvert = true;
 
+// Quand on clique sur le volume 1
 btn_volume_1.addEventListener("click", (e) => {
   if (volume_1_ouvert == false) {
+    //Ouverture
     lettres_allcontainer_volume_1.style.display = "block";
     fleche_volume_1.style.rotate = "180deg";
     btn_volume_1.style.borderRadius = "20px 20px 0 0";
     volume_1_ouvert = true;
   } else {
+    //Fermeture
     lettres_allcontainer_volume_1.style.display = "none";
     fleche_volume_1.style.rotate = "0deg";
     btn_volume_1.style.borderRadius = "20px";
@@ -32,13 +36,16 @@ btn_volume_1.addEventListener("click", (e) => {
   }
 });
 
+// Quand on clique sur le volume 2
 btn_volume_2.addEventListener("click", (e) => {
   if (volume_2_ouvert == false) {
+    //Ouverture
     lettres_allcontainer_volume_2.style.display = "block";
     fleche_volume_2.style.rotate = "180deg";
     btn_volume_2.style.borderRadius = "20px 20px 0 0";
     volume_2_ouvert = true;
   } else {
+    //Fermeture
     lettres_allcontainer_volume_2.style.display = "none";
     fleche_volume_2.style.rotate = "0deg";
     btn_volume_2.style.borderRadius = "20px";
@@ -230,6 +237,7 @@ volume2_lettres.forEach((lettre) => {
   lettre.classList.add("lettre-select");
 });
 
+//Ajoute ou retire la class "lettre-select" quand on clique sur le bouton select all
 function update_select_all_volume(volume_select_all, volume) {
   if (volume_select_all.checked === true) {
     volume.forEach((lettre) => {
@@ -244,26 +252,32 @@ function update_select_all_volume(volume_select_all, volume) {
 
 const link_lecture_selection = document.getElementById("btn-lecture-selection");
 
+// Met à jour le lien du bouton "Lire la sélection" avec les lettres ayant la class "lettre-select"
 function update_link_lecture_selection() {
   lettres_selected = [];
+  // On ajoute dans le tableau "lettres-selected" l'ensemble des lettres avec la class "lettre-selected", en gardant juste leur numéro
   volume1_lettres.forEach((lettre) => {
     if (lettre.classList.contains("lettre-select")) {
       lettres_selected.push(lettre.innerHTML.replace("Lettre ", ""));
     }
   });
+  // Si aucune lettre n'est sélectionnée, alors le lien amène à la lettre 1
   if (lettres_selected.length == 0) {
     lettres_selected.push("1");
   }
   str_lettres_selected = "";
+  // Permet d'ajouter un tiret entre tous les volumes sélectionnées
   for (var i = 0; i < lettres_selected.length; i++) {
     str_lettres_selected += "l" + lettres_selected[i] + "-";
   }
+  // Met à jour le lien
   link_lecture_selection.href =
     "viewer_lettre.php?lettre=l" +
     lettres_selected[0] +
     "&page=1&selection=" +
-    str_lettres_selected.slice(0, -1);
+    str_lettres_selected.slice(0, -1); //Permet d'enlever le dernier tiret
 }
+// Important pour mettre à jour le lien dès l'entrée sur le site
 update_link_lecture_selection();
 
 volume1_select_all.addEventListener("click", (e) => {
@@ -271,6 +285,8 @@ volume1_select_all.addEventListener("click", (e) => {
   update_link_lecture_selection();
 });
 
+// Gère le style "lettre-select" quand une lettre est cliqué
+// Si toutes les lettres sont sélectionnées, le bouton select all devient checked
 volume1_lettres.forEach((lettre) => {
   lettre.addEventListener("click", (e) => {
     if (lettre.classList.contains("lettre-select")) {
@@ -295,6 +311,8 @@ volume2_select_all.addEventListener("click", (e) => {
   update_select_all_volume(volume2_select_all, volume2_lettres);
 });
 
+// Gère le style "lettre-select" quand une lettre est cliqué
+// Si toutes les lettres sont sélectionnées, le bouton select all devient checked
 volume2_lettres.forEach((lettre) => {
   lettre.addEventListener("click", (e) => {
     if (lettre.classList.contains("lettre-select")) {
@@ -323,6 +341,7 @@ const container_description_lettre = document.querySelector(
   ".description_lettre",
 );
 
+// Solution temporaire, ce n'est pas l'idéal mais pratique pour 3 lettres
 lettres_description = [
   {
     id: "12",
@@ -347,9 +366,10 @@ lettres_description = [
   },
 ];
 
+// Chaque fois que l'utilisateur passe la souris sur une lettre, sa description est affichée à droite
 all_lettres.forEach((lettre) => {
   lettre.addEventListener("mouseover", (e) => {
-    container_description_lettre.replaceChildren();
+    container_description_lettre.replaceChildren(); //Permet d'enlever tous les enfants du container pour repartir de zéro
     for (var i = 0; i < lettres_description.length; i++) {
       if (lettres_description[i]["nom"] == e.target.textContent) {
         let p_nom_lettre = document.createElement("h3");

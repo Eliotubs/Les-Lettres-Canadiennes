@@ -63,8 +63,11 @@ const checkbox_appareil_critique = document.getElementById(
 );
 const all_notes = document.querySelectorAll(".note");
 
+// L'appareil critique est toujours visible quand on rafraichi la page
+// //////!\\\\\\\\ Attention, car quand on change de page avec l'option désactivées, elle se réactive automatiquement !
 checkbox_appareil_critique.checked = true;
 
+// La class "note-off" contient "display: none", ce qu'il efface son contenu
 checkbox_appareil_critique.addEventListener("click", (e) => {
   console.log("ok");
   all_notes.forEach((note) => {
