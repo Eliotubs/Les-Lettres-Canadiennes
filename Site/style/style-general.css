@@ -671,7 +671,7 @@ main .sommaire {
 /* MENU > ANNEXES / PAGE : DONNEES */
 /* //////////////////// */
 
-.annexes{
+.annexes {
   width: 100%;
   padding: 10px;
   margin-right: 10px;
@@ -709,16 +709,11 @@ main .sommaire {
   margin-top: 80px;
 }
 
-<<<<<<< HEAD
-.a_propos_page{
+.a_propos_page {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
-=======
-.a_propos_page {
-  padding: 40px;
->>>>>>> 3286ee75b6afa600cae9b3e92a23c9a215da781e
 }
 
 .conteneur_a-propos h2 {
@@ -738,15 +733,10 @@ main .sommaire {
   margin: 0px 100px;
 }
 
-<<<<<<< HEAD
-.conteneur_a-propos li{
+.conteneur_a-propos li {
   text-align: justify;
   margin-top: 20px;
   margin-bottom: 20px;
-=======
-.conteneur_a-propos li {
-  margin-bottom: 10px;
->>>>>>> 3286ee75b6afa600cae9b3e92a23c9a215da781e
 }
 
 .btn-pg-suivante {
